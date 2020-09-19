@@ -1,0 +1,5569 @@
+{
+    "AncientBall": {
+        "ModelUser": "DgnOgj_Hrl_AncientBall_01",
+        "PhysicsUser": "DgnOgj_Hrl_AncientBall_01"
+    },
+    "AncientBallSwitch": {
+        "ModelUser": "DgnOgj_Hrl_AncientBallSwitch_01",
+        "PhysicsUser": "DgnOgj_Hrl_AncientBallSwitch_01"
+    },
+    "Animal_Crow_Swarm_HeapMeasure": {
+        "GParamUser": "Animal_Crow_Swarm",
+        "ModelUser": "Animal_Crow_Swarm",
+        "PhysicsUser": "Animal_Crow_Swarm",
+        "SlinkUser": "Animal_Crow_Swarm"
+    },
+    "Animal_Deer_A": {
+        "DamageParamUser": "Animal_Deer"
+    },
+    "Animal_Deer_C": {
+        "DamageParamUser": "Animal_Deer"
+    },
+    "Animal_Elk_A": {
+        "DamageParamUser": "Animal_Elk"
+    },
+    "Animal_Fish_A": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_B": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_C": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_D": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_E": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_F": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_G": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_H": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_I": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_J": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_L": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Fish_Z": {
+        "LifeConditionUser": "Animal_Fish"
+    },
+    "Animal_Gull_Swarm_HeapMeasure": {
+        "DamageParamUser": "Animal_Gull_Swarm",
+        "GParamUser": "Animal_Gull_Swarm",
+        "LifeConditionUser": "Animal_Gull_Swarm",
+        "PhysicsUser": "Animal_Gull_Swarm",
+        "SlinkUser": "Animal_Gull_Swarm"
+    },
+    "Animal_Horse_A": {
+        "SlinkUser": "Horse_A"
+    },
+    "Animal_Insect_EP": {
+        "LifeConditionUser": "Animal_Insect_E"
+    },
+    "Animal_Kokko_A": {
+        "DamageParamUser": "Animal_Kokko"
+    },
+    "Animal_LittleBird_A": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_LittleBird_B": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_LittleBird_C": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_LittleBird_D": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_LittleBird_E": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_LittleBird_F": {
+        "DamageParamUser": "Animal_LittleBird",
+        "DropTableUser": "Animal_LittleBird"
+    },
+    "Animal_Pigeon_B_Swarm_HeapMeasure": {
+        "GParamUser": "Animal_Pigeon_B_Swarm",
+        "ModelUser": "Animal_Pigeon_B_Swarm",
+        "SlinkUser": "Animal_Pigeon_B_Swarm"
+    },
+    "Animal_Pigeon_Swarm_HeapMeasure": {
+        "GParamUser": "Animal_Pigeon_Swarm",
+        "ModelUser": "Animal_Pigeon_Swarm"
+    },
+    "Animal_Rhino_A": {
+        "DamageParamUser": "Animal_Rhino"
+    },
+    "Animal_Squirrel_A": {
+        "DamageParamUser": "Animal_Squirrel"
+    },
+    "Animal_SunazarashiSP_A": {
+        "GParamUser": "Animal_Sunazarashi",
+        "PhysicsUser": "Animal_Sunazarashi"
+    },
+    "Animal_SunazarashiSP_B": {
+        "GParamUser": "Animal_SunazarashiSP",
+        "PhysicsUser": "Animal_SunazarashiSP"
+    },
+    "Animal_SunazarashiSP_C": {
+        "GParamUser": "Animal_SunazarashiSP",
+        "PhysicsUser": "Animal_SunazarashiSP"
+    },
+    "Animal_Sunazarashi_A": {
+        "GParamUser": "Animal_Sunazarashi",
+        "ModelUser": "Animal_Sunazarashi",
+        "PhysicsUser": "Animal_Sunazarashi"
+    },
+    "Animal_Sunazarashi_B": {
+        "GParamUser": "Animal_Sunazarashi",
+        "PhysicsUser": "Animal_Sunazarashi"
+    },
+    "Animal_Sunazarashi_D_DLC2nd": {
+        "GParamUser": "Animal_Sunazarashi",
+        "PhysicsUser": "Animal_Sunazarashi"
+    },
+    "Armor_001_Head": {
+        "PhysicsUser": "Armor_001_Head_A"
+    },
+    "Armor_001_Head_B": {
+        "GParamUser": "Armor_001_Head"
+    },
+    "Armor_002_Head_B": {
+        "GParamUser": "Armor_002_Head"
+    },
+    "Armor_003_Head_B": {
+        "GParamUser": "Armor_003_Head"
+    },
+    "Armor_004_Head_B": {
+        "GParamUser": "Armor_004_Head"
+    },
+    "Armor_012_Head_B": {
+        "GParamUser": "Armor_012_Head"
+    },
+    "Armor_015_Head_B": {
+        "GParamUser": "Armor_015_Head"
+    },
+    "Armor_022_Head_B": {
+        "GParamUser": "Armor_022_Head"
+    },
+    "Armor_042_Head_B": {
+        "GParamUser": "Armor_042_Head"
+    },
+    "Armor_077_Head_B": {
+        "GParamUser": "Armor_077_Head"
+    },
+    "Armor_078_Head_B": {
+        "GParamUser": "Armor_078_Head"
+    },
+    "Armor_079_Head_B": {
+        "GParamUser": "Armor_079_Head"
+    },
+    "Armor_177_Head_B": {
+        "GParamUser": "Armor_177_Head"
+    },
+    "Armor_178_Head_B": {
+        "GParamUser": "Armor_178_Head"
+    },
+    "Armor_220_Head_B": {
+        "GParamUser": "Armor_220_Head"
+    },
+    "Armor_221_Head_B": {
+        "GParamUser": "Armor_221_Head"
+    },
+    "Armor_222_Head_B": {
+        "GParamUser": "Armor_222_Head"
+    },
+    "Armor_223_Head_B": {
+        "GParamUser": "Armor_223_Head"
+    },
+    "Armor_224_Head_B": {
+        "GParamUser": "Armor_224_Head"
+    },
+    "AscendingCurrent_GanonBeast": {
+        "ElinkUser": "AscendingCurrent_GanonBeastBeam"
+    },
+    "Barrel": {
+        "ModelUser": "Obj_Barrel_A"
+    },
+    "BarrelBomb": {
+        "ModelUser": "SS_object_BarrelBomb"
+    },
+    "Barrel_CDungeon": {
+        "DropTableUser": "Barrel_CDungeon_A"
+    },
+    "BeeHome": {
+        "PhysicsUser": "Item_BeeHome"
+    },
+    "BowlPin_2_Far": {
+        "PhysicsUser": "BowlPin_2"
+    },
+    "Bros_Rock_01_Far": {
+        "ElinkUser": "Bros_Rock_01",
+        "PhysicsUser": "Bros_Rock_01",
+        "SlinkUser": "Bros_Rock_01"
+    },
+    "Bros_Rock_02_Far": {
+        "ElinkUser": "Bros_Rock_02",
+        "PhysicsUser": "Bros_Rock_02",
+        "SlinkUser": "Bros_Rock_02"
+    },
+    "Bros_Rock_03_Far": {
+        "ElinkUser": "Bros_Rock_03",
+        "PhysicsUser": "Bros_Rock_03",
+        "SlinkUser": "Bros_Rock_03"
+    },
+    "Bros_Rock_04_Far": {
+        "ElinkUser": "Bros_Rock_04",
+        "PhysicsUser": "Bros_Rock_04",
+        "SlinkUser": "Bros_Rock_04"
+    },
+    "Bros_Rock_05_Far": {
+        "ElinkUser": "Bros_Rock_05",
+        "PhysicsUser": "Bros_Rock_05",
+        "SlinkUser": "Bros_Rock_05"
+    },
+    "DLC_ChallengeChainRing_Last": {
+        "SlinkUser": "DLC_ChallengeChainRing"
+    },
+    "DLC_DgnObj_BoardWood_L": {
+        "ElinkUser": "DgnObj_BoardWood_L",
+        "GParamUser": "DgnObj_BoardWood_L",
+        "ModelUser": "DgnObj_BoardWood_L",
+        "SlinkUser": "DgnObj_BoardWood_L"
+    },
+    "DLC_TwnObj_FlightTraningTarget_A_01": {
+        "ModelUser": "TwnObj_FlightTraningTarget_A_01",
+        "PhysicsUser": "TwnObj_FlightTraningTarget_A_01"
+    },
+    "DgnObj_AncientReactor_B_01_on": {
+        "ModelUser": "DgnObj_AncientReactor_B_01"
+    },
+    "DgnObj_BoardIron_A_Fixed": {
+        "ModelUser": "DgnObj_BoardIron_A"
+    },
+    "DgnObj_BoardIron_DLC_D_01": {
+        "ModelUser": "DgnObj_BoardIron_D"
+    },
+    "DgnObj_BoardSeesaw_A": {
+        "SlinkUser": "DgnObj_BoardSeesaw"
+    },
+    "DgnObj_BoardSeesaw_A_050": {
+        "ModelUser": "DgnObj_BoardSeesaw_A"
+    },
+    "DgnObj_BoardSeesaw_B": {
+        "SlinkUser": "DgnObj_BoardSeesaw"
+    },
+    "DgnObj_BoardSeesaw_C": {
+        "SlinkUser": "DgnObj_BoardSeesaw"
+    },
+    "DgnObj_BoxShutter_4x4x4_Slide": {
+        "ModelUser": "DgnObj_BoxShutter_4x4x4"
+    },
+    "DgnObj_BoxShutter_4x4x4_Slow": {
+        "ModelUser": "DgnObj_BoxShutter_4x4x4"
+    },
+    "DgnObj_Cannon_B": {
+        "SlinkUser": "DgnObj_Cannon"
+    },
+    "DgnObj_DLC_BattleRoom_Parts_C_01_Active": {
+        "ModelUser": "DgnObj_DLC_BattleRoom_Parts_C_01"
+    },
+    "DgnObj_DLC_BattleRoom_Parts_C_02_Active": {
+        "ModelUser": "DgnObj_DLC_BattleRoom_Parts_C_02"
+    },
+    "DgnObj_DLC_BoxNet_B_2": {
+        "ModelUser": "DgnObj_DLC_BoxNet_B"
+    },
+    "DgnObj_DLC_ChampionsDungeonEntrance_A_01": {
+        "SlinkUser": "DgnObj_DLC_ChampionsDungeonEntrance"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_A_02": {
+        "GParamUser": "DgnObj_DLC_ColorfulAncientBall_A"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_A_03": {
+        "GParamUser": "DgnObj_DLC_ColorfulAncientBall_A"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_A_04": {
+        "GParamUser": "DgnObj_DLC_ColorfulAncientBall_A"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_Big_A_02": {
+        "PhysicsUser": "DgnObj_DLC_ColorfulAncientBall_Big_A"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_Big_A_03": {
+        "PhysicsUser": "DgnObj_DLC_ColorfulAncientBall_Big_A"
+    },
+    "DgnObj_DLC_ColorfulAncientBall_Big_A_04": {
+        "PhysicsUser": "DgnObj_DLC_ColorfulAncientBall_Big_A"
+    },
+    "DgnObj_DLC_IbutsuEx_E_WaterPump_A_01": {
+        "SlinkUser": "DgnObj_DLC_IbutsuEx_E_WaterPump"
+    },
+    "DgnObj_DLC_IbutsuEx_E_WaterPump_A_02": {
+        "SlinkUser": "DgnObj_DLC_IbutsuEx_E_WaterPump"
+    },
+    "DgnObj_DLC_IbutsuEx_E_WaterPump_A_03": {
+        "SlinkUser": "DgnObj_DLC_IbutsuEx_E_WaterPump"
+    },
+    "DgnObj_DLC_Weapon_Sword_502": {
+        "ModelUser": "Weapon_Sword_502"
+    },
+    "DgnObj_DoorIron_A": {
+        "XlinkUser": "DgnObj_DoorIron"
+    },
+    "DgnObj_DoorIron_A_02": {
+        "SlinkUser": "DgnObj_DoorIron_A",
+        "XlinkUser": "DgnObj_DoorIron"
+    },
+    "DgnObj_DoorIron_A_R": {
+        "PhysicsUser": "DgnObj_DoorIron_A",
+        "SlinkUser": "DgnObj_DoorIron_A",
+        "XlinkUser": "DgnObj_DoorIron"
+    },
+    "DgnObj_DoorStone_A": {
+        "SlinkUser": "DgnObj_DoorStone"
+    },
+    "DgnObj_DoorStone_A_R": {
+        "PhysicsUser": "DgnObj_DoorStone_A",
+        "SlinkUser": "DgnObj_DoorStone"
+    },
+    "DgnObj_DungeonEntranceSP": {
+        "SlinkUser": "DgnObj_DungeonEntrance"
+    },
+    "DgnObj_DungeonEntranceSP_Far": {
+        "ElinkUser": "DgnObj_DungeonEntranceSP",
+        "PhysicsUser": "DgnObj_DungeonEntranceSP",
+        "SlinkUser": "DgnObj_DungeonEntrance"
+    },
+    "DgnObj_DungeonEntrance_A_01_Far": {
+        "ElinkUser": "DgnObj_DungeonEntrance_A_01",
+        "GParamUser": "DgnObj_DungeonEntrance_A_01",
+        "PhysicsUser": "DgnObj_DungeonEntrance_A_01"
+    },
+    "DgnObj_DungeonLava50x50_A_01_100enemy": {
+        "ModelUser": "DgnObj_DungeonLava50x50_A_01"
+    },
+    "DgnObj_DungeonWaterFlow_B_01_Model": {
+        "ModelUser": "DgnObj_DungeonWaterFlow_B_01"
+    },
+    "DgnObj_ElectricBoxGenerator": {
+        "ModelUser": "DgnObj_ElectricBoxGenerator_B_01"
+    },
+    "DgnObj_ElectricPillar_A_01": {
+        "SlinkUser": "DgnObj_ElectricPillar"
+    },
+    "DgnObj_ElectricPillar_A_02": {
+        "SlinkUser": "DgnObj_ElectricPillar"
+    },
+    "DgnObj_ElectricWire_A_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_02": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_03": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_05": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_06": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_07": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_08": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_09": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_10": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_11": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_12": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_13": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_14": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_15": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_18": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_19": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_21": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_22": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_A_24": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Consent_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Cross_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Down_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_End_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Straight_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Straight_02": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Turn_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_ElectricWire_B_Up_01": {
+        "SlinkUser": "DgnObj_ElectricWire"
+    },
+    "DgnObj_EnemyLift_A_01": {
+        "SlinkUser": "DgnObj_EnemyLift"
+    },
+    "DgnObj_EntranceElevatorSP": {
+        "SlinkUser": "DgnObj_EntranceElevator"
+    },
+    "DgnObj_EntranceElevator_A_01": {
+        "SlinkUser": "DgnObj_EntranceElevator"
+    },
+    "DgnObj_EntranceShutterSP": {
+        "SlinkUser": "DgnObj_EntranceShutter"
+    },
+    "DgnObj_EntranceShutter_A_01": {
+        "SlinkUser": "DgnObj_EntranceShutter"
+    },
+    "DgnObj_EntranceTerminalSP": {
+        "SlinkUser": "DgnObj_EntranceTerminal"
+    },
+    "DgnObj_EntranceTerminal_A_01": {
+        "SlinkUser": "DgnObj_EntranceTerminal"
+    },
+    "DgnObj_FirePillar_B": {
+        "ElinkUser": "DgnObj_FirePillar",
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_FirePillar_C": {
+        "ElinkUser": "DLC2_DgnObj_FirePillar_C",
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_FirePillar_C_02": {
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_FirePillar_C_03": {
+        "ElinkUser": "DgnObj_FirePillar",
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_FirePillar_C_04": {
+        "ElinkUser": "DgnObj_FirePillar",
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_FirePillar_C_Physics": {
+        "ElinkUser": "DgnObj_FirePillar",
+        "SlinkUser": "DgnObj_FirePillar"
+    },
+    "DgnObj_GearHandle_A_01": {
+        "SlinkUser": "DgnObj_GearHandle"
+    },
+    "DgnObj_HangedLamp_A": {
+        "ModelUser": "DgnObj_HangedLamp"
+    },
+    "DgnObj_HangedLamp_B": {
+        "ModelUser": "DgnObj_HangedLamp"
+    },
+    "DgnObj_HingeBoard_A": {
+        "SlinkUser": "DgnObj_HingeBoard"
+    },
+    "DgnObj_Hrl_Box1x1x4Center_02_Col": {
+        "PhysicsUser": "DgnObj_Hrl_Box1x1x4Center_02"
+    },
+    "DgnObj_Hrl_RailLift_6x6_01": {
+        "SlinkUser": "DgnObj_Hrl_RailLift"
+    },
+    "DgnObj_Hrl_Warpin_2x2_01": {
+        "SlinkUser": "DgnObj_Hrl_Warpin"
+    },
+    "DgnObj_IronRail_A": {
+        "ModelUser": "DgnObj_IronRail",
+        "PhysicsUser": "DgnObj_IronRail"
+    },
+    "DgnObj_IronRail_Fixed": {
+        "ModelUser": "DgnObj_IronRail"
+    },
+    "DgnObj_IvyBurn_Floor": {
+        "ElinkUser": "DgnObj_IvyBurn",
+        "ModelUser": "DgnObj_IvyBurn",
+        "PhysicsUser": "DgnObj_IvyBurn",
+        "SlinkUser": "DgnObj_IvyBurn"
+    },
+    "DgnObj_IvyBurn_FloorB": {
+        "DamageParamUser": "DgnObj_IvyBurn_Floor",
+        "ElinkUser": "DgnObj_IvyBurn",
+        "ModelUser": "DgnObj_IvyBurn",
+        "SlinkUser": "DgnObj_IvyBurn"
+    },
+    "DgnObj_KibakoDungeon_040": {
+        "SlinkUser": "KibakoDungeon_040"
+    },
+    "DgnObj_RemainsLithograghBall_AoC": {
+        "ModelUser": "DgnObj_RemainsLithograghBall"
+    },
+    "DgnObj_RemainsLithograph_A_01": {
+        "SlinkUser": "DgnObj_RemainsLithograph"
+    },
+    "DgnObj_SliderBlockIron_A": {
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_A_02": {
+        "PhysicsUser": "DgnObj_SliderBlockIron_A",
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_B_01": {
+        "ModelUser": "DgnObj_SliderBlockIron_B",
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_C": {
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_D": {
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_D_01": {
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderBlockIron_E_01": {
+        "SlinkUser": "DgnObj_SliderBlockIron"
+    },
+    "DgnObj_SliderSpike_A": {
+        "ModelUser": "DgnObj_SliderSpike_A_01",
+        "SlinkUser": "DgnObj_SliderSpike"
+    },
+    "DgnObj_StartPointShutter": {
+        "ModelUser": "Obj_StartPointShutter",
+        "PhysicsUser": "Obj_StartPointShutter",
+        "SlinkUser": "Obj_StartPointShutter"
+    },
+    "DgnObj_StoneBall_005": {
+        "SlinkUser": "StoneBall_005"
+    },
+    "DgnObj_StoneBall_040": {
+        "SlinkUser": "StoneBall_040"
+    },
+    "DgnObj_SwitchStake_A": {
+        "SlinkUser": "DgnObj_SwitchStake"
+    },
+    "DgnObj_SwitchTarget_A": {
+        "SlinkUser": "DgnObj_SwitchTarget"
+    },
+    "DgnObj_WarpPointSP": {
+        "SlinkUser": "DgnObj_WarpPoint"
+    },
+    "DgnObj_WarpPoint_A_01": {
+        "SlinkUser": "DgnObj_WarpPoint"
+    },
+    "DgnObj_WarpPoint_Remains": {
+        "SlinkUser": "DgnObj_WarpPoint"
+    },
+    "DgnObj_WaterShutterL_A_01": {
+        "SlinkUser": "DgnObj_WaterShutter"
+    },
+    "DgnObj_WaterShutterR_A_01": {
+        "SlinkUser": "DgnObj_WaterShutter"
+    },
+    "Dm_Animal_LittleBird_A": {
+        "ModelUser": "Animal_LittleBird_A"
+    },
+    "Dm_Animal_Squirrel_A": {
+        "ModelUser": "Animal_Squirrel_A"
+    },
+    "Dm_FldObj_ScaffoldWood_B_02": {
+        "ModelUser": "FldObj_ScaffoldWood_B_02"
+    },
+    "Dm_Locator_DLC2nd": {
+        "ModelUser": "Dm_Locator"
+    },
+    "Dm_Locator_Demo2020": {
+        "ModelUser": "Dm_Locator"
+    },
+    "Dm_Npc_Hylia_Pen": {
+        "GParamUser": "Npc_Hylia_Pen"
+    },
+    "Dm_Npc_Sheiker_Searcher_M_001": {
+        "UMiiUser": "Sheiker_Searcher_M_001"
+    },
+    "Dm_Npc_Zelda_Sibyl": {
+        "ElinkUser": "Dm_Npc_Zelda"
+    },
+    "Dragonfly": {
+        "LifeConditionUser": "Effect30m_Dragonfly"
+    },
+    "Enemy_Assassin_Junior": {
+        "DropTableUser": "Assassin_Junior",
+        "GParamUser": "Assassin_Junior",
+        "SlinkUser": "Assassin_Junior"
+    },
+    "Enemy_Assassin_Junior_Npc_001": {
+        "DropTableUser": "Assassin_Junior",
+        "GParamUser": "Assassin_Junior",
+        "ModelUser": "Enemy_Assassin_Junior",
+        "SlinkUser": "Assassin_Junior"
+    },
+    "Enemy_Assassin_Junior_Npc_002": {
+        "DropTableUser": "Assassin_Junior",
+        "GParamUser": "Assassin_Junior",
+        "ModelUser": "Enemy_Assassin_Junior",
+        "SlinkUser": "Assassin_Junior"
+    },
+    "Enemy_Assassin_Middle": {
+        "DropTableUser": "Assassin_Middle",
+        "ElinkUser": "Assassin_Middle",
+        "GParamUser": "Assassin_Middle",
+        "PhysicsUser": "Assassin_Middle",
+        "SlinkUser": "Assassin_Middle"
+    },
+    "Enemy_Assassin_Middle_Quest": {
+        "DamageParamUser": "Enemy_Assassin_Middle",
+        "ElinkUser": "Assassin_Middle",
+        "GParamUser": "Assassin_Middle",
+        "ModelUser": "Enemy_Assassin_Middle",
+        "PhysicsUser": "Assassin_Middle",
+        "SlinkUser": "Assassin_Middle",
+        "UMiiUser": "Assassin_Middle_Quest"
+    },
+    "Enemy_Assassin_Senior": {
+        "DropTableUser": "Assassin_Senior",
+        "GParamUser": "Assassin_Senior",
+        "SlinkUser": "Assassin_Senior",
+        "XlinkUser": "Assassin_Senior"
+    },
+    "Enemy_Assassin_Shooter_Junior": {
+        "SlinkUser": "Assassin_Shooter_Junior"
+    },
+    "Enemy_Beamos_Static": {
+        "PhysicsUser": "Beamos_Static"
+    },
+    "Enemy_Bee_Swarm": {
+        "SlinkUser": "Bee_Swarm"
+    },
+    "Enemy_Bee_Swarm_HeapMeasure": {
+        "DamageParamUser": "Enemy_Bee_Swarm",
+        "ElinkUser": "Enemy_Bee_Swarm",
+        "GParamUser": "Enemy_Bee_Swarm",
+        "LifeConditionUser": "Enemy_Bee_Swarm",
+        "ModelUser": "Enemy_Bee_Swarm",
+        "PhysicsUser": "Enemy_Bee_Swarm",
+        "SlinkUser": "Bee_Swarm"
+    },
+    "Enemy_Bokoblin_Bone_Junior": {
+        "DropTableUser": "Bokoblin_Bone_Junior",
+        "GParamUser": "Bokoblin_Bone_Junior",
+        "PhysicsUser": "Bokoblin_Bone"
+    },
+    "Enemy_Bokoblin_Bone_Junior_AllDay": {
+        "DamageParamUser": "Enemy_Bokoblin_Bone_Junior",
+        "DropTableUser": "Bokoblin_Bone_Junior",
+        "ElinkUser": "Enemy_Bokoblin_Bone_Junior",
+        "GParamUser": "Bokoblin_Bone_Junior_AllDay",
+        "ModelUser": "Enemy_Bokoblin_Bone_Junior",
+        "PhysicsUser": "Bokoblin_Bone"
+    },
+    "Enemy_Bokoblin_Bone_Junior_Head": {
+        "GParamUser": "Bokoblin_Bone_Junior_Head"
+    },
+    "Enemy_Bokoblin_Bone_Junior_Head_AllDay": {
+        "GParamUser": "Bokoblin_Bone_Junior_Head",
+        "ModelUser": "Enemy_Bokoblin_Bone_Junior_Head"
+    },
+    "Enemy_Bokoblin_Dark": {
+        "GParamUser": "Bokoblin_Dark"
+    },
+    "Enemy_Bokoblin_Guard_Junior": {
+        "GParamUser": "Bokoblin_Guard"
+    },
+    "Enemy_Bokoblin_Guard_Junior_Ambush": {
+        "DamageParamUser": "Enemy_Bokoblin_Guard_Junior",
+        "DropTableUser": "Enemy_Bokoblin_Guard_Junior"
+    },
+    "Enemy_Bokoblin_Guard_Junior_TreeHouseTop": {
+        "DamageParamUser": "Enemy_Bokoblin_Guard_Junior",
+        "DropTableUser": "Enemy_Bokoblin_Guard_Junior"
+    },
+    "Enemy_Bokoblin_Guard_Middle_Ambush": {
+        "DropTableUser": "Enemy_Bokoblin_Guard_Middle"
+    },
+    "Enemy_Bokoblin_Guard_Middle_TreeHouseTop": {
+        "DropTableUser": "Enemy_Bokoblin_Guard_Middle"
+    },
+    "Enemy_Bokoblin_Junior": {
+        "DropTableUser": "Bokoblin_Junior",
+        "GParamUser": "Bokoblin_Junior"
+    },
+    "Enemy_Bokoblin_Middle": {
+        "DropTableUser": "Bokoblin_Middle",
+        "GParamUser": "Bokoblin_Middle"
+    },
+    "Enemy_Bokoblin_Senior": {
+        "DropTableUser": "Bokoblin_Senior",
+        "GParamUser": "Bokoblin_Senior"
+    },
+    "Enemy_Chuchu_Electric_Junior": {
+        "DropTableUser": "Chuchu_Elec"
+    },
+    "Enemy_Chuchu_Electric_Middle": {
+        "ModelUser": "Enemy_Chuchu_Electric"
+    },
+    "Enemy_Chuchu_Fire_Junior": {
+        "DropTableUser": "Chuchu_Fire"
+    },
+    "Enemy_Chuchu_Fire_Middle": {
+        "ModelUser": "Enemy_Chuchu_Fire"
+    },
+    "Enemy_Chuchu_Ice_Junior": {
+        "DropTableUser": "Chuchu_Ice"
+    },
+    "Enemy_Chuchu_Ice_Middle": {
+        "ModelUser": "Enemy_Chuchu_Ice"
+    },
+    "Enemy_Chuchu_Junior": {
+        "SlinkUser": "Enemy_Chuchu"
+    },
+    "Enemy_Chuchu_Middle": {
+        "ModelUser": "Enemy_Chuchu"
+    },
+    "Enemy_Dragon_Electric": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "ElinkUser": "Enemy_Dragon",
+        "PhysicsUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Electric_Far": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Fire": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "ElinkUser": "Enemy_Dragon",
+        "PhysicsUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Fire_Far": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Grudge": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "ElinkUser": "Enemy_Dragon",
+        "PhysicsUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Grudge_Far": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "GParamUser": "Enemy_Dragon_Grudge",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Ice": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "ElinkUser": "Enemy_Dragon",
+        "PhysicsUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_Dragon_Ice_Far": {
+        "DamageParamUser": "Enemy_Dragon",
+        "DropTableUser": "Enemy_Dragon",
+        "XlinkUser": "Enemy_Dragon"
+    },
+    "Enemy_GanonBeast_WeakPoint": {
+        "DamageParamUser": "GanonBeast_WeakPoint",
+        "GParamUser": "GanonBeast_WeakPoint",
+        "PhysicsUser": "GanonBeast_WeakPoint"
+    },
+    "Enemy_GanonGrudge_01": {
+        "DamageParamUser": "Enemy_GanonGrudge"
+    },
+    "Enemy_GanonGrudge_02": {
+        "DamageParamUser": "Enemy_GanonGrudge"
+    },
+    "Enemy_Ganon_Sword_Weapon_FL": {
+        "GParamUser": "Enemy_Ganon_Sword_Weapon"
+    },
+    "Enemy_Ganon_Sword_Weapon_FR": {
+        "GParamUser": "Enemy_Ganon_Sword_Weapon"
+    },
+    "Enemy_Ganon_Sword_Weapon_MR": {
+        "GParamUser": "Enemy_Ganon_Sword_Weapon"
+    },
+    "Enemy_Giant_Bone": {
+        "SlinkUser": "Giant_Bone",
+        "XlinkUser": "Enemy_Giant"
+    },
+    "Enemy_Giant_Bone_AllDay": {
+        "DamageParamUser": "Enemy_Giant_Bone",
+        "DropTableUser": "Enemy_Giant_Bone",
+        "ElinkUser": "Enemy_Giant_Bone",
+        "ModelUser": "Enemy_Giant_Bone",
+        "PhysicsUser": "Enemy_Giant_Bone",
+        "SlinkUser": "Giant_Bone",
+        "XlinkUser": "Enemy_Giant"
+    },
+    "Enemy_Giant_Bone_Eye_AllDay": {
+        "DamageParamUser": "Enemy_Giant_Bone_Eye",
+        "ElinkUser": "Enemy_Giant_Bone_Eye",
+        "GParamUser": "Enemy_Giant_Bone_Eye",
+        "ModelUser": "Enemy_Giant_Bone_Eye",
+        "PhysicsUser": "Enemy_Giant_Bone_Eye",
+        "SlinkUser": "Enemy_Giant_Bone_Eye"
+    },
+    "Enemy_Giant_Junior": {
+        "DamageParamUser": "Enemy_Giant",
+        "PhysicsUser": "Enemy_Giant",
+        "XlinkUser": "Enemy_Giant"
+    },
+    "Enemy_Giant_Middle": {
+        "DamageParamUser": "Enemy_Giant",
+        "PhysicsUser": "Enemy_Giant",
+        "XlinkUser": "Enemy_Giant"
+    },
+    "Enemy_Giant_Senior": {
+        "DamageParamUser": "Enemy_Giant",
+        "PhysicsUser": "Enemy_Giant",
+        "XlinkUser": "Enemy_Giant"
+    },
+    "Enemy_Golem_Fire": {
+        "DamageParamUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_Fire_R": {
+        "DamageParamUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_Ice": {
+        "DamageParamUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_Junior": {
+        "DamageParamUser": "Enemy_Golem",
+        "ElinkUser": "Enemy_Golem",
+        "GParamUser": "Enemy_Golem",
+        "ModelUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_Little_Fire": {
+        "PhysicsUser": "Enemy_Golem_Little",
+        "XlinkUser": "Enemy_Golem_Little"
+    },
+    "Enemy_Golem_Little_Ice": {
+        "PhysicsUser": "Enemy_Golem_Little",
+        "XlinkUser": "Enemy_Golem_Little"
+    },
+    "Enemy_Golem_Middle": {
+        "DamageParamUser": "Enemy_Golem",
+        "ElinkUser": "Enemy_Golem",
+        "ModelUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_Senior": {
+        "DamageParamUser": "Enemy_Golem",
+        "ElinkUser": "Enemy_Golem",
+        "ModelUser": "Enemy_Golem",
+        "XlinkUser": "Enemy_Golem"
+    },
+    "Enemy_Golem_WeakPoint_02": {
+        "DamageParamUser": "Enemy_Golem_WeakPoint",
+        "GParamUser": "Enemy_Golem_WeakPoint",
+        "PhysicsUser": "Enemy_Golem_WeakPoint",
+        "SlinkUser": "Enemy_Golem_WeakPoint"
+    },
+    "Enemy_Golem_WeakPoint_03": {
+        "DamageParamUser": "Enemy_Golem_WeakPoint",
+        "GParamUser": "Enemy_Golem_WeakPoint",
+        "PhysicsUser": "Enemy_Golem_WeakPoint",
+        "SlinkUser": "Enemy_Golem_WeakPoint"
+    },
+    "Enemy_Guardian_A": {
+        "ElinkUser": "Guardian_A"
+    },
+    "Enemy_Guardian_A_Fixed_Moss": {
+        "DropTableUser": "Enemy_Guardian_A_Fixed",
+        "ElinkUser": "Enemy_Guardian_A_Fixed",
+        "GParamUser": "Enemy_Guardian_A_Fixed",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A_Fixed",
+        "SlinkUser": "Enemy_Guardian_A_Fixed"
+    },
+    "Enemy_Guardian_A_Fixed_Sand": {
+        "DropTableUser": "Enemy_Guardian_A_Fixed",
+        "ElinkUser": "Enemy_Guardian_A_Fixed",
+        "GParamUser": "Enemy_Guardian_A_Fixed",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A_Fixed",
+        "SlinkUser": "Enemy_Guardian_A_Fixed"
+    },
+    "Enemy_Guardian_A_Fixed_Snow": {
+        "DropTableUser": "Enemy_Guardian_A_Fixed",
+        "ElinkUser": "Enemy_Guardian_A_Fixed",
+        "GParamUser": "Enemy_Guardian_A_Fixed",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A_Fixed",
+        "SlinkUser": "Enemy_Guardian_A_Fixed"
+    },
+    "Enemy_Guardian_A_Moss": {
+        "DropTableUser": "Enemy_Guardian_A",
+        "GParamUser": "Enemy_Guardian_A",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A"
+    },
+    "Enemy_Guardian_A_Sand": {
+        "DropTableUser": "Enemy_Guardian_A",
+        "GParamUser": "Enemy_Guardian_A",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A"
+    },
+    "Enemy_Guardian_A_Snow": {
+        "DropTableUser": "Enemy_Guardian_A",
+        "GParamUser": "Enemy_Guardian_A",
+        "LifeConditionUser": "Enemy_Guardian_A",
+        "PhysicsUser": "Enemy_Guardian_A"
+    },
+    "Enemy_Guardian_B_Clean": {
+        "DropTableUser": "Enemy_Guardian_B",
+        "GParamUser": "Enemy_Guardian_B",
+        "LifeConditionUser": "Enemy_Guardian_B",
+        "ModelUser": "Enemy_Guardian_B",
+        "PhysicsUser": "Enemy_Guardian_B",
+        "SlinkUser": "Enemy_Guardian_B"
+    },
+    "Enemy_Guardian_C_Clean": {
+        "GParamUser": "Enemy_Guardian_C",
+        "LifeConditionUser": "Enemy_Guardian_C",
+        "ModelUser": "Enemy_Guardian_C",
+        "PhysicsUser": "Enemy_Guardian_C",
+        "SlinkUser": "Enemy_Guardian_C"
+    },
+    "Enemy_Guardian_Mini_Baby": {
+        "DropTableUser": "Enemy_Guardian_Mini",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Baby",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Baby_Dark": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Baby",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Junior": {
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Junior",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Junior_Dark": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Junior",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Junior_DetachLineBeam": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Junior",
+        "DropTableUser": "Enemy_Guardian_Mini_Junior",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Junior",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Junior_Wipe": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Junior",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Junior_Wipe_DetachLineBeam": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Junior",
+        "DropTableUser": "Enemy_Guardian_Mini_Junior_Wipe",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Enemy_Guardian_Mini_Junior_Wipe",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Middle": {
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Middle",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Middle_Dark": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Middle",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Middle_DetachLineBeam": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Middle",
+        "DropTableUser": "Enemy_Guardian_Mini_Middle",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Middle",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Practice": {
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Senior": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Senior_Wipe",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "GParamUser": "Guardian_Mini_Senior",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Guardian_Mini_Senior_Dark": {
+        "DamageParamUser": "Enemy_Guardian_Mini_Senior",
+        "ElinkUser": "Enemy_Guardian_Mini",
+        "ModelUser": "Enemy_Guardian_Mini",
+        "PhysicsUser": "Enemy_Guardian_Mini",
+        "SlinkUser": "Guardian_Mini",
+        "XlinkUser": "Guardian_Mini"
+    },
+    "Enemy_Keese_AllDay": {
+        "ModelUser": "Enemy_Keese"
+    },
+    "Enemy_Keese_Electric": {
+        "DamageParamUser": "Keese_Electric",
+        "DropTableUser": "Keese_Elec"
+    },
+    "Enemy_Keese_Electric_AllDay": {
+        "DamageParamUser": "Keese_Electric",
+        "DropTableUser": "Keese_Elec",
+        "ModelUser": "Enemy_Keese_Electric"
+    },
+    "Enemy_Keese_Fire": {
+        "DamageParamUser": "Keese_Fire",
+        "DropTableUser": "Keese_Fire"
+    },
+    "Enemy_Keese_Fire_AllDay": {
+        "DamageParamUser": "Keese_Fire",
+        "DropTableUser": "Keese_Fire",
+        "ElinkUser": "Keese_Fire",
+        "ModelUser": "Enemy_Keese_Fire"
+    },
+    "Enemy_Keese_Ice": {
+        "DamageParamUser": "Keese_Ice",
+        "DropTableUser": "Keese_Ice"
+    },
+    "Enemy_Keese_Ice_AllDay": {
+        "DamageParamUser": "Keese_Ice",
+        "DropTableUser": "Keese_Ice",
+        "GParamUser": "Enemy_Keese_Ice",
+        "ModelUser": "Enemy_Keese_Ice"
+    },
+    "Enemy_Keese_Swarm": {
+        "GParamUser": "Keese_Swarm",
+        "ModelUser": "Enemy_Keese",
+        "PhysicsUser": "Keese_Swarm",
+        "SlinkUser": "Keese_Swarm"
+    },
+    "Enemy_Keese_Swarm_AllDay": {
+        "ModelUser": "Enemy_Keese",
+        "PhysicsUser": "Keese_Swarm",
+        "SlinkUser": "Keese_Swarm"
+    },
+    "Enemy_Keese_Swarm_AllDay_HeapMeasure": {
+        "GParamUser": "Enemy_Keese_Swarm_AllDay",
+        "ModelUser": "Enemy_Keese",
+        "PhysicsUser": "Keese_Swarm",
+        "SlinkUser": "Keese_Swarm"
+    },
+    "Enemy_Keese_Swarm_HeapMeasure": {
+        "GParamUser": "Keese_Swarm",
+        "ModelUser": "Enemy_Keese",
+        "PhysicsUser": "Keese_Swarm",
+        "SlinkUser": "Keese_Swarm"
+    },
+    "Enemy_Lizalfos_Bone_Junior": {
+        "DropTableUser": "Lizalfos_Bone_Junior",
+        "PhysicsUser": "Lizalfos_Bone"
+    },
+    "Enemy_Lizalfos_Electric": {
+        "DamageParamUser": "Lizalfos_Electric"
+    },
+    "Enemy_Lizalfos_Electric_ForestTower": {
+        "DamageParamUser": "Lizalfos_Electric",
+        "DropTableUser": "Enemy_Lizalfos_Electric",
+        "ElinkUser": "Enemy_Lizalfos_Electric",
+        "GParamUser": "Lizalfos_Electric",
+        "ModelUser": "Enemy_Lizalfos_Electric"
+    },
+    "Enemy_Lizalfos_Fire": {
+        "DamageParamUser": "Lizalfos_Fire",
+        "GParamUser": "Lizalfos_Fire"
+    },
+    "Enemy_Lizalfos_Fire_Guard_Ambush": {
+        "DamageParamUser": "Lizalfos_Fire",
+        "DropTableUser": "Enemy_Lizalfos_Fire",
+        "ElinkUser": "Enemy_Lizalfos_Fire",
+        "GParamUser": "Lizalfos_Fire",
+        "ModelUser": "Enemy_Lizalfos_Fire"
+    },
+    "Enemy_Lizalfos_Guard_Junior": {
+        "DamageParamUser": "Lizalfos_Guard",
+        "DropTableUser": "Lizalfos_Guard_Junior",
+        "GParamUser": "Lizalfos_Guard_Junior"
+    },
+    "Enemy_Lizalfos_Guard_Junior_LongVisibility": {
+        "DamageParamUser": "Lizalfos_Guard",
+        "DropTableUser": "Lizalfos_Guard_Junior",
+        "GParamUser": "Lizalfos_Guard_Junior"
+    },
+    "Enemy_Lizalfos_Guard_Middle": {
+        "DamageParamUser": "Lizalfos_Guard"
+    },
+    "Enemy_Lizalfos_Guard_Middle_LongVisibility": {
+        "DamageParamUser": "Lizalfos_Guard",
+        "DropTableUser": "Enemy_Lizalfos_Guard_Middle"
+    },
+    "Enemy_Lizalfos_Ice": {
+        "DamageParamUser": "Lizalfos_Ice",
+        "GParamUser": "Lizalfos_Ice",
+        "ModelUser": "Lizalfos_Ice"
+    },
+    "Enemy_Lizalfos_Junior": {
+        "DropTableUser": "Lizalfos_Junior",
+        "GParamUser": "Lizalfos_Junior"
+    },
+    "Enemy_Lizalfos_Junior_Guard_Ambush": {
+        "DamageParamUser": "Enemy_Lizalfos_Junior",
+        "DropTableUser": "Lizalfos_Junior",
+        "GParamUser": "Lizalfos_Junior",
+        "ModelUser": "Enemy_Lizalfos_Junior"
+    },
+    "Enemy_Lizalfos_Middle": {
+        "DropTableUser": "Lizalfos_Middle",
+        "GParamUser": "Lizalfos_Middle"
+    },
+    "Enemy_Lizalfos_Middle_Guard_Ambush": {
+        "DamageParamUser": "Enemy_Lizalfos_Middle",
+        "DropTableUser": "Lizalfos_Middle",
+        "GParamUser": "Lizalfos_Middle",
+        "ModelUser": "Enemy_Lizalfos_Middle"
+    },
+    "Enemy_Lizalfos_Senior": {
+        "DropTableUser": "Lizalfos_Senior",
+        "GParamUser": "Lizalfos_Senior"
+    },
+    "Enemy_Lynel_Dark": {
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel"
+    },
+    "Enemy_Lynel_Gold": {
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel"
+    },
+    "Enemy_Lynel_Junior": {
+        "DropTableUser": "Lynel_Junior",
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel"
+    },
+    "Enemy_Lynel_Junior_Mountain": {
+        "DropTableUser": "Lynel_Junior",
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel",
+        "ModelUser": "Enemy_Lynel_Junior"
+    },
+    "Enemy_Lynel_Middle": {
+        "DropTableUser": "Lynel_Middle",
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel"
+    },
+    "Enemy_Lynel_Senior": {
+        "DropTableUser": "Lynel_Senior",
+        "ElinkUser": "Enemy_Lynel",
+        "LifeConditionUser": "Enemy_Lynel"
+    },
+    "Enemy_Moriblin_Bone_Junior": {
+        "DropTableUser": "Moriblin_Bone_Junior",
+        "PhysicsUser": "Enemy_Moriblin_Bone"
+    },
+    "Enemy_Moriblin_Dark": {
+        "GParamUser": "Moriblin_Dark"
+    },
+    "Enemy_Moriblin_Junior": {
+        "DropTableUser": "Moriblin_Junior"
+    },
+    "Enemy_Moriblin_Middle": {
+        "DropTableUser": "Moriblin_Middle",
+        "GParamUser": "Moriblin_Middle",
+        "ModelUser": "Moriblin_Middle"
+    },
+    "Enemy_Moriblin_Senior": {
+        "DropTableUser": "Moriblin_Senior",
+        "GParamUser": "Moriblin_Senior",
+        "ModelUser": "Moriblin_Senior"
+    },
+    "Enemy_Moriblin_Senior_Volcano": {
+        "DamageParamUser": "Enemy_Moriblin_Senior",
+        "DropTableUser": "Moriblin_Senior",
+        "ModelUser": "Moriblin_Senior"
+    },
+    "Enemy_Octarock_Desert": {
+        "DropTableUser": "Octarock_Desert"
+    },
+    "Enemy_Octarock_Snow": {
+        "GParamUser": "Octarock_Snow"
+    },
+    "Enemy_SandwormR": {
+        "ElinkUser": "Enemy_Sandworm",
+        "PhysicsUser": "Enemy_Sandworm",
+        "SlinkUser": "Enemy_Sandworm"
+    },
+    "Enemy_SiteBoss_Bow": {
+        "SlinkUser": "SiteBoss_Bow"
+    },
+    "Enemy_SiteBoss_Bow_Castle": {
+        "DamageParamUser": "Enemy_SiteBoss_Bow",
+        "ElinkUser": "Enemy_SiteBoss_Bow",
+        "GParamUser": "Enemy_SiteBoss_Bow",
+        "ModelUser": "Enemy_SiteBoss_Bow",
+        "PhysicsUser": "Enemy_SiteBoss_Bow",
+        "SlinkUser": "SiteBoss_Bow"
+    },
+    "Enemy_SiteBoss_Bow_ChildDevice": {
+        "SlinkUser": "SiteBoss_Bow_ChildDevice"
+    },
+    "Enemy_SiteBoss_Bow_R": {
+        "DamageParamUser": "Enemy_SiteBoss_Bow",
+        "ElinkUser": "Enemy_SiteBoss_Bow",
+        "ModelUser": "Enemy_SiteBoss_Bow",
+        "PhysicsUser": "Enemy_SiteBoss_Bow",
+        "SlinkUser": "SiteBoss_Bow"
+    },
+    "Enemy_SiteBoss_Lsword": {
+        "SlinkUser": "SiteBoss_Lsword"
+    },
+    "Enemy_SiteBoss_Lsword_Castle": {
+        "DamageParamUser": "Enemy_SiteBoss_Lsword",
+        "ElinkUser": "Enemy_SiteBoss_Lsword",
+        "GParamUser": "Enemy_SiteBoss_Lsword",
+        "ModelUser": "SiteBoss_Lsword",
+        "PhysicsUser": "Enemy_SiteBoss_Lsword",
+        "SlinkUser": "SiteBoss_Lsword"
+    },
+    "Enemy_SiteBoss_Lsword_R": {
+        "DamageParamUser": "Enemy_SiteBoss_Lsword",
+        "ElinkUser": "Enemy_SiteBoss_Lsword",
+        "PhysicsUser": "Enemy_SiteBoss_Lsword",
+        "SlinkUser": "SiteBoss_Lsword"
+    },
+    "Enemy_SiteBoss_Spear": {
+        "ModelUser": "SiteBoss_Spear",
+        "SlinkUser": "SiteBoss_Spear"
+    },
+    "Enemy_SiteBoss_Spear_Castle": {
+        "GParamUser": "Enemy_SiteBoss_Spear",
+        "PhysicsUser": "Enemy_SiteBoss_Spear",
+        "SlinkUser": "SiteBoss_Spear"
+    },
+    "Enemy_SiteBoss_Spear_R": {
+        "ElinkUser": "Enemy_SiteBoss_Spear",
+        "ModelUser": "SiteBoss_Spear",
+        "PhysicsUser": "Enemy_SiteBoss_Spear",
+        "SlinkUser": "SiteBoss_Spear"
+    },
+    "Enemy_SiteBoss_Sword": {
+        "SlinkUser": "SiteBoss_Sword"
+    },
+    "Enemy_SiteBoss_Sword_AfterImage": {
+        "ModelUser": "Enemy_SiteBoss_Sword",
+        "SlinkUser": "SiteBoss_Sword_AfterImage"
+    },
+    "Enemy_SiteBoss_Sword_Castle": {
+        "DamageParamUser": "Enemy_SiteBoss_Sword",
+        "ElinkUser": "Enemy_SiteBoss_Sword",
+        "GParamUser": "Enemy_SiteBoss_Sword",
+        "PhysicsUser": "Enemy_SiteBoss_Sword",
+        "SlinkUser": "SiteBoss_Sword"
+    },
+    "Enemy_SiteBoss_Sword_R": {
+        "DamageParamUser": "Enemy_SiteBoss_Sword",
+        "ElinkUser": "Enemy_SiteBoss_Sword",
+        "ModelUser": "Enemy_SiteBoss_Sword",
+        "PhysicsUser": "Enemy_SiteBoss_Sword",
+        "SlinkUser": "SiteBoss_Sword"
+    },
+    "Enemy_Wizzrobe_Electric_Senior": {
+        "ElinkUser": "Enemy_Wizzrobe_Electric",
+        "SlinkUser": "Enemy_Wizzrobe_Electric"
+    },
+    "Enemy_Wizzrobe_Fire_Senior": {
+        "ElinkUser": "Enemy_Wizzrobe_Fire",
+        "SlinkUser": "Enemy_Wizzrobe_Fire"
+    },
+    "Enemy_Wizzrobe_Ice_Senior": {
+        "ElinkUser": "Enemy_Wizzrobe_Ice",
+        "SlinkUser": "Enemy_Wizzrobe_Ice"
+    },
+    "ExpandElectricField": {
+        "ElinkUser": "ExpandElectricField_Chuchu"
+    },
+    "ExpandFireField": {
+        "ElinkUser": "ExpandFireField_Chuchu"
+    },
+    "ExpandFireField_Golem_Little": {
+        "SlinkUser": "ExpandFireField_Golem"
+    },
+    "ExpandIceField": {
+        "ElinkUser": "ExpandIceField_Chuchu"
+    },
+    "ExpandIceField_Golem_Little": {
+        "SlinkUser": "ExpandIceField_Golem"
+    },
+    "FidObj_TorchStand_A_01_100enemy": {
+        "ModelUser": "FidObj_TorchStand_A_01",
+        "PhysicsUser": "FidObj_TorchStand_A_01"
+    },
+    "FldObj_AkkareCave_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareCave_A_01"
+    },
+    "FldObj_AkkareCliffVillageBase_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareCliffVillageBase_A_01"
+    },
+    "FldObj_AkkareFortBridge_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareFortBridge_A_01"
+    },
+    "FldObj_AkkareFortBridge_A_02_Far": {
+        "PhysicsUser": "FldObj_AkkareFortBridge_A_02"
+    },
+    "FldObj_AkkareFortParts_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_01"
+    },
+    "FldObj_AkkareFortParts_A_02_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_02"
+    },
+    "FldObj_AkkareFortParts_A_03_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_03"
+    },
+    "FldObj_AkkareFortParts_A_04_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_04"
+    },
+    "FldObj_AkkareFortParts_A_05_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_05"
+    },
+    "FldObj_AkkareFortParts_A_06_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_06"
+    },
+    "FldObj_AkkareFortParts_A_08_Far": {
+        "PhysicsUser": "FldObj_AkkareFortParts_A_08"
+    },
+    "FldObj_AkkareFortStairs_A_02_Far": {
+        "PhysicsUser": "FldObj_AkkareFortStairs_A_02"
+    },
+    "FldObj_AkkareFort_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareFort_A_01"
+    },
+    "FldObj_AkkareFort_A_02_Far": {
+        "PhysicsUser": "FldObj_AkkareFort_A_02"
+    },
+    "FldObj_AkkareFort_Gate_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareFort_Gate_A_01"
+    },
+    "FldObj_AkkareFort_Table_A_01_Far": {
+        "PhysicsUser": "FldObj_AkkareFort_Table_A_01"
+    },
+    "FldObj_AkkareFort_Wall_A_02_Far": {
+        "PhysicsUser": "FldObj_AkkareFort_Wall_A_02"
+    },
+    "FldObj_AncientLakeEntrance_A_01_Far": {
+        "PhysicsUser": "FldObj_AncientLakeEntrance_A_01"
+    },
+    "FldObj_AncientLakeEntrance_A_02_Far": {
+        "PhysicsUser": "FldObj_AncientLakeEntrance_A_02"
+    },
+    "FldObj_AncientLake_A_01_Far": {
+        "PhysicsUser": "FldObj_AncientLake_A_01"
+    },
+    "FldObj_AncientLake_A_02_Far": {
+        "PhysicsUser": "FldObj_AncientLake_A_02"
+    },
+    "FldObj_AncientReactorCoverAkkare_A_01_Far": {
+        "PhysicsUser": "FldObj_AncientReactorCoverAkkare_A_01"
+    },
+    "FldObj_AncientReactorCoverHateru_A_01_Far": {
+        "PhysicsUser": "FldObj_AncientReactorCoverHateru_A_01"
+    },
+    "FldObj_AncientStoneTower_A_01_Far": {
+        "PhysicsUser": "FldObj_AncientStoneTower_A_01"
+    },
+    "FldObj_AncientStoneTower_A_02_Far": {
+        "PhysicsUser": "FldObj_AncientStoneTower_A_02"
+    },
+    "FldObj_AssassinPicture_A_01": {
+        "PhysicsUser": "FldObj_AssassinPicture"
+    },
+    "FldObj_BokoFortress_A_01_Far": {
+        "PhysicsUser": "FldObj_BokoFortress_A_01"
+    },
+    "FldObj_BoneGiant_BackBone_A_01_Far": {
+        "PhysicsUser": "FldObj_BoneGiant_BackBone_A_01"
+    },
+    "FldObj_BoneGiant_Rib_A_02_Far": {
+        "PhysicsUser": "FldObj_BoneGiant_Rib_A_02"
+    },
+    "FldObj_BoneGiant_Rib_A_03_Far": {
+        "PhysicsUser": "FldObj_BoneGiant_Rib_A_03"
+    },
+    "FldObj_BoneWhale_A_01_Far": {
+        "PhysicsUser": "FldObj_BoneWhale_A_01"
+    },
+    "FldObj_BoneWhale_A_02_Far": {
+        "PhysicsUser": "FldObj_BoneWhale_A_02"
+    },
+    "FldObj_BoneWhale_A_03_Far": {
+        "PhysicsUser": "FldObj_BoneWhale_A_03"
+    },
+    "FldObj_Bottle_Letter": {
+        "GParamUser": "Bottle_Letter"
+    },
+    "FldObj_BridgeAkkare_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeAkkare_A_01"
+    },
+    "FldObj_BridgeGerudoEntrance_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeGerudoEntrance_A_01"
+    },
+    "FldObj_BridgeGerudoEntrance_A_02_Far": {
+        "PhysicsUser": "FldObj_BridgeGerudoEntrance_A_02"
+    },
+    "FldObj_BridgeHutagoHatagoFront_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeHutagoHatagoFront_A_01"
+    },
+    "FldObj_BridgeHutagoHatagoFront_A_02_Far": {
+        "PhysicsUser": "FldObj_BridgeHutagoHatagoFront_A_02"
+    },
+    "FldObj_BridgeHyruleStone_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeHyruleStone_A_01"
+    },
+    "FldObj_BridgeLog_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeLog_A_01"
+    },
+    "FldObj_BridgeNorthWest_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeNorthWest_A_01"
+    },
+    "FldObj_BridgeRockWhite_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeRockWhite_A_01"
+    },
+    "FldObj_BridgeSheikerOutskirts_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeSheikerOutskirts_A_01"
+    },
+    "FldObj_BridgeSouthFalls_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeSouthFalls_A_01"
+    },
+    "FldObj_BridgeStoneSeaSide_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeStoneSeaSide_A_01"
+    },
+    "FldObj_BridgeStone_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeStone_A_01"
+    },
+    "FldObj_BridgeWoodAndStone_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodAndStone_A_01"
+    },
+    "FldObj_BridgeWoodGashamahi_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodGashamahi_A_01"
+    },
+    "FldObj_BridgeWoodGashamahi_A_02_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodGashamahi_A_02"
+    },
+    "FldObj_BridgeWoodLarge_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodLarge_A_01"
+    },
+    "FldObj_BridgeWoodLarge_A_02_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodLarge_A_02"
+    },
+    "FldObj_BridgeWoodLarge_A_05_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodLarge_A_05"
+    },
+    "FldObj_BridgeWoodLattice_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodLattice_A_01"
+    },
+    "FldObj_BridgeWoodThin_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodThin_A_01"
+    },
+    "FldObj_BridgeWoodWest_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeWoodWest_A_01"
+    },
+    "FldObj_BridgeZoraStonePillar_B_01_Far": {
+        "PhysicsUser": "FldObj_BridgeZoraStonePillar_B_01"
+    },
+    "FldObj_BridgeZoraStone_A_01_Far": {
+        "PhysicsUser": "FldObj_BridgeZoraStone_A_01"
+    },
+    "FldObj_BuildingZoraWallStone_A_01_Far": {
+        "PhysicsUser": "FldObj_BuildingZoraWallStone_A_01"
+    },
+    "FldObj_Chain_A_02": {
+        "GParamUser": "FldObj_Chain_A",
+        "PhysicsUser": "FldObj_Chain_A"
+    },
+    "FldObj_Chain_A_03": {
+        "GParamUser": "FldObj_Chain_A",
+        "PhysicsUser": "FldObj_Chain_A"
+    },
+    "FldObj_CheckPointGate": {
+        "GParamUser": "FldObj_CheckPointGate_A_01"
+    },
+    "FldObj_CliffAkkareEnd_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffAkkareEnd_A_01"
+    },
+    "FldObj_CliffAkkareEnd_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffAkkareEnd_A_02"
+    },
+    "FldObj_CliffAkkareEnd_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffAkkareEnd_B_01"
+    },
+    "FldObj_CliffAkkareEnd_B_02_Far": {
+        "PhysicsUser": "FldObj_CliffAkkareEnd_B_02"
+    },
+    "FldObj_CliffAkkare_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_02"
+    },
+    "FldObj_CliffAkkare_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_05"
+    },
+    "FldObj_CliffAkkare_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_06"
+    },
+    "FldObj_CliffAkkare_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_07"
+    },
+    "FldObj_CliffAkkare_A_08_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_08"
+    },
+    "FldObj_CliffAkkare_A_10_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_10"
+    },
+    "FldObj_CliffAkkare_A_11_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_11"
+    },
+    "FldObj_CliffAkkare_A_12_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_A_12"
+    },
+    "FldObj_CliffAkkare_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_B_01"
+    },
+    "FldObj_CliffAkkare_B_02_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_B_02"
+    },
+    "FldObj_CliffAkkare_B_03_Far": {
+        "PhysicsUser": "FldObj_CliffAkkare_B_03"
+    },
+    "FldObj_CliffCheeseRock_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffCheeseRock_A_01"
+    },
+    "FldObj_CliffCheeseStone_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffCheeseStone_A_02"
+    },
+    "FldObj_CliffCheeseWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffCheeseWall_A_01"
+    },
+    "FldObj_CliffDeathMt_B_16_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_B_16"
+    },
+    "FldObj_CliffDeathMt_C_01_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_01"
+    },
+    "FldObj_CliffDeathMt_C_04_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_04"
+    },
+    "FldObj_CliffDeathMt_C_05_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_05"
+    },
+    "FldObj_CliffDeathMt_C_08_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_08"
+    },
+    "FldObj_CliffDeathMt_C_09_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_09"
+    },
+    "FldObj_CliffDeathMt_C_12_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_12"
+    },
+    "FldObj_CliffDeathMt_C_13_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_C_13"
+    },
+    "FldObj_CliffDeathMt_D_04_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_04"
+    },
+    "FldObj_CliffDeathMt_D_06_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_06"
+    },
+    "FldObj_CliffDeathMt_D_07_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_07"
+    },
+    "FldObj_CliffDeathMt_D_08_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_08"
+    },
+    "FldObj_CliffDeathMt_D_10_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_10"
+    },
+    "FldObj_CliffDeathMt_D_11_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_11"
+    },
+    "FldObj_CliffDeathMt_D_14_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_14"
+    },
+    "FldObj_CliffDeathMt_D_15_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_15"
+    },
+    "FldObj_CliffDeathMt_D_16_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_16"
+    },
+    "FldObj_CliffDeathMt_D_18_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_18"
+    },
+    "FldObj_CliffDeathMt_D_19_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_19"
+    },
+    "FldObj_CliffDeathMt_D_21_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_21"
+    },
+    "FldObj_CliffDeathMt_D_22_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_22"
+    },
+    "FldObj_CliffDeathMt_D_24_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_24"
+    },
+    "FldObj_CliffDeathMt_D_26_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_D_26"
+    },
+    "FldObj_CliffDeathMt_END_D_27_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_END_D_27"
+    },
+    "FldObj_CliffDeathMt_E_01_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_01"
+    },
+    "FldObj_CliffDeathMt_E_07_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_07"
+    },
+    "FldObj_CliffDeathMt_E_12_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_12"
+    },
+    "FldObj_CliffDeathMt_E_14_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_14"
+    },
+    "FldObj_CliffDeathMt_E_15_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_15"
+    },
+    "FldObj_CliffDeathMt_E_18_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_18"
+    },
+    "FldObj_CliffDeathMt_E_19_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_E_19"
+    },
+    "FldObj_CliffDeathMt_F_01_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_F_01"
+    },
+    "FldObj_CliffDeathMt_F_02_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_F_02"
+    },
+    "FldObj_CliffDeathMt_F_03_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_F_03"
+    },
+    "FldObj_CliffDeathMt_F_04_Far": {
+        "PhysicsUser": "FldObj_CliffDeathMt_F_04"
+    },
+    "FldObj_CliffGashamahi_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffGashamahi_A_01"
+    },
+    "FldObj_CliffGashamahi_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffGashamahi_A_03"
+    },
+    "FldObj_CliffGashamahi_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffGashamahi_A_04"
+    },
+    "FldObj_CliffGashamahi_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffGashamahi_A_06"
+    },
+    "FldObj_CliffGashamahi_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffGashamahi_A_07"
+    },
+    "FldObj_CliffGrayParts_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_04"
+    },
+    "FldObj_CliffGrayParts_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_05"
+    },
+    "FldObj_CliffGrayParts_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_06"
+    },
+    "FldObj_CliffGrayParts_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_07"
+    },
+    "FldObj_CliffGrayParts_A_08_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_08"
+    },
+    "FldObj_CliffGrayParts_A_10_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_10"
+    },
+    "FldObj_CliffGrayParts_A_11_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_11"
+    },
+    "FldObj_CliffGrayParts_A_12_Far": {
+        "PhysicsUser": "FldObj_CliffGrayParts_A_12"
+    },
+    "FldObj_CliffHorseGod_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffHorseGod_A_01"
+    },
+    "FldObj_CliffLakeHylia_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffLakeHylia_A_02"
+    },
+    "FldObj_CliffOrangeMountain_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeMountain_A_01"
+    },
+    "FldObj_CliffOrangeMountain_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeMountain_A_02"
+    },
+    "FldObj_CliffOrangeMountain_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeMountain_A_03"
+    },
+    "FldObj_CliffOrangeMountain_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeMountain_A_04"
+    },
+    "FldObj_CliffOrangeSnow_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeSnow_A_01"
+    },
+    "FldObj_CliffOrangeSnow_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeSnow_A_02"
+    },
+    "FldObj_CliffOrangeSnow_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeSnow_A_03"
+    },
+    "FldObj_CliffOrangeSnow_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeSnow_A_04"
+    },
+    "FldObj_CliffOrangeTop_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeTop_A_01"
+    },
+    "FldObj_CliffOrangeWallEnd_A_15_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWallEnd_A_15"
+    },
+    "FldObj_CliffOrangeWallEnd_A_33_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWallEnd_A_33"
+    },
+    "FldObj_CliffOrangeWallEnd_A_34_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWallEnd_A_34"
+    },
+    "FldObj_CliffOrangeWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_01"
+    },
+    "FldObj_CliffOrangeWall_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_02"
+    },
+    "FldObj_CliffOrangeWall_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_03"
+    },
+    "FldObj_CliffOrangeWall_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_05"
+    },
+    "FldObj_CliffOrangeWall_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_07"
+    },
+    "FldObj_CliffOrangeWall_A_15_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_15"
+    },
+    "FldObj_CliffOrangeWall_A_19_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_19"
+    },
+    "FldObj_CliffOrangeWall_A_25_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_25"
+    },
+    "FldObj_CliffOrangeWall_A_33_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_33"
+    },
+    "FldObj_CliffOrangeWall_A_34_Far": {
+        "PhysicsUser": "FldObj_CliffOrangeWall_A_34"
+    },
+    "FldObj_CliffOrange_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffOrange_A_01"
+    },
+    "FldObj_CliffOrange_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffOrange_A_02"
+    },
+    "FldObj_CliffOrange_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffOrange_A_03"
+    },
+    "FldObj_CliffOrange_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffOrange_A_07"
+    },
+    "FldObj_CliffSaw_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffSaw_A_01"
+    },
+    "FldObj_CliffSheikerWaterFall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffSheikerWaterFall_A_01"
+    },
+    "FldObj_CliffSnowEdgeWall_B_02_Far": {
+        "PhysicsUser": "FldObj_CliffSnowEdgeWall_B_02"
+    },
+    "FldObj_CliffSnowEdgeWall_END_B_02_Far": {
+        "PhysicsUser": "FldObj_CliffSnowEdgeWall_END_B_02"
+    },
+    "FldObj_CliffSnowLargeWall_D_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnowLargeWall_D_01"
+    },
+    "FldObj_CliffSnowLargeWall_D_02_Far": {
+        "PhysicsUser": "FldObj_CliffSnowLargeWall_D_02"
+    },
+    "FldObj_CliffSnowLargeWall_D_03_Far": {
+        "PhysicsUser": "FldObj_CliffSnowLargeWall_D_03"
+    },
+    "FldObj_CliffSnowLargeWall_END_D_03_Far": {
+        "PhysicsUser": "FldObj_CliffSnowLargeWall_END_D_03"
+    },
+    "FldObj_CliffSnowScaffold_D_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnowScaffold_D_01"
+    },
+    "FldObj_CliffSnowScaffold_D_02_Far": {
+        "PhysicsUser": "FldObj_CliffSnowScaffold_D_02"
+    },
+    "FldObj_CliffSnowTopHalf_D_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnowTopHalf_D_01"
+    },
+    "FldObj_CliffSnowTop_D_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnowTop_D_01"
+    },
+    "FldObj_CliffSnowWall_D_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_01"
+    },
+    "FldObj_CliffSnowWall_D_02_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_02"
+    },
+    "FldObj_CliffSnowWall_D_03_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_03"
+    },
+    "FldObj_CliffSnowWall_D_05_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_05"
+    },
+    "FldObj_CliffSnowWall_D_06_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_06"
+    },
+    "FldObj_CliffSnowWall_D_07_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_07"
+    },
+    "FldObj_CliffSnowWall_D_08_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_08"
+    },
+    "FldObj_CliffSnowWall_D_09_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_09"
+    },
+    "FldObj_CliffSnowWall_D_10_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_10"
+    },
+    "FldObj_CliffSnowWall_D_11_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_11"
+    },
+    "FldObj_CliffSnowWall_D_14_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_14"
+    },
+    "FldObj_CliffSnowWall_D_15_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_15"
+    },
+    "FldObj_CliffSnowWall_D_16_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_16"
+    },
+    "FldObj_CliffSnowWall_D_17_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_17"
+    },
+    "FldObj_CliffSnowWall_D_18_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_18"
+    },
+    "FldObj_CliffSnowWall_D_19_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_19"
+    },
+    "FldObj_CliffSnowWall_D_22_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_22"
+    },
+    "FldObj_CliffSnowWall_D_23_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_23"
+    },
+    "FldObj_CliffSnowWall_D_25_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_25"
+    },
+    "FldObj_CliffSnowWall_D_27_Far": {
+        "PhysicsUser": "FldObj_CliffSnowWall_D_27"
+    },
+    "FldObj_CliffSnow_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffSnow_B_01"
+    },
+    "FldObj_CliffTropicsCave_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsCave_A_01"
+    },
+    "FldObj_CliffTropicsScaffold_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsScaffold_A_01"
+    },
+    "FldObj_CliffTropicsWallParts_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWallParts_A_01"
+    },
+    "FldObj_CliffTropicsWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_01"
+    },
+    "FldObj_CliffTropicsWall_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_02"
+    },
+    "FldObj_CliffTropicsWall_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_03"
+    },
+    "FldObj_CliffTropicsWall_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_04"
+    },
+    "FldObj_CliffTropicsWall_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_05"
+    },
+    "FldObj_CliffTropicsWall_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_06"
+    },
+    "FldObj_CliffTropicsWall_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_07"
+    },
+    "FldObj_CliffTropicsWall_A_08_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWall_A_08"
+    },
+    "FldObj_CliffTropicsWaterFall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffTropicsWaterFall_A_01"
+    },
+    "FldObj_CliffWhiteBroken_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteBroken_A_02"
+    },
+    "FldObj_CliffWhiteBroken_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteBroken_A_03"
+    },
+    "FldObj_CliffWhiteCave_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteCave_A_01"
+    },
+    "FldObj_CliffWhiteCave_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteCave_A_02"
+    },
+    "FldObj_CliffWhiteCave_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteCave_A_03"
+    },
+    "FldObj_CliffWhiteEdgeParts_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteEdgeParts_A_03"
+    },
+    "FldObj_CliffWhiteEdgeParts_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteEdgeParts_A_04"
+    },
+    "FldObj_CliffWhiteHill_C_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteHill_C_02"
+    },
+    "FldObj_CliffWhiteHill_C_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteHill_C_03"
+    },
+    "FldObj_CliffWhiteMountainHole_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteMountainHole_A_01"
+    },
+    "FldObj_CliffWhiteMountain_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteMountain_A_02"
+    },
+    "FldObj_CliffWhiteParts_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteParts_A_03"
+    },
+    "FldObj_CliffWhiteParts_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteParts_A_05"
+    },
+    "FldObj_CliffWhiteParts_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteParts_A_06"
+    },
+    "FldObj_CliffWhiteScaffold_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteScaffold_A_01"
+    },
+    "FldObj_CliffWhiteSet_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteSet_A_01"
+    },
+    "FldObj_CliffWhiteTilt_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteTilt_A_01"
+    },
+    "FldObj_CliffWhiteTop_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteTop_A_01"
+    },
+    "FldObj_CliffWhiteTunnel_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteTunnel_A_01"
+    },
+    "FldObj_CliffWhiteTunnel_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteTunnel_A_02"
+    },
+    "FldObj_CliffWhiteWallCurve_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWallCurve_A_01"
+    },
+    "FldObj_CliffWhiteWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_01"
+    },
+    "FldObj_CliffWhiteWall_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_02"
+    },
+    "FldObj_CliffWhiteWall_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_03"
+    },
+    "FldObj_CliffWhiteWall_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_04"
+    },
+    "FldObj_CliffWhiteWall_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_05"
+    },
+    "FldObj_CliffWhiteWall_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_06"
+    },
+    "FldObj_CliffWhiteWall_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_07"
+    },
+    "FldObj_CliffWhiteWall_A_08_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_A_08"
+    },
+    "FldObj_CliffWhiteWall_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_01"
+    },
+    "FldObj_CliffWhiteWall_B_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_03"
+    },
+    "FldObj_CliffWhiteWall_B_06_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_06"
+    },
+    "FldObj_CliffWhiteWall_B_07_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_07"
+    },
+    "FldObj_CliffWhiteWall_B_08_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_08"
+    },
+    "FldObj_CliffWhiteWall_B_09_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_09"
+    },
+    "FldObj_CliffWhiteWall_B_10_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_10"
+    },
+    "FldObj_CliffWhiteWall_B_12_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_12"
+    },
+    "FldObj_CliffWhiteWall_B_13_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_13"
+    },
+    "FldObj_CliffWhiteWall_B_14_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_14"
+    },
+    "FldObj_CliffWhiteWall_B_15_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_B_15"
+    },
+    "FldObj_CliffWhiteWall_C_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_C_01"
+    },
+    "FldObj_CliffWhiteWall_C_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_C_02"
+    },
+    "FldObj_CliffWhiteWall_C_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_C_03"
+    },
+    "FldObj_CliffWhiteWall_C_04_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWall_C_04"
+    },
+    "FldObj_CliffWhiteWaterFall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWaterFall_A_01"
+    },
+    "FldObj_CliffWhiteWaterFall_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhiteWaterFall_B_01"
+    },
+    "FldObj_CliffWhite_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_A_01"
+    },
+    "FldObj_CliffWhite_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_A_03"
+    },
+    "FldObj_CliffWhite_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_A_04"
+    },
+    "FldObj_CliffWhite_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_A_05"
+    },
+    "FldObj_CliffWhite_A_S_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_A_S_01"
+    },
+    "FldObj_CliffWhite_B_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_B_01"
+    },
+    "FldObj_CliffWhite_B_08_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_B_08"
+    },
+    "FldObj_CliffWhite_B_10_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_B_10"
+    },
+    "FldObj_CliffWhite_C_01_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_01"
+    },
+    "FldObj_CliffWhite_C_02_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_02"
+    },
+    "FldObj_CliffWhite_C_03_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_03"
+    },
+    "FldObj_CliffWhite_C_04_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_04"
+    },
+    "FldObj_CliffWhite_C_05_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_05"
+    },
+    "FldObj_CliffWhite_C_06_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_06"
+    },
+    "FldObj_CliffWhite_C_07_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_07"
+    },
+    "FldObj_CliffWhite_C_08_Far": {
+        "PhysicsUser": "FldObj_CliffWhite_C_08"
+    },
+    "FldObj_CliffYellowCurve_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowCurve_A_01"
+    },
+    "FldObj_CliffYellowHead_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowHead_A_01"
+    },
+    "FldObj_CliffYellowHole_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowHole_A_01"
+    },
+    "FldObj_CliffYellowPillar_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowPillar_A_01"
+    },
+    "FldObj_CliffYellowRock_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowRock_A_01"
+    },
+    "FldObj_CliffYellowTunnel_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowTunnel_A_01"
+    },
+    "FldObj_CliffYellowWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_01"
+    },
+    "FldObj_CliffYellowWall_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_02"
+    },
+    "FldObj_CliffYellowWall_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_03"
+    },
+    "FldObj_CliffYellowWall_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_04"
+    },
+    "FldObj_CliffYellowWall_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_05"
+    },
+    "FldObj_CliffYellowWall_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_06"
+    },
+    "FldObj_CliffYellowWall_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_07"
+    },
+    "FldObj_CliffYellowWall_A_08_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_08"
+    },
+    "FldObj_CliffYellowWall_A_09_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_09"
+    },
+    "FldObj_CliffYellowWall_A_10_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_10"
+    },
+    "FldObj_CliffYellowWall_A_11_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_A_11"
+    },
+    "FldObj_CliffYellowWall_END_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_END_A_01"
+    },
+    "FldObj_CliffYellowWall_END_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffYellowWall_END_A_04"
+    },
+    "FldObj_CliffZoraHole_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffZoraHole_A_02"
+    },
+    "FldObj_CliffZoraWall_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_01"
+    },
+    "FldObj_CliffZoraWall_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_02"
+    },
+    "FldObj_CliffZoraWall_A_03_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_03"
+    },
+    "FldObj_CliffZoraWall_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_04"
+    },
+    "FldObj_CliffZoraWall_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_05"
+    },
+    "FldObj_CliffZoraWall_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_06"
+    },
+    "FldObj_CliffZoraWall_A_07_Far": {
+        "PhysicsUser": "FldObj_CliffZoraWall_A_07"
+    },
+    "FldObj_CliffZora_A_01_Far": {
+        "PhysicsUser": "FldObj_CliffZora_A_01"
+    },
+    "FldObj_CliffZora_A_02_Far": {
+        "PhysicsUser": "FldObj_CliffZora_A_02"
+    },
+    "FldObj_CliffZora_A_04_Far": {
+        "PhysicsUser": "FldObj_CliffZora_A_04"
+    },
+    "FldObj_CliffZora_A_05_Far": {
+        "PhysicsUser": "FldObj_CliffZora_A_05"
+    },
+    "FldObj_CliffZora_A_06_Far": {
+        "PhysicsUser": "FldObj_CliffZora_A_06"
+    },
+    "FldObj_DamagePlant_A_01": {
+        "GParamUser": "FldObj_Damage"
+    },
+    "FldObj_DamagePlant_A_02": {
+        "GParamUser": "FldObj_Damage"
+    },
+    "FldObj_DamagePlant_Challenge": {
+        "GParamUser": "FldObj_Damage"
+    },
+    "FldObj_DamageRockMaze_A_01": {
+        "GParamUser": "FldObj_Damage"
+    },
+    "FldObj_DamageRock_A_01": {
+        "GParamUser": "FldObj_Damage"
+    },
+    "FldObj_DarkWoodsCandle": {
+        "ModelUser": "FldObj_DarkWoodsCandle_A"
+    },
+    "FldObj_DarkWoodsCandleOn": {
+        "ElinkUser": "FldObj_DarkWoodsCandle",
+        "PhysicsUser": "FldObj_DarkWoodsCandle"
+    },
+    "FldObj_DeathMountain_Base_Far": {
+        "PhysicsUser": "FldObj_DeathMountain_Base"
+    },
+    "FldObj_DeathMtArtifactFlag_A_01_Far": {
+        "PhysicsUser": "FldObj_DeathMtArtifactFlag_A_01"
+    },
+    "FldObj_DeathMtArtifactFlag_A_02_Far": {
+        "PhysicsUser": "FldObj_DeathMtArtifactFlag_A_02"
+    },
+    "FldObj_DeathMtArtifactGate_A_01_Far": {
+        "PhysicsUser": "FldObj_DeathMtArtifactGate_A_01"
+    },
+    "FldObj_DeathMtArtifactPickaxeStatue_A_01_Far": {
+        "PhysicsUser": "FldObj_DeathMtArtifactPickaxeStatue_A_01"
+    },
+    "FldObj_DeathMtArtifactPillar_A_01_Far": {
+        "PhysicsUser": "FldObj_DeathMtArtifactPillar_A_01"
+    },
+    "FldObj_DeathMtGeyser_02_100enemy": {
+        "ModelUser": "FldObj_DeathMtGeyser_02",
+        "PhysicsUser": "FldObj_DeathMtGeyser_02"
+    },
+    "FldObj_DeathMtGutsWall_A_01_Far": {
+        "PhysicsUser": "FldObj_DeathMtGutsWall_A_01"
+    },
+    "FldObj_DeathMtLavaFall_A_03_Far": {
+        "PhysicsUser": "FldObj_DeathMtLavaFall_A_03"
+    },
+    "FldObj_DeathMtLavaFall_A_04_Far": {
+        "PhysicsUser": "FldObj_DeathMtLavaFall_A_04"
+    },
+    "FldObj_DeathMtLavaFall_A_05_Far": {
+        "PhysicsUser": "FldObj_DeathMtLavaFall_A_05"
+    },
+    "FldObj_DeathMtLavaFall_A_06_Far": {
+        "PhysicsUser": "FldObj_DeathMtLavaFall_A_06"
+    },
+    "FldObj_DeathMtLavaFall_A_08_Far": {
+        "PhysicsUser": "FldObj_DeathMtLavaFall_A_08"
+    },
+    "FldObj_DesertRuinPillar_A_01_Far": {
+        "PhysicsUser": "FldObj_DesertRuinPillar_A_01"
+    },
+    "FldObj_DesertRuinPillar_A_02_Far": {
+        "PhysicsUser": "FldObj_DesertRuinPillar_A_02"
+    },
+    "FldObj_DesertRuinWall_A_01_Far": {
+        "PhysicsUser": "FldObj_DesertRuinWall_A_01"
+    },
+    "FldObj_DesertRuin_A_02_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_02"
+    },
+    "FldObj_DesertRuin_A_03_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_03"
+    },
+    "FldObj_DesertRuin_A_05_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_05"
+    },
+    "FldObj_DesertRuin_A_07_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_07"
+    },
+    "FldObj_DesertRuin_A_08_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_08"
+    },
+    "FldObj_DesertRuin_A_09_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_09"
+    },
+    "FldObj_DesertRuin_A_10_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_10"
+    },
+    "FldObj_DesertRuin_A_11_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_11"
+    },
+    "FldObj_DesertRuin_A_12_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_12"
+    },
+    "FldObj_DesertRuin_A_13_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_13"
+    },
+    "FldObj_DesertRuin_A_14_Far": {
+        "PhysicsUser": "FldObj_DesertRuin_A_14"
+    },
+    "FldObj_EnemyBaseBanana_L_A_01_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseBanana_L_A_01"
+    },
+    "FldObj_EnemyBaseBanana_S_A_01_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseBanana_S_A_01"
+    },
+    "FldObj_EnemyBaseRiversideBridge_A_01_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseRiversideBridge_A_01"
+    },
+    "FldObj_EnemyBaseRiversideBridge_A_02_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseRiversideBridge_A_02"
+    },
+    "FldObj_EnemyBaseRiverside_A_01_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseRiverside_A_01"
+    },
+    "FldObj_EnemyBaseRock_A_01_Far": {
+        "PhysicsUser": "FldObj_EnemyBaseRock_A_01"
+    },
+    "FldObj_FarthestIsland_A_01_Far": {
+        "PhysicsUser": "FldObj_FarthestIsland_A_01"
+    },
+    "FldObj_FenceWoodDamage_A_01_NearEnemy": {
+        "ElinkUser": "FldObj_FenceWoodDamage_A_01",
+        "ModelUser": "FldObj_FenceWoodDamage_A_01",
+        "PhysicsUser": "FldObj_FenceWoodDamage_A_01"
+    },
+    "FldObj_FirstBigCliff_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstBigCliff_A_01"
+    },
+    "FldObj_FirstBigCliff_A_02_Far": {
+        "PhysicsUser": "FldObj_FirstBigCliff_A_02"
+    },
+    "FldObj_FirstBigFall_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstBigFall_A_01"
+    },
+    "FldObj_FirstBrokenBridge_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstBrokenBridge_A_01"
+    },
+    "FldObj_FirstCurve_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstCurve_A_01"
+    },
+    "FldObj_FirstEdge_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstEdge_A_01"
+    },
+    "FldObj_FirstGateSnowEntrance_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstGateSnowEntrance_A_01"
+    },
+    "FldObj_FirstPlateauSouthPlatform_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstPlateauSouthPlatform_A_01"
+    },
+    "FldObj_FirstPond_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstPond_A_01"
+    },
+    "FldObj_FirstShrineCover_A_01_Far": {
+        "PhysicsUser": "FldObj_FirstShrineCover_A_01"
+    },
+    "FldObj_FissureValleyEye_A_01_Far": {
+        "PhysicsUser": "FldObj_FissureValleyEye_A_01"
+    },
+    "FldObj_FissureValleyPillar_A_03_Far": {
+        "PhysicsUser": "FldObj_FissureValleyPillar_A_03"
+    },
+    "FldObj_FissureValleyPillar_A_04_Far": {
+        "PhysicsUser": "FldObj_FissureValleyPillar_A_04"
+    },
+    "FldObj_FissureValleyPond_A_01_Far": {
+        "PhysicsUser": "FldObj_FissureValleyPond_A_01"
+    },
+    "FldObj_FissureValleyRock_A_02_Far": {
+        "PhysicsUser": "FldObj_FissureValleyRock_A_02"
+    },
+    "FldObj_FissureValleyWall_A_01_Far": {
+        "PhysicsUser": "FldObj_FissureValleyWall_A_01"
+    },
+    "FldObj_FissureValley_A_01_Far": {
+        "PhysicsUser": "FldObj_FissureValley_A_01"
+    },
+    "FldObj_FissureValley_A_02_Far": {
+        "PhysicsUser": "FldObj_FissureValley_A_02"
+    },
+    "FldObj_FissureValley_A_03_Far": {
+        "PhysicsUser": "FldObj_FissureValley_A_03"
+    },
+    "FldObj_FissureValley_A_04_Far": {
+        "PhysicsUser": "FldObj_FissureValley_A_04"
+    },
+    "FldObj_FissureValley_A_06_Far": {
+        "PhysicsUser": "FldObj_FissureValley_A_06"
+    },
+    "FldObj_FlightTrainingTower_A_01_Far": {
+        "PhysicsUser": "FldObj_FlightTrainingTower_A_01"
+    },
+    "FldObj_ForestCandle_01": {
+        "ModelUser": "FldObj_ForestCandle",
+        "PhysicsUser": "FldObj_ForestCandle"
+    },
+    "FldObj_GateGerudoDesert_A_01_Far": {
+        "PhysicsUser": "FldObj_GateGerudoDesert_A_01"
+    },
+    "FldObj_GateGerudoDesert_A_02_Far": {
+        "PhysicsUser": "FldObj_GateGerudoDesert_A_02"
+    },
+    "FldObj_GatewayDestroyed_A_01_Far": {
+        "PhysicsUser": "FldObj_GatewayDestroyed_A_01"
+    },
+    "FldObj_GerudoBase_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoBase_A_01"
+    },
+    "FldObj_GerudoBase_A_02_Far": {
+        "PhysicsUser": "FldObj_GerudoBase_A_02"
+    },
+    "FldObj_GerudoBase_A_03_Far": {
+        "PhysicsUser": "FldObj_GerudoBase_A_03"
+    },
+    "FldObj_GerudoBase_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoBase_A_04"
+    },
+    "FldObj_GerudoCavePillar_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoCavePillar_A_01"
+    },
+    "FldObj_GerudoCave_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_01"
+    },
+    "FldObj_GerudoCave_A_02_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_02"
+    },
+    "FldObj_GerudoCave_A_03_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_03"
+    },
+    "FldObj_GerudoCave_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_04"
+    },
+    "FldObj_GerudoCave_A_05_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_05"
+    },
+    "FldObj_GerudoCave_A_07_Far": {
+        "PhysicsUser": "FldObj_GerudoCave_A_07"
+    },
+    "FldObj_GerudoDesertRock_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_01"
+    },
+    "FldObj_GerudoDesertRock_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_04"
+    },
+    "FldObj_GerudoDesertRock_A_06_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_06"
+    },
+    "FldObj_GerudoDesertRock_A_07_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_07"
+    },
+    "FldObj_GerudoDesertRock_A_21_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_21"
+    },
+    "FldObj_GerudoDesertRock_A_22_Far": {
+        "PhysicsUser": "FldObj_GerudoDesertRock_A_22"
+    },
+    "FldObj_GerudoHighlandCliffEnd_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliffEnd_A_01"
+    },
+    "FldObj_GerudoHighlandCliffEnd_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliffEnd_A_04"
+    },
+    "FldObj_GerudoHighlandCliff_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_01"
+    },
+    "FldObj_GerudoHighlandCliff_A_02_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_02"
+    },
+    "FldObj_GerudoHighlandCliff_A_03_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_03"
+    },
+    "FldObj_GerudoHighlandCliff_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_04"
+    },
+    "FldObj_GerudoHighlandCliff_A_05_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_05"
+    },
+    "FldObj_GerudoHighlandCliff_A_06_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_06"
+    },
+    "FldObj_GerudoHighlandCliff_A_07_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_07"
+    },
+    "FldObj_GerudoHighlandCliff_A_08_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_08"
+    },
+    "FldObj_GerudoHighlandCliff_A_10_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_10"
+    },
+    "FldObj_GerudoHighlandCliff_A_11_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_11"
+    },
+    "FldObj_GerudoHighlandCliff_A_12_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandCliff_A_12"
+    },
+    "FldObj_GerudoHighlandRockCave_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRockCave_A_01"
+    },
+    "FldObj_GerudoHighlandRock_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_A_01"
+    },
+    "FldObj_GerudoHighlandRock_A_02_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_A_02"
+    },
+    "FldObj_GerudoHighlandRock_A_03_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_A_03"
+    },
+    "FldObj_GerudoHighlandRock_A_04_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_A_04"
+    },
+    "FldObj_GerudoHighlandRock_A_06_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_A_06"
+    },
+    "FldObj_GerudoHighlandRock_B_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_B_01"
+    },
+    "FldObj_GerudoHighlandRock_C_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_C_01"
+    },
+    "FldObj_GerudoHighlandRock_C_02_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_C_02"
+    },
+    "FldObj_GerudoHighlandRock_C_03_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_C_03"
+    },
+    "FldObj_GerudoHighlandRock_C_04_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandRock_C_04"
+    },
+    "FldObj_GerudoHighlandScaffold_B_01_Far": {
+        "PhysicsUser": "FldObj_GerudoHighlandScaffold_B_01"
+    },
+    "FldObj_GerudoStonepit_A_01_Far": {
+        "PhysicsUser": "FldObj_GerudoStonepit_A_01"
+    },
+    "FldObj_GerudoStonepit_A_02_Far": {
+        "PhysicsUser": "FldObj_GerudoStonepit_A_02"
+    },
+    "FldObj_GoronCannon_YunBo_60": {
+        "ElinkUser": "FldObj_GoronCannon_YunBo",
+        "GParamUser": "FldObj_GoronCannon_YunBo",
+        "SlinkUser": "FldObj_GoronCannon_YunBo"
+    },
+    "FldObj_HangedLamp_A_100enemy": {
+        "ElinkUser": "FldObj_HangedLamp_A",
+        "ModelUser": "FldObj_HangedLamp_A"
+    },
+    "FldObj_HighwayHyliaWall_A_02_Far": {
+        "PhysicsUser": "FldObj_HighwayHyliaWall_A_02"
+    },
+    "FldObj_HighwayHylia_A_01_Far": {
+        "PhysicsUser": "FldObj_HighwayHylia_A_01"
+    },
+    "FldObj_HugeMazeGround_B_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_B_01"
+    },
+    "FldObj_HugeMazeGround_B_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_B_02"
+    },
+    "FldObj_HugeMazeGround_B_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_B_03"
+    },
+    "FldObj_HugeMazeGround_B_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_B_04"
+    },
+    "FldObj_HugeMazeGround_C_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_C_01"
+    },
+    "FldObj_HugeMazeGround_C_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_C_02"
+    },
+    "FldObj_HugeMazeGround_C_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_C_03"
+    },
+    "FldObj_HugeMazeGround_C_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeGround_C_04"
+    },
+    "FldObj_HugeMazeLadder_A_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeLadder_A_01"
+    },
+    "FldObj_HugeMazeLadder_Top_A_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeLadder_Top_A_01"
+    },
+    "FldObj_HugeMazeParts_A_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_01"
+    },
+    "FldObj_HugeMazeParts_A_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_02"
+    },
+    "FldObj_HugeMazeParts_A_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_03"
+    },
+    "FldObj_HugeMazeParts_A_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_04"
+    },
+    "FldObj_HugeMazeParts_A_05_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_05"
+    },
+    "FldObj_HugeMazeParts_A_06_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_06"
+    },
+    "FldObj_HugeMazeParts_A_07_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_07"
+    },
+    "FldObj_HugeMazeParts_A_08_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_A_08"
+    },
+    "FldObj_HugeMazeParts_B_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_01"
+    },
+    "FldObj_HugeMazeParts_B_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_02"
+    },
+    "FldObj_HugeMazeParts_B_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_03"
+    },
+    "FldObj_HugeMazeParts_B_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_04"
+    },
+    "FldObj_HugeMazeParts_B_05_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_05"
+    },
+    "FldObj_HugeMazeParts_B_06_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_06"
+    },
+    "FldObj_HugeMazeParts_B_07_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_07"
+    },
+    "FldObj_HugeMazeParts_B_08_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_08"
+    },
+    "FldObj_HugeMazeParts_B_09_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_09"
+    },
+    "FldObj_HugeMazeParts_B_11_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_B_11"
+    },
+    "FldObj_HugeMazeParts_C_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_C_01"
+    },
+    "FldObj_HugeMazeParts_C_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_C_02"
+    },
+    "FldObj_HugeMazeParts_C_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_C_03"
+    },
+    "FldObj_HugeMazeParts_C_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeParts_C_04"
+    },
+    "FldObj_HugeMazeWall_A_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_A_01"
+    },
+    "FldObj_HugeMazeWall_A_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_A_02"
+    },
+    "FldObj_HugeMazeWall_A_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_A_03"
+    },
+    "FldObj_HugeMazeWall_A_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_A_04"
+    },
+    "FldObj_HugeMazeWall_B_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_B_01"
+    },
+    "FldObj_HugeMazeWall_B_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_B_02"
+    },
+    "FldObj_HugeMazeWall_B_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_B_03"
+    },
+    "FldObj_HugeMazeWall_B_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_B_04"
+    },
+    "FldObj_HugeMazeWall_C_01_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_C_01"
+    },
+    "FldObj_HugeMazeWall_C_02_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_C_02"
+    },
+    "FldObj_HugeMazeWall_C_03_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_C_03"
+    },
+    "FldObj_HugeMazeWall_C_04_Far": {
+        "PhysicsUser": "FldObj_HugeMazeWall_C_04"
+    },
+    "FldObj_HyliaBridgeFoot_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaBridgeFoot_A_01"
+    },
+    "FldObj_HyliaBridgeFoot_A_02_Far": {
+        "PhysicsUser": "FldObj_HyliaBridgeFoot_A_02"
+    },
+    "FldObj_HyliaStoneRuinBalanceBeam_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinBalanceBeam_A_01"
+    },
+    "FldObj_HyliaStoneRuinDebris_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinDebris_A_01"
+    },
+    "FldObj_HyliaStoneRuinGate_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinGate_A_01"
+    },
+    "FldObj_HyliaStoneRuinHouse_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinHouse_A_01"
+    },
+    "FldObj_HyliaStoneRuinHouse_A_02_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinHouse_A_02"
+    },
+    "FldObj_HyliaStoneRuinHouse_A_03_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinHouse_A_03"
+    },
+    "FldObj_HyliaStoneRuinLookoutSmall_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinLookoutSmall_A_01"
+    },
+    "FldObj_HyliaStoneRuinLookout_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinLookout_A_01"
+    },
+    "FldObj_HyliaStoneRuinLookout_A_02_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinLookout_A_02"
+    },
+    "FldObj_HyliaStoneRuinRightAngleWall_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinRightAngleWall_A_01"
+    },
+    "FldObj_HyliaStoneRuinRightAngleWall_A_02_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinRightAngleWall_A_02"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_01"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_02_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_02"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_03_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_03"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_04_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_04"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_05_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_05"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_06_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_06"
+    },
+    "FldObj_HyliaStoneRuinStraightWall_A_07_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinStraightWall_A_07"
+    },
+    "FldObj_HyliaStoneRuinTowerBase_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinTowerBase_A_01"
+    },
+    "FldObj_HyliaStoneRuinTower_A_01_Far": {
+        "PhysicsUser": "FldObj_HyliaStoneRuinTower_A_01"
+    },
+    "FldObj_LavaPlane_A_02_Far": {
+        "PhysicsUser": "FldObj_LavaPlane_A_02"
+    },
+    "FldObj_LavaPlane_A_04_Far": {
+        "PhysicsUser": "FldObj_LavaPlane_A_04"
+    },
+    "FldObj_LookOutForlorn_A_01_Far": {
+        "PhysicsUser": "FldObj_LookOutForlorn_A_01"
+    },
+    "FldObj_MapTowerStairWood_A_01_Far": {
+        "PhysicsUser": "FldObj_MapTowerStairWood_A_01"
+    },
+    "FldObj_MapTowerWingBefore_A_01_First": {
+        "ModelUser": "FldObj_MapTowerWingBefore_A_01",
+        "PhysicsUser": "FldObj_MapTowerWingBefore_A_01"
+    },
+    "FldObj_MapTower_A_01": {
+        "ElinkUser": "FldObj_MapTower_A"
+    },
+    "FldObj_MapTower_A_01_First": {
+        "ElinkUser": "FldObj_MapTower_A",
+        "ModelUser": "FldObj_MapTower_A_01",
+        "PhysicsUser": "FldObj_MapTower_A_01"
+    },
+    "FldObj_Mound_A_02_Far": {
+        "PhysicsUser": "FldObj_Mound_A_02"
+    },
+    "FldObj_MountainFutagoScaffold_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainFutagoScaffold_A_01"
+    },
+    "FldObj_MountainFutagoWall_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainFutagoWall_A_01"
+    },
+    "FldObj_MountainFutago_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainFutago_A_01"
+    },
+    "FldObj_MountainFutago_A_02_Far": {
+        "PhysicsUser": "FldObj_MountainFutago_A_02"
+    },
+    "FldObj_MountainLakeHylia_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainLakeHylia_A_01"
+    },
+    "FldObj_MountainLakeHylia_A_03_Far": {
+        "PhysicsUser": "FldObj_MountainLakeHylia_A_03"
+    },
+    "FldObj_MountainLakeHylia_A_04_Far": {
+        "PhysicsUser": "FldObj_MountainLakeHylia_A_04"
+    },
+    "FldObj_MountainLakeHylia_A_05_Far": {
+        "PhysicsUser": "FldObj_MountainLakeHylia_A_05"
+    },
+    "FldObj_MountainLanayruWall_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainLanayruWall_A_01"
+    },
+    "FldObj_MountainLanayru_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainLanayru_A_01"
+    },
+    "FldObj_MountainLanayru_A_02_Far": {
+        "PhysicsUser": "FldObj_MountainLanayru_A_02"
+    },
+    "FldObj_MountainLanayru_A_03_Far": {
+        "PhysicsUser": "FldObj_MountainLanayru_A_03"
+    },
+    "FldObj_MountainSheikerWall_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_01"
+    },
+    "FldObj_MountainSheikerWall_A_02_Far": {
+        "ElinkUser": "FldObj_MountainSheikerWall_A_02",
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_02"
+    },
+    "FldObj_MountainSheikerWall_A_03_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_03"
+    },
+    "FldObj_MountainSheikerWall_A_04_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_04"
+    },
+    "FldObj_MountainSheikerWall_A_05_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_05"
+    },
+    "FldObj_MountainSheikerWall_A_06_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_06"
+    },
+    "FldObj_MountainSheikerWall_A_07_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_07"
+    },
+    "FldObj_MountainSheikerWall_A_08_Far": {
+        "PhysicsUser": "FldObj_MountainSheikerWall_A_08"
+    },
+    "FldObj_MountainSheiker_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainSheiker_A_01"
+    },
+    "FldObj_MountainSheiker_A_02_Far": {
+        "PhysicsUser": "FldObj_MountainSheiker_A_02"
+    },
+    "FldObj_MountainSheiker_A_03_Far": {
+        "PhysicsUser": "FldObj_MountainSheiker_A_03"
+    },
+    "FldObj_MountainSheiker_A_04_Far": {
+        "PhysicsUser": "FldObj_MountainSheiker_A_04"
+    },
+    "FldObj_MountainSnowTunnel_A_01_Far": {
+        "PhysicsUser": "FldObj_MountainSnowTunnel_A_01"
+    },
+    "FldObj_MountainSnow_A_M_02_Far": {
+        "PhysicsUser": "FldObj_MountainSnow_A_M_02"
+    },
+    "FldObj_MountainSnow_A_M_04_Far": {
+        "PhysicsUser": "FldObj_MountainSnow_A_M_04"
+    },
+    "FldObj_OblivionValleyFloor_A_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyFloor_A_01"
+    },
+    "FldObj_OblivionValleyPartition_A_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyPartition_A_01"
+    },
+    "FldObj_OblivionValleyPillar_A_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyPillar_A_01"
+    },
+    "FldObj_OblivionValleyWall_A_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyWall_A_01"
+    },
+    "FldObj_OblivionValleyWall_A_02_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyWall_A_02"
+    },
+    "FldObj_OblivionValleyWall_B_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyWall_B_01"
+    },
+    "FldObj_OblivionValleyWall_C_01_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyWall_C_01"
+    },
+    "FldObj_OblivionValleyWall_C_02_Far": {
+        "PhysicsUser": "FldObj_OblivionValleyWall_C_02"
+    },
+    "FldObj_PlayerChapel_A_01_Far": {
+        "PhysicsUser": "FldObj_PlayerChapel_A_01"
+    },
+    "FldObj_PlayerChapel_B_01_Far": {
+        "PhysicsUser": "FldObj_PlayerChapel_B_01"
+    },
+    "FldObj_PlayerChapel_C_01_Far": {
+        "PhysicsUser": "FldObj_PlayerChapel_C_01"
+    },
+    "FldObj_RanchRuin_Silo_A_01_Far": {
+        "PhysicsUser": "FldObj_RanchRuin_Silo_A_01"
+    },
+    "FldObj_RiverEdge_A_01_Far": {
+        "PhysicsUser": "FldObj_RiverEdge_A_01"
+    },
+    "FldObj_RiverEdge_A_02_Far": {
+        "PhysicsUser": "FldObj_RiverEdge_A_02"
+    },
+    "FldObj_RiverEdge_A_03_Far": {
+        "PhysicsUser": "FldObj_RiverEdge_A_03"
+    },
+    "FldObj_RockBeachWall_A_01_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_01"
+    },
+    "FldObj_RockBeachWall_A_02_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_02"
+    },
+    "FldObj_RockBeachWall_A_04_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_04"
+    },
+    "FldObj_RockBeachWall_A_05_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_05"
+    },
+    "FldObj_RockBeachWall_A_06_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_06"
+    },
+    "FldObj_RockBeachWall_A_07_Far": {
+        "PhysicsUser": "FldObj_RockBeachWall_A_07"
+    },
+    "FldObj_RockBeach_A_L_01_Far": {
+        "PhysicsUser": "FldObj_RockBeach_A_L_01"
+    },
+    "FldObj_RockBeach_A_M_01_Far": {
+        "PhysicsUser": "FldObj_RockBeach_A_M_01"
+    },
+    "FldObj_RockBeach_A_S_01_Far": {
+        "PhysicsUser": "FldObj_RockBeach_A_S_01"
+    },
+    "FldObj_RockBridgeGerudoEntrance_A_01_Far": {
+        "PhysicsUser": "FldObj_RockBridgeGerudoEntrance_A_01"
+    },
+    "FldObj_RockBridgeGerudoEntrance_A_02_Far": {
+        "PhysicsUser": "FldObj_RockBridgeGerudoEntrance_A_02"
+    },
+    "FldObj_RockBridgeGerudoEntrance_A_03_Far": {
+        "PhysicsUser": "FldObj_RockBridgeGerudoEntrance_A_03"
+    },
+    "FldObj_RockBridgeGerudoEntrance_A_04_Far": {
+        "PhysicsUser": "FldObj_RockBridgeGerudoEntrance_A_04"
+    },
+    "FldObj_RockBridgeGerudoEntrance_A_05_Far": {
+        "PhysicsUser": "FldObj_RockBridgeGerudoEntrance_A_05"
+    },
+    "FldObj_RockDislocation_A_01_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_A_01"
+    },
+    "FldObj_RockDislocation_A_02_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_A_02"
+    },
+    "FldObj_RockDislocation_A_05_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_A_05"
+    },
+    "FldObj_RockDislocation_A_06_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_A_06"
+    },
+    "FldObj_RockDislocation_B_01_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_B_01"
+    },
+    "FldObj_RockDislocation_B_02_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_B_02"
+    },
+    "FldObj_RockDislocation_B_05_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_B_05"
+    },
+    "FldObj_RockDislocation_B_06_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_B_06"
+    },
+    "FldObj_RockDislocation_D_01_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_01"
+    },
+    "FldObj_RockDislocation_D_02_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_02"
+    },
+    "FldObj_RockDislocation_D_03_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_03"
+    },
+    "FldObj_RockDislocation_D_04_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_04"
+    },
+    "FldObj_RockDislocation_D_05_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_05"
+    },
+    "FldObj_RockDislocation_D_06_Far": {
+        "PhysicsUser": "FldObj_RockDislocation_D_06"
+    },
+    "FldObj_RockGerudoHighland_B_01_Far": {
+        "PhysicsUser": "FldObj_RockGerudoHighland_B_01"
+    },
+    "FldObj_RockGerudoHighland_B_02_Far": {
+        "PhysicsUser": "FldObj_RockGerudoHighland_B_02"
+    },
+    "FldObj_RockGerudoHighland_C_01_Far": {
+        "PhysicsUser": "FldObj_RockGerudoHighland_C_01"
+    },
+    "FldObj_RockOrangeBridgeBase_A_01_Far": {
+        "PhysicsUser": "FldObj_RockOrangeBridgeBase_A_01"
+    },
+    "FldObj_RockOrangeBridge_A_01_Far": {
+        "PhysicsUser": "FldObj_RockOrangeBridge_A_01"
+    },
+    "FldObj_RockOrangePillar_A_02_Far": {
+        "PhysicsUser": "FldObj_RockOrangePillar_A_02"
+    },
+    "FldObj_RockOrangeStone_A_01_Demo": {
+        "ModelUser": "FldObj_RockOrangeStone_A_01",
+        "PhysicsUser": "FldObj_RockOrangeStone_A_01"
+    },
+    "FldObj_RockOrangeStone_A_02_Demo": {
+        "ModelUser": "FldObj_RockOrangeStone_A_02",
+        "PhysicsUser": "FldObj_RockOrangeStone_A_02"
+    },
+    "FldObj_RockOrangeStone_A_03_Demo": {
+        "ModelUser": "FldObj_RockOrangeStone_A_03",
+        "PhysicsUser": "FldObj_RockOrangeStone_A_03"
+    },
+    "FldObj_RockOrange_A_L_01_Far": {
+        "PhysicsUser": "FldObj_RockOrange_A_L_01"
+    },
+    "FldObj_RockOrange_A_L_02_Far": {
+        "PhysicsUser": "FldObj_RockOrange_A_L_02"
+    },
+    "FldObj_RockOrange_A_M_06_Far": {
+        "PhysicsUser": "FldObj_RockOrange_A_M_06"
+    },
+    "FldObj_RockZoraCliffBridge_A_01_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffBridge_A_01"
+    },
+    "FldObj_RockZoraCliffWall_A_01_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_01"
+    },
+    "FldObj_RockZoraCliffWall_A_02_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_02"
+    },
+    "FldObj_RockZoraCliffWall_A_03_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_03"
+    },
+    "FldObj_RockZoraCliffWall_A_05_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_05"
+    },
+    "FldObj_RockZoraCliffWall_A_06_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_06"
+    },
+    "FldObj_RockZoraCliffWall_A_07_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_07"
+    },
+    "FldObj_RockZoraCliffWall_A_08_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliffWall_A_08"
+    },
+    "FldObj_RockZoraCliff_A_01_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_01"
+    },
+    "FldObj_RockZoraCliff_A_02_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_02"
+    },
+    "FldObj_RockZoraCliff_A_03_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_03"
+    },
+    "FldObj_RockZoraCliff_A_04_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_04"
+    },
+    "FldObj_RockZoraCliff_A_11_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_11"
+    },
+    "FldObj_RockZoraCliff_A_12_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_12"
+    },
+    "FldObj_RockZoraCliff_A_13_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_13"
+    },
+    "FldObj_RockZoraCliff_A_14_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_14"
+    },
+    "FldObj_RockZoraCliff_A_15_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_A_15"
+    },
+    "FldObj_RockZoraCliff_B_01_Far": {
+        "PhysicsUser": "FldObj_RockZoraCliff_B_01"
+    },
+    "FldObj_RockZoraLump_A_02_Far": {
+        "PhysicsUser": "FldObj_RockZoraLump_A_02"
+    },
+    "FldObj_RockZoraRelief_A_M_01_ma": {
+        "ModelUser": "FldObj_RockZoraRelief_A_M_01",
+        "PhysicsUser": "FldObj_RockZoraRelief_A_M_01"
+    },
+    "FldObj_RockZoraSet_A_05_Far": {
+        "PhysicsUser": "FldObj_RockZoraSet_A_05"
+    },
+    "FldObj_RuinStatueDragon_A_05_Far": {
+        "PhysicsUser": "FldObj_RuinStatueDragon_A_05"
+    },
+    "FldObj_RuinStatueKnightSword_A_01_Far": {
+        "PhysicsUser": "FldObj_RuinStatueKnightSword_A_01"
+    },
+    "FldObj_RuinStatueKnightSword_A_02_Far": {
+        "PhysicsUser": "FldObj_RuinStatueKnightSword_A_02"
+    },
+    "FldObj_RuinStatueKnight_A_01_Far": {
+        "PhysicsUser": "FldObj_RuinStatueKnight_A_01"
+    },
+    "FldObj_RuinStatueKnight_SnowMT_01_Far": {
+        "PhysicsUser": "FldObj_RuinStatueKnight_SnowMT_01"
+    },
+    "FldObj_RuinStoneWall_A_03_Far": {
+        "PhysicsUser": "FldObj_RuinStoneWall_A_03"
+    },
+    "FldObj_RuinStoneWall_A_13_Far": {
+        "PhysicsUser": "FldObj_RuinStoneWall_A_13"
+    },
+    "FldObj_ScaffoldWood_A_01_Far": {
+        "PhysicsUser": "FldObj_ScaffoldWood_A_01"
+    },
+    "FldObj_ScaffoldWood_A_03_Stump": {
+        "ModelUser": "FldObj_ScaffoldWood_A_03"
+    },
+    "FldObj_ScaffoldWood_B_01_Far": {
+        "PhysicsUser": "FldObj_ScaffoldWood_B_01"
+    },
+    "FldObj_ScaffoldWood_B_02_Far": {
+        "PhysicsUser": "FldObj_ScaffoldWood_B_02"
+    },
+    "FldObj_SignboardWood_A_01_Stump": {
+        "ModelUser": "FldObj_SignboardWood_A_01"
+    },
+    "FldObj_SignboardWood_A_02_Stump": {
+        "ModelUser": "FldObj_SignboardWood_A_02"
+    },
+    "FldObj_SkullRockBone_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRockBone_A_01"
+    },
+    "FldObj_SkullRockBroken_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRockBroken_A_01"
+    },
+    "FldObj_SkullRockBroken_A_02_Far": {
+        "PhysicsUser": "FldObj_SkullRockBroken_A_02"
+    },
+    "FldObj_SkullRockMoss_Moss_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRockMoss_Moss_A_01"
+    },
+    "FldObj_SkullRockSand_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRockSand_A_01"
+    },
+    "FldObj_SkullRockSnow_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRockSnow_A_01"
+    },
+    "FldObj_SkullRock_A_01_Far": {
+        "PhysicsUser": "FldObj_SkullRock_A_01"
+    },
+    "FldObj_SnowBallDoor_A_03_Far": {
+        "PhysicsUser": "FldObj_SnowBallDoor_A_03"
+    },
+    "FldObj_SnowBallGate_A_01_Far": {
+        "PhysicsUser": "FldObj_SnowBallGate_A_01"
+    },
+    "FldObj_SnowScaffoldWood_B_01_Far": {
+        "PhysicsUser": "FldObj_SnowScaffoldWood_B_01"
+    },
+    "FldObj_SoilRockZoraVent_A_01_Far": {
+        "PhysicsUser": "FldObj_SoilRockZoraVent_A_01"
+    },
+    "FldObj_SouthCape_A_01_Far": {
+        "PhysicsUser": "FldObj_SouthCape_A_01"
+    },
+    "FldObj_SpiderMountainBase_A_02_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainBase_A_02"
+    },
+    "FldObj_SpiderMountainBase_A_03_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainBase_A_03"
+    },
+    "FldObj_SpiderMountainBase_A_04_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainBase_A_04"
+    },
+    "FldObj_SpiderMountainBase_A_05_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainBase_A_05"
+    },
+    "FldObj_SpiderMountainFountain_A_01_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainFountain_A_01"
+    },
+    "FldObj_SpiderMountainGate_A_01_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainGate_A_01"
+    },
+    "FldObj_SpiderMountainPiller_A_01_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainPiller_A_01"
+    },
+    "FldObj_SpiderMountainPiller_A_02_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainPiller_A_02"
+    },
+    "FldObj_SpiderMountainPiller_A_03_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainPiller_A_03"
+    },
+    "FldObj_SpiderMountainPiller_A_04_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainPiller_A_04"
+    },
+    "FldObj_SpiderMountainWall_A_01_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainWall_A_01"
+    },
+    "FldObj_SpiderMountainWall_A_02_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainWall_A_02"
+    },
+    "FldObj_SpiderMountainWall_A_03_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainWall_A_03"
+    },
+    "FldObj_SpiderMountainWall_A_04_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainWall_A_04"
+    },
+    "FldObj_SpiderMountainWall_A_05_Far": {
+        "PhysicsUser": "FldObj_SpiderMountainWall_A_05"
+    },
+    "FldObj_StageWoodHebura_A_01_Far": {
+        "PhysicsUser": "FldObj_StageWoodHebura_A_01"
+    },
+    "FldObj_Terminal_A_01": {
+        "SlinkUser": "FldObj_Terminal"
+    },
+    "FldObj_TorchStandBone_A_01_100enemy": {
+        "ModelUser": "FldObj_TorchStandBone_A_01"
+    },
+    "FldObj_TreeRootTropical_A_L_01_Far": {
+        "PhysicsUser": "FldObj_TreeRootTropical_A_L_01"
+    },
+    "FldObj_TreeRootTropical_A_L_02_Far": {
+        "PhysicsUser": "FldObj_TreeRootTropical_A_L_02"
+    },
+    "FldObj_TreeRootTropical_A_L_03_Far": {
+        "PhysicsUser": "FldObj_TreeRootTropical_A_L_03"
+    },
+    "FldObj_TreeRootTropical_A_L_04_Far": {
+        "PhysicsUser": "FldObj_TreeRootTropical_A_L_04"
+    },
+    "FldObj_TreeRootTropical_A_M_03_Far": {
+        "PhysicsUser": "FldObj_TreeRootTropical_A_M_03"
+    },
+    "FldObj_VolcanicBomb_A_01": {
+        "SlinkUser": "FldObj_VolcanicBomb"
+    },
+    "FldObj_VolcanicBomb_Field": {
+        "GParamUser": "VolcanicBomb_Field",
+        "SlinkUser": "FldObj_VolcanicBomb"
+    },
+    "FldObj_WallBokoFortress_A_01_Far": {
+        "PhysicsUser": "FldObj_WallBokoFortress_A_01"
+    },
+    "FldObj_WallBokoFortress_A_02_Far": {
+        "PhysicsUser": "FldObj_WallBokoFortress_A_02"
+    },
+    "FldObj_WaterFallAkkare_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallAkkare_A_01"
+    },
+    "FldObj_WaterFallAkkare_A_02_Far": {
+        "ElinkUser": "FldObj_WaterFallAkkare_A_02"
+    },
+    "FldObj_WaterFallAkkare_A_03_Far": {
+        "ElinkUser": "FldObj_WaterFallAkkare_A_03"
+    },
+    "FldObj_WaterFallBottom_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallBottom_A_01"
+    },
+    "FldObj_WaterFallBottom_A_02_Far": {
+        "ElinkUser": "FldObj_WaterFallBottom_A_02"
+    },
+    "FldObj_WaterFallFirst_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallFirst_A_01"
+    },
+    "FldObj_WaterFallFirst_A_02_Far": {
+        "ElinkUser": "FldObj_WaterFallFirst_A_02"
+    },
+    "FldObj_WaterFallLakeFloria_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallLakeFloria_A_01"
+    },
+    "FldObj_WaterFallLakeFloria_A_02_Far": {
+        "ElinkUser": "FldObj_WaterFallLakeFloria_A_02"
+    },
+    "FldObj_WaterFallLakeFloria_A_03_Far": {
+        "ElinkUser": "FldObj_WaterFallLakeFloria_A_03"
+    },
+    "FldObj_WaterFallLakeFloria_A_S_02_Far": {
+        "ElinkUser": "FldObj_WaterFallLakeFloria_A_S_02"
+    },
+    "FldObj_WaterFallLakeHylia_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallLakeHylia_A_01"
+    },
+    "FldObj_WaterFallLanayru_A_01_Far": {
+        "ElinkUser": "FldObj_WaterFallLanayru_A_01"
+    },
+    "FldObj_WaterFallLanayru_A_05_Far": {
+        "ElinkUser": "FldObj_WaterFallLanayru_A_05"
+    },
+    "FldObj_WaterFall_A_M_01_Far": {
+        "ElinkUser": "FldObj_WaterFall_A_M_01",
+        "PhysicsUser": "FldObj_WaterFall_A_M_01"
+    },
+    "FldObj_WindmillWheel_A_01": {
+        "SlinkUser": "FldObj_WindmillWheel"
+    },
+    "FldObj_WindmillWheel_A_02": {
+        "SlinkUser": "FldObj_WindmillWheel"
+    },
+    "FldObj_Windmill_A_01_Far": {
+        "PhysicsUser": "FldObj_Windmill_A_01"
+    },
+    "FldObj_Windmill_A_02_Far": {
+        "PhysicsUser": "FldObj_Windmill_A_02"
+    },
+    "FldObj_WorldEnd_A_03_Far": {
+        "PhysicsUser": "FldObj_WorldEnd_A_03"
+    },
+    "GamanFire": {
+        "ModelUser": "FldObj_GamanFire_A_01",
+        "PhysicsUser": "FldObj_GamanFire_A_01"
+    },
+    "Get_TwnObj_DLC_MemorialPicture_A_01": {
+        "ModelUser": "TwnObj_DLC_MemorialPicture_A_01"
+    },
+    "GiantGreave_Iron_L": {
+        "GParamUser": "GiantGreave_Iron"
+    },
+    "GiantGreave_Iron_R": {
+        "GParamUser": "GiantGreave_Iron"
+    },
+    "GiantGreave_Wood_L": {
+        "GParamUser": "GiantGreave_Wood"
+    },
+    "GiantGreave_Wood_R": {
+        "GParamUser": "GiantGreave_Wood"
+    },
+    "Guardian_A_BrokenLeg_L": {
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_L_Moss": {
+        "ElinkUser": "Guardian_A_BrokenLeg_L",
+        "PhysicsUser": "Guardian_A_BrokenLeg_L",
+        "SlinkUser": "Guardian_A_BrokenLeg_L",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_L_Sand": {
+        "ElinkUser": "Guardian_A_BrokenLeg_L",
+        "PhysicsUser": "Guardian_A_BrokenLeg_L",
+        "SlinkUser": "Guardian_A_BrokenLeg_L",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_L_Snow": {
+        "ElinkUser": "Guardian_A_BrokenLeg_L",
+        "PhysicsUser": "Guardian_A_BrokenLeg_L",
+        "SlinkUser": "Guardian_A_BrokenLeg_L",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_S": {
+        "ElinkUser": "Guardian_A_BrokenLeg",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_S_Moss": {
+        "ElinkUser": "Guardian_A_BrokenLeg",
+        "PhysicsUser": "Guardian_A_BrokenLeg_S",
+        "SlinkUser": "Guardian_A_BrokenLeg_S",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_S_Sand": {
+        "ElinkUser": "Guardian_A_BrokenLeg",
+        "PhysicsUser": "Guardian_A_BrokenLeg_S",
+        "SlinkUser": "Guardian_A_BrokenLeg_S",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_BrokenLeg_S_Snow": {
+        "ElinkUser": "Guardian_A_BrokenLeg",
+        "PhysicsUser": "Guardian_A_BrokenLeg_S",
+        "SlinkUser": "Guardian_A_BrokenLeg_S",
+        "XlinkUser": "Guardian_A_BrokenLeg"
+    },
+    "Guardian_A_Leg_Moss": {
+        "DamageParamUser": "Guardian_A_Leg",
+        "DropTableUser": "Guardian_A_Leg",
+        "ElinkUser": "Guardian_A_Leg",
+        "PhysicsUser": "Guardian_A_Leg",
+        "SlinkUser": "Guardian_A_Leg"
+    },
+    "Guardian_A_Leg_Sand": {
+        "DamageParamUser": "Guardian_A_Leg",
+        "DropTableUser": "Guardian_A_Leg",
+        "ElinkUser": "Guardian_A_Leg",
+        "PhysicsUser": "Guardian_A_Leg",
+        "SlinkUser": "Guardian_A_Leg"
+    },
+    "Guardian_A_Leg_Snow": {
+        "DamageParamUser": "Guardian_A_Leg",
+        "DropTableUser": "Guardian_A_Leg",
+        "ElinkUser": "Guardian_A_Leg",
+        "PhysicsUser": "Guardian_A_Leg",
+        "SlinkUser": "Guardian_A_Leg"
+    },
+    "Guardian_C_Propeller_Clean": {
+        "DamageParamUser": "Guardian_C_Propeller",
+        "DropTableUser": "Guardian_C_Propeller",
+        "ElinkUser": "Guardian_C_Propeller",
+        "GParamUser": "Guardian_C_Propeller",
+        "PhysicsUser": "Guardian_C_Propeller",
+        "SlinkUser": "Guardian_C_Propeller"
+    },
+    "Item_CookSet_100enemy": {
+        "ElinkUser": "Item_CookSet",
+        "GParamUser": "Item_CookSet",
+        "ModelUser": "Item_CookSet",
+        "PhysicsUser": "Item_CookSet",
+        "SlinkUser": "Item_CookSet"
+    },
+    "Item_CookSet_PanOnly": {
+        "ElinkUser": "Item_CookSet",
+        "GParamUser": "Item_CookSet",
+        "PhysicsUser": "Item_CookSet",
+        "SlinkUser": "Item_CookSet"
+    },
+    "Item_FishGet_A": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_B": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_C": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_D": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_E": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_F": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_G": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_H": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_I": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_J": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_L": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_L_00": {
+        "DropTableUser": "Item_FishGet_L",
+        "ModelUser": "Item_FishGet_L",
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_X": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_FishGet_Z": {
+        "SlinkUser": "Item_FishGet"
+    },
+    "Item_Fruit_A": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_B": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_C": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_D": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_E": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_E_00": {
+        "DropTableUser": "Item_Fruit_E",
+        "ModelUser": "Item_Fruit_E",
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_F": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_G": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_H": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_I": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_K": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Fruit_L": {
+        "SlinkUser": "Item_Fruit"
+    },
+    "Item_Material_05_00": {
+        "ElinkUser": "Item_Material_05",
+        "GParamUser": "Item_Material_05",
+        "ModelUser": "Item_Material_05",
+        "SlinkUser": "Item_Material_05"
+    },
+    "Item_Mushroom_F_00": {
+        "DropTableUser": "Item_Mushroom_F",
+        "GParamUser": "Item_Mushroom_F",
+        "ModelUser": "Item_Mushroom_F"
+    },
+    "Item_Mushroom_N_00": {
+        "DropTableUser": "Item_Mushroom_N",
+        "GParamUser": "Item_Mushroom_N",
+        "ModelUser": "Item_Mushroom_N"
+    },
+    "Item_Ore_A_00": {
+        "GParamUser": "Item_Ore_A",
+        "ModelUser": "Item_Ore_A",
+        "PhysicsUser": "Item_Ore_A"
+    },
+    "Item_Plant_B": {
+        "DamageParamUser": "Item_Plant_BurnoutRebirth_NoChill"
+    },
+    "Item_Roast_15": {
+        "SlinkUser": "Item_Roast"
+    },
+    "Kibako_Contain_01": {
+        "GParamUser": "Kibako_Contain"
+    },
+    "Kibako_Contain_100enemy": {
+        "GParamUser": "Kibako_Contain"
+    },
+    "MergedGrudge_E-4_0-BB_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-BB"
+    },
+    "MergedGrudge_E-4_0-BC_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-BC"
+    },
+    "MergedGrudge_E-4_0-CA_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-CA"
+    },
+    "MergedGrudge_E-4_0-CB_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-CB"
+    },
+    "MergedGrudge_E-4_0-CC_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-CC"
+    },
+    "MergedGrudge_E-4_0-DA_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-DA"
+    },
+    "MergedGrudge_E-4_0-DB_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-DB"
+    },
+    "MergedGrudge_E-4_0-DC_Far": {
+        "PhysicsUser": "MergedGrudge_E-4_0-DC"
+    },
+    "NPC_artist_000": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist",
+        "UMiiUser": "artist_000"
+    },
+    "NPC_artist_001": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_002": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_003": {
+        "ElinkUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_004": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_005": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_006": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_007": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_008": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_009": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_010": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "NPC_artist_011": {
+        "ElinkUser": "NPC_artist",
+        "GParamUser": "NPC_artist",
+        "SlinkUser": "NPC_artist"
+    },
+    "Npc_AncientDoctor_Hateno": {
+        "UMiiUser": "AncientDoctor_Hateno"
+    },
+    "Npc_Assassin_001": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_002": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_003": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_004": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_005": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_006": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_007": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_008": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_009": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Assassin_010": {
+        "ElinkUser": "Npc_Assassin"
+    },
+    "Npc_Attacked_001": {
+        "UMiiUser": "Attacked_001"
+    },
+    "Npc_Attacked_002": {
+        "UMiiUser": "Attacked_002"
+    },
+    "Npc_Attacked_003": {
+        "UMiiUser": "Attacked_003"
+    },
+    "Npc_Attacked_004": {
+        "UMiiUser": "Attacked_004"
+    },
+    "Npc_Attacked_005": {
+        "UMiiUser": "Attacked_005"
+    },
+    "Npc_Attacked_006": {
+        "UMiiUser": "Attacked_006"
+    },
+    "Npc_Attacked_006_DLC2nd": {
+        "ShopDataUser": "Npc_Attacked_006",
+        "UMiiUser": "Attacked_006"
+    },
+    "Npc_Attacked_007": {
+        "UMiiUser": "Attacked_007"
+    },
+    "Npc_Attacked_008": {
+        "UMiiUser": "Attacked_008"
+    },
+    "Npc_Attacked_009": {
+        "UMiiUser": "Attacked_009"
+    },
+    "Npc_Attacked_010": {
+        "UMiiUser": "Attacked_010"
+    },
+    "Npc_Attacked_011": {
+        "UMiiUser": "Attacked_011"
+    },
+    "Npc_Attacked_011_DLC2nd": {
+        "UMiiUser": "Attacked_011"
+    },
+    "Npc_Attacked_012": {
+        "UMiiUser": "Attacked_012"
+    },
+    "Npc_Bottle_Mes001": {
+        "UMiiUser": "Bottle_Mes001"
+    },
+    "Npc_DeathEastHatago_001": {
+        "UMiiUser": "DeathEastHatago_001"
+    },
+    "Npc_DeathEastHatago_002": {
+        "UMiiUser": "DeathEastHatago_002"
+    },
+    "Npc_DeathEastHatago_003": {
+        "UMiiUser": "DeathEastHatago_003"
+    },
+    "Npc_DeathWestHatago_002": {
+        "UMiiUser": "DeathWestHatago_002"
+    },
+    "Npc_FaronHatago_001": {
+        "UMiiUser": "FaronHatago_001"
+    },
+    "Npc_FollowGoron": {
+        "GParamUser": "Npc_FollowGoronCowardice"
+    },
+    "Npc_Gerudo_FruitMelon_A_Trash_Drift": {
+        "ModelUser": "Npc_Gerudo_FruitMelon_A_Trash"
+    },
+    "Npc_Goron005": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron006": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron010": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron011": {
+        "ElinkUser": "Npc_Goron",
+        "GParamUser": "Npc_Goron"
+    },
+    "Npc_Goron012": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron013": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron014": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron015": {
+        "GParamUser": "Npc_Goron"
+    },
+    "Npc_Goron016": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron017": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron018": {
+        "GParamUser": "Npc_Goron"
+    },
+    "Npc_Goron020_2": {
+        "ElinkUser": "Npc_Goron020",
+        "ModelUser": "Npc_Goron020",
+        "PhysicsUser": "Npc_Goron020",
+        "SlinkUser": "Npc_Goron020"
+    },
+    "Npc_Goron021": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron022": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron023": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron025": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron030": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron031": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron032": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron033": {
+        "GParamUser": "Npc_Goron"
+    },
+    "Npc_Goron109": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Goron110": {
+        "ElinkUser": "Npc_Goron"
+    },
+    "Npc_Hunters_Lost": {
+        "UMiiUser": "Hunters_Lost"
+    },
+    "Npc_HutagoHatago_001": {
+        "UMiiUser": "HutagoHatago_001"
+    },
+    "Npc_Hylia_Mug_Sake_0": {
+        "GParamUser": "Npc_Hylia_Mug"
+    },
+    "Npc_Hylia_Mug_Sake_1": {
+        "GParamUser": "Npc_Hylia_Mug"
+    },
+    "Npc_Hylia_Picturebook_Brown": {
+        "GParamUser": "Npc_Hylia_Picturebook"
+    },
+    "Npc_Hylia_Picturebook_Pink": {
+        "GParamUser": "Npc_Hylia_Picturebook"
+    },
+    "Npc_Hylia_Picturebook_Yellow": {
+        "GParamUser": "Npc_Hylia_Picturebook"
+    },
+    "Npc_King_Parasail002": {
+        "GParamUser": "Npc_King_Parasail",
+        "SlinkUser": "Npc_King_Parasail"
+    },
+    "Npc_King_Parasail004": {
+        "GParamUser": "Npc_King_Parasail",
+        "SlinkUser": "Npc_King_Parasail"
+    },
+    "Npc_King_Parasail005": {
+        "SlinkUser": "Npc_King_Parasail"
+    },
+    "Npc_King_Vagrant001": {
+        "GParamUser": "Npc_King_Vagrant",
+        "ModelUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_King_Vagrant003": {
+        "GParamUser": "Npc_King_Vagrant",
+        "ModelUser": "Npc_King_Vagrant",
+        "PhysicsUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_King_Vagrant004": {
+        "ModelUser": "Npc_King_Vagrant",
+        "PhysicsUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_King_Vagrant005": {
+        "ModelUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_King_Vagrant006": {
+        "GParamUser": "Npc_King_Vagrant",
+        "ModelUser": "Npc_King_Vagrant",
+        "PhysicsUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_King_Vagrant007": {
+        "ModelUser": "Npc_King_Vagrant",
+        "PhysicsUser": "Npc_King_Vagrant",
+        "UMiiUser": "Npc_King_Vagrant"
+    },
+    "Npc_Korogu_Minister_Maracas_Left": {
+        "ElinkUser": "Npc_Korogu_Minister_Maracas",
+        "ModelUser": "Npc_Korogu_Minister_Maracas"
+    },
+    "Npc_MamonoShop": {
+        "ShopDataUser": "Npc_MamonoShop_A"
+    },
+    "Npc_MiniGame_Crosscountry": {
+        "UMiiUser": "MiniGame_Crosscountry"
+    },
+    "Npc_Musician_001": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_002": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_003": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_005": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_006": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_007": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_008": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_009": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_010": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_011": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_012": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_014": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_015": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_BalladOfHeroes": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_BalladOfHeroes_Last": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroGerudo": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroGerudoRelief": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroGoron": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroGoronRelief": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroRito": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroRitoRelief": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroZora": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_Musician_AoC_HeroZoraRelief": {
+        "GParamUser": "Npc_Musician"
+    },
+    "Npc_OldKorok_Forest": {
+        "ElinkUser": "Npc_OldKorok",
+        "GParamUser": "Npc_OldKorok",
+        "LifeConditionUser": "Npc_OldKorok",
+        "ModelUser": "Npc_OldKorok",
+        "PhysicsUser": "Npc_OldKorok",
+        "SlinkUser": "Npc_OldKorok"
+    },
+    "Npc_OldKorok_Help": {
+        "ElinkUser": "Npc_OldKorok",
+        "GParamUser": "Npc_OldKorok",
+        "LifeConditionUser": "Npc_OldKorok",
+        "ModelUser": "Npc_OldKorok",
+        "PhysicsUser": "Npc_OldKorok",
+        "SlinkUser": "Npc_OldKorok"
+    },
+    "Npc_OldKorok_Rvs": {
+        "ElinkUser": "Npc_OldKorok",
+        "GParamUser": "Npc_OldKorok",
+        "LifeConditionUser": "Npc_OldKorok",
+        "ModelUser": "Npc_OldKorok",
+        "PhysicsUser": "Npc_OldKorok",
+        "SlinkUser": "Npc_OldKorok"
+    },
+    "Npc_OldKorok_WetLand": {
+        "ElinkUser": "Npc_OldKorok",
+        "GParamUser": "Npc_OldKorok",
+        "LifeConditionUser": "Npc_OldKorok",
+        "ModelUser": "Npc_OldKorok",
+        "PhysicsUser": "Npc_OldKorok",
+        "SlinkUser": "Npc_OldKorok"
+    },
+    "Npc_Road_027": {
+        "UMiiUser": "Road_027"
+    },
+    "Npc_Road_031": {
+        "UMiiUser": "Road_031"
+    },
+    "Npc_Road_033": {
+        "UMiiUser": "Road_033"
+    },
+    "Npc_Road_Firone002": {
+        "UMiiUser": "Road_Firone002"
+    },
+    "Npc_Shiekah_Artist_Brush_000_Color": {
+        "GParamUser": "Npc_Shiekah_Artist_Brush_000"
+    },
+    "Npc_Shiekah_Artist_Easel_000": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_001": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_002": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_003": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_005": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_006": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_007": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_008": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_009": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_010": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Shiekah_Artist_Easel_011": {
+        "PhysicsUser": "Npc_Shiekah_Artist_Easel"
+    },
+    "Npc_Strange_Beacon": {
+        "UMiiUser": "Strange_Beacon"
+    },
+    "Npc_TamourHatago2_001": {
+        "UMiiUser": "TamourHatago2_001"
+    },
+    "Npc_TamourPlainHatago_001": {
+        "UMiiUser": "TamourPlainHatago_001"
+    },
+    "Npc_TamourPlainHatago_002": {
+        "UMiiUser": "TamourPlainHatago_002"
+    },
+    "Npc_TamourPlainHatago_003": {
+        "UMiiUser": "TamourPlainHatago_003"
+    },
+    "Npc_TamourPlainHatago_004": {
+        "UMiiUser": "TamourPlainHatago_004"
+    },
+    "Npc_TripMaster_00": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_01": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_02": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_03": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_04": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_05": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_06": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_07": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_08": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_09": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_10": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_11": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_12": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_13": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_14": {
+        "GParamUser": "Npc_TripMaster",
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_TripMaster_15": {
+        "SlinkUser": "Npc_TripMaster"
+    },
+    "Npc_Zora001": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora002": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora004": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora005": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora006": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora007": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora008": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora009": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora010": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora013": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora015": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora020": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora025": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora026": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora027": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora028": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora029": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora031": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora032": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora033": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora034": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora035": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora036": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora037": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_Zora126": {
+        "ElinkUser": "Npc_Zora"
+    },
+    "Npc_oasis050": {
+        "GParamUser": "Npc_oasis050_Slow"
+    },
+    "Npc_oasis050_2": {
+        "ShopDataUser": "Npc_oasis050"
+    },
+    "Obj_ArrowBundle_A_01": {
+        "SlinkUser": "Obj_Arrow"
+    },
+    "Obj_ArrowBundle_A_02": {
+        "SlinkUser": "Obj_Arrow"
+    },
+    "Obj_ArrowBundle_A_10": {
+        "SlinkUser": "Obj_Arrow"
+    },
+    "Obj_ArrowNormal_A_01": {
+        "SlinkUser": "Obj_Arrow"
+    },
+    "Obj_BreakBoxIron_100enemy": {
+        "DamageParamUser": "Obj_BreakBoxIron",
+        "ElinkUser": "Obj_BreakBoxIron",
+        "GParamUser": "Obj_BreakBoxIron",
+        "ModelUser": "Obj_BreakBoxIron",
+        "PhysicsUser": "Obj_BreakBoxIron",
+        "SlinkUser": "Obj_BreakBoxIron"
+    },
+    "Obj_CursedStatue": {
+        "ModelUser": "Obj_CursedStatue_A"
+    },
+    "Obj_DRStoneStand": {
+        "ModelUser": "Obj_DRStoneStand_First"
+    },
+    "Obj_FlowerAlpine_B_01_Demo": {
+        "ModelUser": "Obj_FlowerAlpine_B_01"
+    },
+    "Obj_FlowerAlpine_B_02_Demo": {
+        "ModelUser": "Obj_FlowerAlpine_B_02"
+    },
+    "Obj_FlowerPrincess_A_Demo_03": {
+        "ElinkUser": "Obj_FlowerPrincess_A_Demo",
+        "PhysicsUser": "Obj_FlowerPrincess_A_Demo"
+    },
+    "Obj_GerdoElevatorFrame_A_01_Far": {
+        "PhysicsUser": "Obj_GerdoElevatorFrame_A_01"
+    },
+    "Obj_HeartUtuwa_A_01": {
+        "SlinkUser": "Obj_HeartUtuwa"
+    },
+    "Obj_IcicleMountainCover_A_01_Far": {
+        "PhysicsUser": "Obj_IcicleMountainCover_A_01"
+    },
+    "Obj_IcicleMountainCover_A_02_Far": {
+        "PhysicsUser": "Obj_IcicleMountainCover_A_02"
+    },
+    "Obj_IcicleMountain_A_L_02_Far": {
+        "PhysicsUser": "Obj_IcicleMountain_A_L_02"
+    },
+    "Obj_IcicleMountain_A_L_03_Far": {
+        "PhysicsUser": "Obj_IcicleMountain_A_L_03"
+    },
+    "Obj_LiftRockEldin_A_01": {
+        "SlinkUser": "Obj_LiftRock"
+    },
+    "Obj_LiftRockGerudo_A_01": {
+        "SlinkUser": "Obj_LiftRock"
+    },
+    "Obj_LiftRockWhite_100enemy": {
+        "SlinkUser": "Obj_LiftRock"
+    },
+    "Obj_LiftRockWhite_A_01": {
+        "GParamUser": "Obj_LiftRockWhite",
+        "SlinkUser": "Obj_LiftRock"
+    },
+    "Obj_MineralBury_A_01": {
+        "DamageParamUser": "Obj_Mineral"
+    },
+    "Obj_Mineral_A_01": {
+        "DamageParamUser": "Obj_Mineral"
+    },
+    "Obj_Mineral_B_01": {
+        "DamageParamUser": "Obj_Mineral"
+    },
+    "Obj_Mineral_C_01": {
+        "DamageParamUser": "Obj_Mineral"
+    },
+    "Obj_Plant_BushWeed_A_01": {
+        "ElinkUser": "Obj_Plant_BushWeed_A"
+    },
+    "Obj_Plant_HopBush_A_01": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_A_02": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_A_03": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_B_01": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_C_01": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_C_02": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_C_03": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_C_Snow_01": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_C_Snow_02": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_D_01": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_HopBush_D_02": {
+        "SlinkUser": "Obj_Plant_HopBush"
+    },
+    "Obj_Plant_IvyBurn_A_01_Curtain": {
+        "ModelUser": "Obj_Plant_IvyBurn_A_01"
+    },
+    "Obj_Plant_Knotweed_A_01": {
+        "ElinkUser": "Obj_Plant_Knotweed_A"
+    },
+    "Obj_RaftWoodSail_A_S_01": {
+        "SlinkUser": "Obj_RaftWoodSail"
+    },
+    "Obj_RockDeathMt_D_L_01_Far": {
+        "PhysicsUser": "Obj_RockDeathMt_D_L_01"
+    },
+    "Obj_RockDeathMt_D_L_03_Far": {
+        "PhysicsUser": "Obj_RockDeathMt_D_L_03"
+    },
+    "Obj_RockDeathMt_D_L_06_Far": {
+        "PhysicsUser": "Obj_RockDeathMt_D_L_06"
+    },
+    "Obj_RockLayerMossHole_A_01_Far": {
+        "PhysicsUser": "Obj_RockLayerMossHole_A_01"
+    },
+    "Obj_RockLayerMoss_A_Cliff_02_Far": {
+        "PhysicsUser": "Obj_RockLayerMoss_A_Cliff_02"
+    },
+    "Obj_RockLayerMoss_B_Cliff_01_Far": {
+        "PhysicsUser": "Obj_RockLayerMoss_B_Cliff_01"
+    },
+    "Obj_RockLayerMoss_B_Cliff_02_Far": {
+        "PhysicsUser": "Obj_RockLayerMoss_B_Cliff_02"
+    },
+    "Obj_RockSetDeathMt_Crab_Far": {
+        "PhysicsUser": "Obj_RockSetDeathMt_Crab"
+    },
+    "Obj_RockSetSnow_A_01_Far": {
+        "PhysicsUser": "Obj_RockSetSnow_A_01"
+    },
+    "Obj_RockSetWhite_A_L_01_Far": {
+        "PhysicsUser": "Obj_RockSetWhite_A_L_01"
+    },
+    "Obj_RockSetYellow_A_L_01_Far": {
+        "PhysicsUser": "Obj_RockSetYellow_A_L_01"
+    },
+    "Obj_RockYellow_A_L_04_Far": {
+        "PhysicsUser": "Obj_RockYellow_A_L_04"
+    },
+    "Obj_ShieldFenceWood_A_M_01": {
+        "SlinkUser": "Obj_ShieldFenceWood_A_M"
+    },
+    "Obj_ShieldFenceWood_A_M_02": {
+        "SlinkUser": "Obj_ShieldFenceWood_A_M"
+    },
+    "Obj_ShieldFenceWood_A_M_03": {
+        "SlinkUser": "Obj_ShieldFenceWood_A_M"
+    },
+    "Obj_StaminaUtuwa_A_01": {
+        "SlinkUser": "Obj_StaminaUtuwa"
+    },
+    "Obj_TreeApple_A_M_01_Stump": {
+        "ModelUser": "Obj_TreeApple_A_M_01"
+    },
+    "Obj_TreeBanana_A_01_Stump": {
+        "ModelUser": "Obj_TreeBanana_A_01"
+    },
+    "Obj_TreeBroadleafDead_B_L_01_Stump": {
+        "ModelUser": "Obj_TreeBroadleafDead_B_L_01"
+    },
+    "Obj_TreeBroadleaf_A_LL_Set_01": {
+        "ModelUser": "Obj_TreeBroadleaf_A_LL",
+        "PhysicsUser": "Obj_TreeBroadleaf_A_LL"
+    },
+    "Obj_TreeBroadleaf_A_L_Stump": {
+        "ModelUser": "Obj_TreeBroadleaf_A_L"
+    },
+    "Obj_TreeBurned_A_01_Stump": {
+        "ModelUser": "Obj_TreeBurned_A_01"
+    },
+    "Obj_TreeBurned_B_01_Stump": {
+        "ModelUser": "Obj_TreeBurned_B_01"
+    },
+    "Obj_TreeBurned_B_02_Stump": {
+        "ModelUser": "Obj_TreeBurned_B_02"
+    },
+    "Obj_TreeConiferousDead_A_01_Stump": {
+        "ModelUser": "Obj_TreeConiferousDead_A_01"
+    },
+    "Obj_TreeConiferousDead_A_02_Stump": {
+        "ModelUser": "Obj_TreeConiferousDead_A_02"
+    },
+    "Obj_TreeConiferous_A_01_Stump": {
+        "ModelUser": "Obj_TreeConiferous_A_01"
+    },
+    "Obj_TreeConiferous_A_02_Stump": {
+        "ModelUser": "Obj_TreeConiferous_A_02"
+    },
+    "Obj_TreeConiferous_A_03_Stump": {
+        "ModelUser": "Obj_TreeConiferous_A_03"
+    },
+    "Obj_TreeConiferous_A_04_Stump": {
+        "ModelUser": "Obj_TreeConiferous_A_04"
+    },
+    "Obj_TreeConiferous_A_Snow_01_Stump": {
+        "ModelUser": "Obj_TreeConiferous_A_Snow_01"
+    },
+    "Obj_TreeDeadLeaf_A_01_Stump": {
+        "ModelUser": "Obj_TreeDeadLeaf_A_01"
+    },
+    "Obj_TreeDead_A_01_Stump": {
+        "ModelUser": "Obj_TreeDead_A_01"
+    },
+    "Obj_TreeDorian_A_01_Stump": {
+        "ModelUser": "Obj_TreeDorian_A_01"
+    },
+    "Obj_TreeGashamahiBase_A_01_Far": {
+        "PhysicsUser": "Obj_TreeGashamahiBase_A_01"
+    },
+    "Obj_TreeGashamahiBase_A_02_Far": {
+        "PhysicsUser": "Obj_TreeGashamahiBase_A_02"
+    },
+    "Obj_TreeGhost_A_01": {
+        "ElinkUser": "Obj_TreeGhost_A"
+    },
+    "Obj_TreeGhost_A_02": {
+        "ElinkUser": "Obj_TreeGhost_A"
+    },
+    "Obj_TreeGhost_A_03": {
+        "ElinkUser": "Obj_TreeGhost_A"
+    },
+    "Obj_TreeGhost_A_03_Stump": {
+        "ElinkUser": "Obj_TreeGhost_A"
+    },
+    "Obj_TreeGhost_A_04": {
+        "ElinkUser": "Obj_TreeGhost_A"
+    },
+    "Obj_TreeMaple_A_01_Stump": {
+        "ModelUser": "Obj_TreeMaple_A_01"
+    },
+    "Obj_TreeMaple_A_02_Stump": {
+        "ModelUser": "Obj_TreeMaple_A_02"
+    },
+    "Obj_TreeMaple_B_01_Stump": {
+        "ModelUser": "Obj_TreeMaple_B_01"
+    },
+    "Obj_TreeMaple_C_01_Stump": {
+        "ModelUser": "Obj_TreeMaple_C_01"
+    },
+    "Obj_TreeMaple_C_02_Stump": {
+        "ModelUser": "Obj_TreeMaple_C_02"
+    },
+    "Obj_TreePalmBeach_A_01_Stump": {
+        "ModelUser": "Obj_TreePalmBeach_A_01"
+    },
+    "Obj_TreePalmBeach_A_02_Stump": {
+        "ModelUser": "Obj_TreePalmBeach_A_02"
+    },
+    "Obj_TreePalm_A_01_Stump": {
+        "ModelUser": "Obj_TreePalm_A_01"
+    },
+    "Obj_TreePalm_A_02_Stump": {
+        "ModelUser": "Obj_TreePalm_A_02"
+    },
+    "Obj_TreePine_A_01_Stump": {
+        "ModelUser": "Obj_TreePine_A_01"
+    },
+    "Obj_TreeWhiteBirch_A_01_Stump": {
+        "ModelUser": "Obj_TreeWhiteBirch_A_01"
+    },
+    "Obj_TreeWhiteBirch_A_02_Stump": {
+        "ModelUser": "Obj_TreeWhiteBirch_A_02"
+    },
+    "Obj_TreeWhiteBirch_A_03_Stump": {
+        "ModelUser": "Obj_TreeWhiteBirch_A_03"
+    },
+    "Obj_TreeWhiteBirch_A_04_Stump": {
+        "ModelUser": "Obj_TreeWhiteBirch_A_04"
+    },
+    "Obj_TreeWillow_A_01_Stump": {
+        "ModelUser": "Obj_TreeWillow_A_01"
+    },
+    "OctObj_Grass_01": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_02": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_03": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_04": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_05": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_06": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_07": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Grass_08": {
+        "SlinkUser": "OctObj_Grass"
+    },
+    "OctObj_Stone_01": {
+        "SlinkUser": "OctObj_Stone"
+    },
+    "Plant_Fern_A": {
+        "ElinkUser": "Obj_Plant_Fern_A"
+    },
+    "Pot": {
+        "GParamUser": "Pot_S",
+        "PhysicsUser": "Obj_Pot_S"
+    },
+    "Priest_Boss_Weapon_Bow_029": {
+        "ElinkUser": "Weapon_Bow_029",
+        "ModelUser": "Weapon_Bow_029"
+    },
+    "Priest_Boss_Weapon_Sword_015": {
+        "ModelUser": "Weapon_Sword_015"
+    },
+    "PutRupee_Blue": {
+        "GParamUser": "Rupee_Blue"
+    },
+    "PutRupee_Red": {
+        "GParamUser": "Rupee_Red"
+    },
+    "RailLift": {
+        "SlinkUser": "DgnObj_Hrl_RailLift"
+    },
+    "RemainsFire_Drone_A_01": {
+        "PhysicsUser": "RemainsFire_Drone",
+        "SlinkUser": "RemainsFire_Drone"
+    },
+    "RemainsWind_Barrier_A_01": {
+        "SlinkUser": "RemainsWind_Barrier"
+    },
+    "RemainsWind_Battery_A_01": {
+        "LifeConditionUser": "RemainsWind_Battery"
+    },
+    "RockLayerMoss_A_L_02_TwoWheels": {
+        "ModelUser": "RockLayerMoss_A_L_02",
+        "PhysicsUser": "RockLayerMoss_A_L_02"
+    },
+    "RockLayerMoss_A_L_03_TwoWheels": {
+        "ModelUser": "RockLayerMoss_A_L_03",
+        "PhysicsUser": "RockLayerMoss_A_L_03"
+    },
+    "RockLayerMoss_A_L_04_TwoWheels": {
+        "ModelUser": "RockLayerMoss_A_L_04",
+        "PhysicsUser": "RockLayerMoss_A_L_04"
+    },
+    "RockLayerMoss_A_M_05_TwoWheels": {
+        "ModelUser": "RockLayerMoss_A_M_05",
+        "PhysicsUser": "RockLayerMoss_A_M_05"
+    },
+    "SS_object_ShutterFenceOnly00": {
+        "SlinkUser": "SS_object_ShutterFence"
+    },
+    "SandStorm_Distance_A8": {
+        "GParamUser": "SandStorm_Distance"
+    },
+    "SandStorm_Distance_Battle": {
+        "GParamUser": "SandStorm_Distance"
+    },
+    "SandStorm_Distance_Ibutsu": {
+        "GParamUser": "SandStorm_Distance"
+    },
+    "SandStorm_Distance_daytime": {
+        "ElinkUser": "SandStorm_Distance",
+        "GParamUser": "SandStorm_Distance"
+    },
+    "SitRemainsElec": {
+        "ElinkUser": "Test_SitRemainsElec"
+    },
+    "SitRemainsFire": {
+        "ElinkUser": "Test_SitRemainsFire"
+    },
+    "SitRemainsWater": {
+        "ElinkUser": "Test_SitRemainsWater"
+    },
+    "SitRemainsWind": {
+        "ElinkUser": "Test_SitRemainsWind"
+    },
+    "TBox_Dungeon_Iron": {
+        "ElinkUser": "TBox_Dungeon"
+    },
+    "TBox_Dungeon_Iron_050": {
+        "ElinkUser": "TBox_Dungeon",
+        "ModelUser": "TBox_Dungeon_Iron"
+    },
+    "TBox_Dungeon_Iron_Hanged": {
+        "ElinkUser": "TBox_Dungeon",
+        "ModelUser": "TBox_Dungeon_Iron"
+    },
+    "TBox_Dungeon_Stone": {
+        "ElinkUser": "TBox_Dungeon"
+    },
+    "TBox_Dungeon_Wood_AreaCulling": {
+        "ElinkUser": "TBox_Dungeon_Wood",
+        "ModelUser": "TBox_Dungeon_Wood",
+        "PhysicsUser": "TBox_Dungeon_Wood"
+    },
+    "TBox_Field_Iron": {
+        "ElinkUser": "TBox_Field"
+    },
+    "TBox_Field_Iron_GodTree": {
+        "ElinkUser": "TBox_Field",
+        "ModelUser": "TBox_Field_Iron",
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_NoReaction": {
+        "ElinkUser": "TBox_Field",
+        "ModelUser": "TBox_Field_Iron",
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_NoReaction_Aoc": {
+        "ElinkUser": "TBox_Field",
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_NoReaction_Aoc_long": {
+        "ElinkUser": "TBox_Field",
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_NoReaction_Collabo": {
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_Sandworm": {
+        "ElinkUser": "TBox_Field",
+        "ModelUser": "TBox_Field_Iron",
+        "PhysicsUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Iron_SandwormR": {
+        "ElinkUser": "TBox_Field",
+        "ModelUser": "TBox_Field_Iron",
+        "SlinkUser": "TBox_Field_Iron"
+    },
+    "TBox_Field_Stone_NoReaction": {
+        "ElinkUser": "TBox_Field_Stone",
+        "ModelUser": "TBox_Field_Stone",
+        "PhysicsUser": "TBox_Field_Stone",
+        "SlinkUser": "TBox_Field_Stone"
+    },
+    "TwnObj_AncientCivilLaboParts_A_01_Far": {
+        "PhysicsUser": "TwnObj_AncientCivilLaboParts_A_01"
+    },
+    "TwnObj_AncientCivilLaboWindMill_A_01": {
+        "SlinkUser": "TwnObj_AncientCivilLaboWindMill"
+    },
+    "TwnObj_AncientCivilLabo_A_01_Far": {
+        "GParamUser": "TwnObj_AncientCivilLabo_A_01",
+        "PhysicsUser": "TwnObj_AncientCivilLabo_A_01"
+    },
+    "TwnObj_AncientCivilLabo_B_01_Far": {
+        "ElinkUser": "TwnObj_AncientCivilLabo_B_01",
+        "PhysicsUser": "TwnObj_AncientCivilLabo_B_01"
+    },
+    "TwnObj_AncientReactorFurnace_A_01": {
+        "SlinkUser": "TwnObj_AncientReactorFurnace"
+    },
+    "TwnObj_AncientReactorFurnace_B_01": {
+        "SlinkUser": "TwnObj_AncientReactorFurnace"
+    },
+    "TwnObj_AncientReactor_A_01_Far": {
+        "PhysicsUser": "TwnObj_AncientReactor_A_01"
+    },
+    "TwnObj_ArtifactObservationPostWindmill_A_01": {
+        "SlinkUser": "TwnObj_ArtifactObservationPostWindmill"
+    },
+    "TwnObj_ArtifactObservationPost_A_01_Far": {
+        "GParamUser": "TwnObj_ArtifactObservationPost_A_01",
+        "PhysicsUser": "TwnObj_ArtifactObservationPost_A_01"
+    },
+    "TwnObj_BraveHorsePark_A_01_Far": {
+        "ElinkUser": "TwnObj_BraveHorsePark_A_01",
+        "PhysicsUser": "TwnObj_BraveHorsePark_A_01"
+    },
+    "TwnObj_BrownStoneRuinArch_A_01_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinArch_A_01"
+    },
+    "TwnObj_BrownStoneRuinArch_A_02_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinArch_A_02"
+    },
+    "TwnObj_BrownStoneRuinPillar_A_01_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinPillar_A_01"
+    },
+    "TwnObj_BrownStoneRuinSet_A_01_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinSet_A_01"
+    },
+    "TwnObj_BrownStoneRuinWall_A_01_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinWall_A_01"
+    },
+    "TwnObj_BrownStoneRuinWall_A_02_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinWall_A_02"
+    },
+    "TwnObj_BrownStoneRuinWall_A_03_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinWall_A_03"
+    },
+    "TwnObj_BrownStoneRuinWall_A_04_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinWall_A_04"
+    },
+    "TwnObj_BrownStoneRuinWall_A_05_Far": {
+        "PhysicsUser": "TwnObj_BrownStoneRuinWall_A_05"
+    },
+    "TwnObj_City_GerudoGround_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoGround_A_01"
+    },
+    "TwnObj_City_GerudoHouse_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoHouse_A_01"
+    },
+    "TwnObj_City_GerudoHouse_A_02_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoHouse_A_02"
+    },
+    "TwnObj_City_GerudoLag_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoLag_A_01"
+    },
+    "TwnObj_City_GerudoMainGate_A_01_Far": {
+        "GParamUser": "TwnObj_City_GerudoMainGate_A_01",
+        "PhysicsUser": "TwnObj_City_GerudoMainGate_A_01"
+    },
+    "TwnObj_City_GerudoMainGate_A_02_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoMainGate_A_02"
+    },
+    "TwnObj_City_GerudoMayerHouse_A_01_Far": {
+        "GParamUser": "TwnObj_City_GerudoMayerHouse_A_01",
+        "PhysicsUser": "TwnObj_City_GerudoMayerHouse_A_01"
+    },
+    "TwnObj_City_GerudoOutsideRock_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GerudoOutsideRock_A_01"
+    },
+    "TwnObj_City_GoronRock_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GoronRock_A_01"
+    },
+    "TwnObj_City_GoronRock_A_02_Far": {
+        "PhysicsUser": "TwnObj_City_GoronRock_A_02"
+    },
+    "TwnObj_City_GoronRock_A_03_Far": {
+        "PhysicsUser": "TwnObj_City_GoronRock_A_03"
+    },
+    "TwnObj_City_GoronRock_A_04_Far": {
+        "PhysicsUser": "TwnObj_City_GoronRock_A_04"
+    },
+    "TwnObj_City_GoronStatue_A_01_Far": {
+        "PhysicsUser": "TwnObj_City_GoronStatue_A_01"
+    },
+    "TwnObj_City_GoronStatue_B_01_Far": {
+        "PhysicsUser": "TwnObj_City_GoronStatue_B_01"
+    },
+    "TwnObj_City_GoronStatue_C_01_Far": {
+        "PhysicsUser": "TwnObj_City_GoronStatue_C_01"
+    },
+    "TwnObj_CommissionPlace_A_01_Far": {
+        "PhysicsUser": "TwnObj_CommissionPlace_A_01",
+        "SlinkUser": "TwnObj_CommissionPlace_A_01"
+    },
+    "TwnObj_FairySpring_A_01_Far": {
+        "ElinkUser": "TwnObj_FairySpring_A_01",
+        "GParamUser": "TwnObj_FairySpring_A_01",
+        "PhysicsUser": "TwnObj_FairySpring_A_01"
+    },
+    "TwnObj_FairySpring_B_01_Far": {
+        "PhysicsUser": "TwnObj_FairySpring_B_01"
+    },
+    "TwnObj_FairySpring_C_01_Far": {
+        "PhysicsUser": "TwnObj_FairySpring_C_01"
+    },
+    "TwnObj_FairySpring_D_01_Far": {
+        "PhysicsUser": "TwnObj_FairySpring_D_01"
+    },
+    "TwnObj_FairySpring_E_01_Far": {
+        "ElinkUser": "TwnObj_FairySpring_E_01",
+        "PhysicsUser": "TwnObj_FairySpring_E_01"
+    },
+    "TwnObj_FirstHighlandRuin_A_01_Far": {
+        "PhysicsUser": "TwnObj_FirstHighlandRuin_A_01"
+    },
+    "TwnObj_FirstHighlandRuin_A_02_Far": {
+        "PhysicsUser": "TwnObj_FirstHighlandRuin_A_02"
+    },
+    "TwnObj_FirstHighlandRuin_A_03_Far": {
+        "PhysicsUser": "TwnObj_FirstHighlandRuin_A_03"
+    },
+    "TwnObj_FirstHighlandRuin_A_04_Far": {
+        "PhysicsUser": "TwnObj_FirstHighlandRuin_A_04"
+    },
+    "TwnObj_GanonGrudgeSolid_Eyeball_A_01": {
+        "SlinkUser": "TwnObj_GanonGrudgeSolid_Eyeball"
+    },
+    "TwnObj_Hermitage_A_01_Far": {
+        "PhysicsUser": "TwnObj_Hermitage_A_01"
+    },
+    "TwnObj_HyruleCastleAncientPole_A_01_Far": {
+        "ElinkUser": "TwnObj_HyruleCastleAncientPole_A_01"
+    },
+    "TwnObj_HyruleCastleAncientPole_A_02_Far": {
+        "ElinkUser": "TwnObj_HyruleCastleAncientPole_A_02"
+    },
+    "TwnObj_HyruleCastleGround_Area_05_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Area_05_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Area_06_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Area_06_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Area_07_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Area_07_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Area_08_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Area_08_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Cliff_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Cliff_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Cliff_A_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Cliff_A_02"
+    },
+    "TwnObj_HyruleCastleGround_Cliff_A_03_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Cliff_A_03"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_01"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_02"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_03_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_03"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_04_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_04"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_05_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_05"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_06_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_06"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_07_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_07"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_08_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_08"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_09_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_09"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_10_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_10"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_11_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_11"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_12_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_12"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_13_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_13"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_14_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_14"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_15_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_15"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_16_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_16"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_17_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_17"
+    },
+    "TwnObj_HyruleCastleGround_Culling_A_18_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleGround_Culling_A_18"
+    },
+    "TwnObj_HyruleCastleInside_LibraryPillar_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleInside_LibraryPillar_A_01"
+    },
+    "TwnObj_HyruleCastleInside_LibraryPillar_A_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleInside_LibraryPillar_A_02"
+    },
+    "TwnObj_HyruleCastleWallConnect_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_A_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_B_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_B_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_C_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_C_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_D_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_D_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_D_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_D_02"
+    },
+    "TwnObj_HyruleCastleWallConnect_E_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_E_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_F_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_F_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_F_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_F_02"
+    },
+    "TwnObj_HyruleCastleWallConnect_G_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_G_01"
+    },
+    "TwnObj_HyruleCastleWallConnect_G_03_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallConnect_G_03"
+    },
+    "TwnObj_HyruleCastleWallGate_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallGate_A_01"
+    },
+    "TwnObj_HyruleCastleWallPartsEndBreak_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallPartsEndBreak_A_01"
+    },
+    "TwnObj_HyruleCastleWallPartsEndBreak_A_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallPartsEndBreak_A_02"
+    },
+    "TwnObj_HyruleCastleWallPartsEndBreak_A_03_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallPartsEndBreak_A_03"
+    },
+    "TwnObj_HyruleCastleWallPartsEnd_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallPartsEnd_A_01"
+    },
+    "TwnObj_HyruleCastleWallParts_A_02_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallParts_A_02"
+    },
+    "TwnObj_HyruleCastleWallParts_A_03_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallParts_A_03"
+    },
+    "TwnObj_HyruleCastleWallParts_B_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallParts_B_01"
+    },
+    "TwnObj_HyruleCastleWallParts_C_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallParts_C_01"
+    },
+    "TwnObj_HyruleCastleWallParts_D_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallParts_D_01"
+    },
+    "TwnObj_HyruleCastleWallWatchTower_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallWatchTower_A_01"
+    },
+    "TwnObj_HyruleCastleWallWatchTower_B_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallWatchTower_B_01"
+    },
+    "TwnObj_HyruleCastleWallWatchTower_C_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallWatchTower_C_01"
+    },
+    "TwnObj_HyruleCastleWallWatchTower_D_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastleWallWatchTower_D_01"
+    },
+    "TwnObj_HyruleCastle_CitadelBase_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastle_CitadelBase_A_01"
+    },
+    "TwnObj_HyruleCastle_SecondCitadel_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastle_SecondCitadel_A_01"
+    },
+    "TwnObj_HyruleCastle_ThirdCitadel_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCastle_ThirdCitadel_A_01"
+    },
+    "TwnObj_HyruleCityBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_HyruleCityBridge_A_01"
+    },
+    "TwnObj_RuinedTownBrokenBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_RuinedTownBrokenBridge_A_01"
+    },
+    "TwnObj_SmallOasisHotel_A_01_Far": {
+        "GParamUser": "TwnObj_SmallOasisHotel_A_01",
+        "PhysicsUser": "TwnObj_SmallOasisHotel_A_01"
+    },
+    "TwnObj_SmallOasisTent_A_01_Far": {
+        "GParamUser": "TwnObj_SmallOasisTent_A_01",
+        "PhysicsUser": "TwnObj_SmallOasisTent_A_01"
+    },
+    "TwnObj_SmallOasisTent_A_02_Far": {
+        "GParamUser": "TwnObj_SmallOasisTent_A_02",
+        "PhysicsUser": "TwnObj_SmallOasisTent_A_02"
+    },
+    "TwnObj_StableHostelPinwheel_A_01": {
+        "SlinkUser": "TwnObj_StableHostelPinwheel"
+    },
+    "TwnObj_StableHostel_A_01_Far": {
+        "PhysicsUser": "TwnObj_StableHostel_A_01"
+    },
+    "TwnObj_StoneBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_StoneBridge_A_01"
+    },
+    "TwnObj_TempleOfTime_Base_A_02_Far": {
+        "GParamUser": "TwnObj_TempleOfTime_Base_A_02",
+        "PhysicsUser": "TwnObj_TempleOfTime_Base_A_02"
+    },
+    "TwnObj_TempleOfTime_Gate_B_02_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_Gate_B_02"
+    },
+    "TwnObj_TempleOfTime_GrandStairStep_A_01_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_GrandStairStep_A_01"
+    },
+    "TwnObj_TempleOfTime_GrandStair_A_01_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_GrandStair_A_01"
+    },
+    "TwnObj_TempleOfTime_WallSnow_C_01_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_WallSnow_C_01"
+    },
+    "TwnObj_TempleOfTime_WallSnow_C_02_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_WallSnow_C_02"
+    },
+    "TwnObj_TempleOfTime_WallSnow_C_03_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_WallSnow_C_03"
+    },
+    "TwnObj_TempleOfTime_WallSnow_C_04_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_WallSnow_C_04"
+    },
+    "TwnObj_TempleOfTime_Wall_B_04_Far": {
+        "PhysicsUser": "TwnObj_TempleOfTime_Wall_B_04"
+    },
+    "TwnObj_Village_AncientCivilLaboSignboard_A_01_Stump": {
+        "ModelUser": "TwnObj_Village_AncientCivilLaboSignboard_A_01"
+    },
+    "TwnObj_Village_FishingBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingBridge_A_01"
+    },
+    "TwnObj_Village_FishingCrowsNest_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingCrowsNest_A_01"
+    },
+    "TwnObj_Village_FishingHouse_L_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingHouse_L_A_01"
+    },
+    "TwnObj_Village_FishingHouse_S_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingHouse_S_A_01"
+    },
+    "TwnObj_Village_FishingHouse_S_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingHouse_S_A_02"
+    },
+    "TwnObj_Village_FishingMayerHouse_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingMayerHouse_A_01"
+    },
+    "TwnObj_Village_FishingRock_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingRock_A_01"
+    },
+    "TwnObj_Village_FishingRock_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_FishingRock_A_02"
+    },
+    "TwnObj_Village_HatenoAnimalShed_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoAnimalShed_A_01"
+    },
+    "TwnObj_Village_HatenoAnimalShed_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoAnimalShed_A_02"
+    },
+    "TwnObj_Village_HatenoBarn_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoBarn_A_01"
+    },
+    "TwnObj_Village_HatenoChickenShed_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoChickenShed_A_01"
+    },
+    "TwnObj_Village_HatenoChurch_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoChurch_A_01"
+    },
+    "TwnObj_Village_HatenoGuidePost_A_01_Stump": {
+        "ModelUser": "TwnObj_Village_HatenoGuidePost_A_01"
+    },
+    "TwnObj_Village_HatenoHouseSet_A_S_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouseSet_A_S_01"
+    },
+    "TwnObj_Village_HatenoHouseSet_A_S_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouseSet_A_S_02"
+    },
+    "TwnObj_Village_HatenoHouse_A_L_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_L_01"
+    },
+    "TwnObj_Village_HatenoHouse_A_L_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_L_02"
+    },
+    "TwnObj_Village_HatenoHouse_A_L_03_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_L_03"
+    },
+    "TwnObj_Village_HatenoHouse_A_L_04_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_L_04"
+    },
+    "TwnObj_Village_HatenoHouse_A_M_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_M_01"
+    },
+    "TwnObj_Village_HatenoHouse_A_M_03_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_M_03"
+    },
+    "TwnObj_Village_HatenoHouse_A_S_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_S_01"
+    },
+    "TwnObj_Village_HatenoHouse_A_S_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoHouse_A_S_02"
+    },
+    "TwnObj_Village_HatenoKitchen_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoKitchen_A_01"
+    },
+    "TwnObj_Village_HatenoLamp_A_04_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoLamp_A_04"
+    },
+    "TwnObj_Village_HatenoPharmacy_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoPharmacy_A_01"
+    },
+    "TwnObj_Village_HatenoRock_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoRock_A_01"
+    },
+    "TwnObj_Village_HatenoRock_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoRock_A_02"
+    },
+    "TwnObj_Village_HatenoRock_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoRock_A_03"
+    },
+    "TwnObj_Village_HatenoSakuradaHouse_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoSakuradaHouse_A_01"
+    },
+    "TwnObj_Village_HatenoSakuradaHouse_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoSakuradaHouse_A_02"
+    },
+    "TwnObj_Village_HatenoSakuradaHouse_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoSakuradaHouse_A_03"
+    },
+    "TwnObj_Village_HatenoTailor_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoTailor_A_01"
+    },
+    "TwnObj_Village_HatenoWindmillShaft_A_01": {
+        "SlinkUser": "TwnObj_Village_HatenoWindmillShaft"
+    },
+    "TwnObj_Village_HatenoWindmill_Wing_A_01": {
+        "SlinkUser": "TwnObj_Village_HatenoWindmill_Wing"
+    },
+    "TwnObj_Village_HatenoWoodBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_HatenoWoodBridge_A_01"
+    },
+    "TwnObj_Village_Hatenodoor_A_01": {
+        "SlinkUser": "TwnObj_Village_Hatenodoor"
+    },
+    "TwnObj_Village_IchikaraGate_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_IchikaraGate_A_01"
+    },
+    "TwnObj_Village_IchikaraHouse_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_IchikaraHouse_A_01"
+    },
+    "TwnObj_Village_IchikaraHouse_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_IchikaraHouse_A_03"
+    },
+    "TwnObj_Village_IchikaraHouse_A_05_Far": {
+        "PhysicsUser": "TwnObj_Village_IchikaraHouse_A_05"
+    },
+    "TwnObj_Village_IchikaraSpring_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_IchikaraSpring_A_01",
+        "SlinkUser": "TwnObj_Village_IchikaraSpring_A_01"
+    },
+    "TwnObj_Village_KorokTree_LL_A_01": {
+        "GParamUser": "Tree_LL"
+    },
+    "TwnObj_Village_KorokTree_LL_B_01": {
+        "GParamUser": "Tree_LL"
+    },
+    "TwnObj_Village_Korok_DekuTree_A_01_Far": {
+        "GParamUser": "TwnObj_Village_Korok_DekuTree_A_01",
+        "PhysicsUser": "TwnObj_Village_Korok_DekuTree_A_01",
+        "SlinkUser": "TwnObj_Village_Korok_DekuTree_A_01",
+        "UMiiUser": "TwnObj_Village_Korok_DekuTree_A_01"
+    },
+    "TwnObj_Village_RitoBase_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBase_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoBase_A_01"
+    },
+    "TwnObj_Village_RitoBase_B_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBase_B_01",
+        "PhysicsUser": "TwnObj_Village_RitoBase_B_01"
+    },
+    "TwnObj_Village_RitoBase_C_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBase_C_01",
+        "PhysicsUser": "TwnObj_Village_RitoBase_C_01"
+    },
+    "TwnObj_Village_RitoBase_D_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBase_D_01",
+        "PhysicsUser": "TwnObj_Village_RitoBase_D_01"
+    },
+    "TwnObj_Village_RitoBridge_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBridge_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoBridge_A_01"
+    },
+    "TwnObj_Village_RitoBridge_B_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBridge_B_01",
+        "PhysicsUser": "TwnObj_Village_RitoBridge_B_01"
+    },
+    "TwnObj_Village_RitoBridge_C_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoBridge_C_01",
+        "PhysicsUser": "TwnObj_Village_RitoBridge_C_01"
+    },
+    "TwnObj_Village_RitoGate_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_RitoGate_A_01"
+    },
+    "TwnObj_Village_RitoGuidePost_A_02_Stump": {
+        "ModelUser": "TwnObj_Village_RitoGuidePost_A_02"
+    },
+    "TwnObj_Village_RitoGuidePost_A_03_Stump": {
+        "ModelUser": "TwnObj_Village_RitoGuidePost_A_03"
+    },
+    "TwnObj_Village_RitoHotel_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoHotel_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoHotel_A_01"
+    },
+    "TwnObj_Village_RitoHouse_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoHouse_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoHouse_A_01"
+    },
+    "TwnObj_Village_RitoHouse_A_02_Far": {
+        "GParamUser": "TwnObj_Village_RitoHouse_A_02",
+        "PhysicsUser": "TwnObj_Village_RitoHouse_A_02"
+    },
+    "TwnObj_Village_RitoHouse_A_04_Far": {
+        "GParamUser": "TwnObj_Village_RitoHouse_A_04",
+        "PhysicsUser": "TwnObj_Village_RitoHouse_A_04"
+    },
+    "TwnObj_Village_RitoHouse_A_05_Far": {
+        "GParamUser": "TwnObj_Village_RitoHouse_A_05",
+        "PhysicsUser": "TwnObj_Village_RitoHouse_A_05"
+    },
+    "TwnObj_Village_RitoHouse_A_06_Far": {
+        "PhysicsUser": "TwnObj_Village_RitoHouse_A_06"
+    },
+    "TwnObj_Village_RitoMayorHouse_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoMayorHouse_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoMayorHouse_A_01"
+    },
+    "TwnObj_Village_RitoPharmacy_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoPharmacy_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoPharmacy_A_01"
+    },
+    "TwnObj_Village_RitoRock_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoRock_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoRock_A_01"
+    },
+    "TwnObj_Village_RitoRock_B_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoRock_B_01",
+        "PhysicsUser": "TwnObj_Village_RitoRock_B_01"
+    },
+    "TwnObj_Village_RitoRock_D_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoRock_D_01",
+        "PhysicsUser": "TwnObj_Village_RitoRock_D_01"
+    },
+    "TwnObj_Village_RitoRock_F_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoRock_F_01",
+        "PhysicsUser": "TwnObj_Village_RitoRock_F_01"
+    },
+    "TwnObj_Village_RitoTailor_A_01_Far": {
+        "GParamUser": "TwnObj_Village_RitoTailor_A_01",
+        "PhysicsUser": "TwnObj_Village_RitoTailor_A_01"
+    },
+    "TwnObj_Village_RitoWindmillWheel_A_01": {
+        "SlinkUser": "TwnObj_Village_RitoWindmillWheel"
+    },
+    "TwnObj_Village_RitoWindmillWheel_A_02": {
+        "SlinkUser": "TwnObj_Village_RitoWindmillWheel"
+    },
+    "TwnObj_Village_SheikerCliff_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_SheikerCliff_A_01"
+    },
+    "TwnObj_Village_SheikerCliff_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_SheikerCliff_A_02"
+    },
+    "TwnObj_Village_SheikerCliff_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_SheikerCliff_A_03"
+    },
+    "TwnObj_Village_SheikerWaterWheel_A_01": {
+        "SlinkUser": "TwnObj_Village_SheikerWaterWheel"
+    },
+    "TwnObj_Village_ZoraBailey_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBailey_A_01"
+    },
+    "TwnObj_Village_ZoraBase_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_A_01"
+    },
+    "TwnObj_Village_ZoraBase_B_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_B_01"
+    },
+    "TwnObj_Village_ZoraBase_C_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_C_01"
+    },
+    "TwnObj_Village_ZoraBase_D_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_D_01"
+    },
+    "TwnObj_Village_ZoraBase_E_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_E_01"
+    },
+    "TwnObj_Village_ZoraBase_F_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBase_F_01"
+    },
+    "TwnObj_Village_ZoraBridge_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBridge_A_02"
+    },
+    "TwnObj_Village_ZoraBridge_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBridge_A_03"
+    },
+    "TwnObj_Village_ZoraBridge_B_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBridge_B_01"
+    },
+    "TwnObj_Village_ZoraBridge_B_02_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraBridge_B_02"
+    },
+    "TwnObj_Village_ZoraHotel_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraHotel_A_01"
+    },
+    "TwnObj_Village_ZoraPillar_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraPillar_A_01"
+    },
+    "TwnObj_Village_ZoraPillar_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraPillar_A_02"
+    },
+    "TwnObj_Village_ZoraPillar_A_03_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraPillar_A_03"
+    },
+    "TwnObj_Village_ZoraPillar_B_02_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraPillar_B_02"
+    },
+    "TwnObj_Village_ZoraRoyalRoom_A_01_Far": {
+        "ElinkUser": "TwnObj_Village_ZoraRoyalRoom_A_01",
+        "PhysicsUser": "TwnObj_Village_ZoraRoyalRoom_A_01"
+    },
+    "TwnObj_Village_ZoraRoyalRoom_A_02_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraRoyalRoom_A_02"
+    },
+    "TwnObj_Village_ZoraShop_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraShop_A_01"
+    },
+    "TwnObj_Village_ZoraStatue_A_01_Far": {
+        "PhysicsUser": "TwnObj_Village_ZoraStatue_A_01"
+    },
+    "TwnObj_WaterFallHyruleCastleGroundFade_A_02_Far": {
+        "ElinkUser": "TwnObj_WaterFallHyruleCastleGroundFade_A_02"
+    },
+    "TwnObj_WoodenFrameworkBridge_A_01_Far": {
+        "PhysicsUser": "TwnObj_WoodenFrameworkBridge_A_01"
+    },
+    "WaterPump": {
+        "PhysicsUser": "DgnObj_WaterPump_A_01"
+    },
+    "Weapon_Bow_001": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_002": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_006": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_011": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_014": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_015": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_023": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_030": {
+        "ElinkUser": "Weapon_Bow",
+        "PhysicsUser": "Weapon_Bow_030_Metal"
+    },
+    "Weapon_Bow_032": {
+        "PhysicsUser": "Weapon_Bow_032_Metal"
+    },
+    "Weapon_Bow_033": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_035": {
+        "ElinkUser": "Weapon_Bow",
+        "PhysicsUser": "Weapon_Bow_035_Metal"
+    },
+    "Weapon_Bow_036": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_038": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Bow_072": {
+        "ElinkUser": "Weapon_Bow"
+    },
+    "Weapon_Shield_001": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_002": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_003": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_004": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_005": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_006": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_007": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_008": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_009": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_016": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_017": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_018": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_021": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_022": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_023": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_025": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_026": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_030": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_031": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_032": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_033": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_034": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_035": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_036": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_037": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_040": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_041": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_042": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Shield_057": {
+        "ElinkUser": "Weapon_Shield"
+    },
+    "Weapon_Spear_001": {
+        "PhysicsUser": "Weapon_Spear_001_Metal"
+    },
+    "Weapon_Spear_003": {
+        "PhysicsUser": "Weapon_Spear_003_Metal"
+    },
+    "Weapon_Spear_005": {
+        "PhysicsUser": "Weapon_Spear_005_Wood"
+    },
+    "Weapon_Spear_022": {
+        "PhysicsUser": "Weapon_Spear_022_Metal"
+    },
+    "Weapon_Spear_031": {
+        "PhysicsUser": "Weapon_Spear_031_Metal"
+    },
+    "Weapon_Sword_014": {
+        "PhysicsUser": "Weapon_Sword_014_Stone"
+    },
+    "Weapon_Sword_015": {
+        "PhysicsUser": "Weapon_Sword_015_Stone"
+    },
+    "Weapon_Sword_019": {
+        "PhysicsUser": "Weapon_Sword_019_Bone"
+    },
+    "Weapon_Sword_020": {
+        "PhysicsUser": "Weapon_Sword_020_Bone"
+    },
+    "Weapon_Sword_048": {
+        "PhysicsUser": "Weapon_Sword_048_Metal"
+    },
+    "Weapon_Sword_049": {
+        "PhysicsUser": "Weapon_Sword_049_Metal"
+    },
+    "Weapon_Sword_050": {
+        "PhysicsUser": "Weapon_Sword_050_Metal"
+    },
+    "Weapon_Sword_060": {
+        "PhysicsUser": "Weapon_Sword_060_Metal"
+    }
+}

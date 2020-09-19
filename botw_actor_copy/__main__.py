@@ -36,17 +36,22 @@ def main() -> None:
     model_dir: str = generate_path(directory / "content" / "Model")
     pack_dir: str = generate_path(directory / "content" / "Pack")
     icon_dir: str = generate_path(directory / "content" / "UI" / "StockItem")
+    basics: dict = {
+        "source_actor": args.source_actor,
+        "target_actor": args.target_actor,
+        "bigendian": args.bigendian,
+    }
 
-    actorpack.copy_actor(directory, args.source_actor, args.target_actor, args.bigendian)
+    actorpack.copy_actor(directory, basics)
 
     actorinfo_path: Path = directory / "content" / "Actor" / "ActorInfo.product.sbyml"
-    actorinfo.copy_actor(actorinfo_path, args.source_actor, args.target_actor, args.bigendian)
+    actorinfo.copy_actor(actorinfo_path, basics)
 
     bootup_path: Path = directory / "content" / "Pack" / "Bootup.pack"
-    bootup.copy_actor(bootup_path, args.source_actor, args.target_actor, args.bigendian)
+    bootup.copy_actor(bootup_path, basics)
 
     lang_path: Path = directory / "content" / "Pack" / f"Bootup_{bcmlutil.get_settings('lang')}.pack"
-    language.copy_actor(lang_path, args.source_actor, args.target_actor, args.bigendian)
+    language.copy_actor(lang_path, basics)
 
     try:
         if not Path(directory / "content" / "Model" / f"{args.target_actor}.sbfres").exists():
@@ -76,15 +81,21 @@ def main() -> None:
                 )
     except FileNotFoundError:
         print(
-            f"{args.source_actor} seems to use a different actor's model, skipping model copy..."
+            f"{args.source_actor} seems to use a different actor's model or no model, skipping model copy..."
         )
         pass
 
-    try:
+    if not actorpack.icon_name == "":
         shutil.copy(
-            bcmlutil.get_game_file(f"UI/StockItem/{args.source_actor}.sbitemico"),
+            bcmlutil.get_game_file(f"UI/StockItem/{actorpack.icon_name}.sbitemico"),
             directory / "content" / "UI" / "StockItem" / f"{args.target_actor}.sbitemico",
         )
-    except FileNotFoundError:
-        print(f"{args.source_actor} seems to use a different actor's icon, skipping icon copy...")
-        pass
+    else:
+        try:
+            shutil.copy(
+                bcmlutil.get_game_file(f"UI/StockItem/{args.source_actor}.sbitemico"),
+                directory / "content" / "UI" / "StockItem" / f"{args.target_actor}.sbitemico",
+            )
+        except FileNotFoundError:
+            print(f"{args.source_actor} seems to use no icon, skipping icon copy...")
+            pass
