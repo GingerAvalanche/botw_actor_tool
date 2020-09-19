@@ -103,9 +103,7 @@ def copy_actor(directory: Path, basics: dict, force: dict):
         bml_data = actorpack_new.files[old_bml_name]
         bml_io: oead.aamp.ParameterIO = oead.aamp.ParameterIO.from_binary(bml_data)
         modeldata = bml_io.lists["ModelData"].lists["ModelData_0"]
-        old_folder = str(modeldata.objects["Base"].params["Folder"])
         modeldata.objects["Base"].params["Folder"] = oead.FixedSafeString64(new_folder)
-        old_unit = str(modeldata.lists["Unit"].objects["Unit_0"].params["UnitName"])
         modeldata.lists["Unit"].objects["Unit_0"].params["UnitName"] = oead.FixedSafeString64(
             basics["target_actor"]
         )
