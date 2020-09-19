@@ -20,6 +20,33 @@ def main() -> None:
     parser.add_argument(
         "-b", "--bigendian", help="Use big endian mode (for Wii U)", action="store_true",
     )
+    parser.add_argument(
+        "-0", "--DamageParamUser", help="Force renaming of bdmgparam", action="store_true",
+    )
+    parser.add_argument(
+        "-1", "--DropTableUser", help="Force renaming of bdrop", action="store_true",
+    )
+    parser.add_argument(
+        "-2", "--GParamUser", help="Force renaming of bgparamlist", action="store_true",
+    )
+    parser.add_argument(
+        "-3", "--LifeConditionUser", help="Force renaming of blifecondition", action="store_true",
+    )
+    parser.add_argument(
+        "-4", "--ModelUser", help="Force renaming of bmodellist", action="store_true",
+    )
+    parser.add_argument(
+        "-5", "--PhysicsUser", help="Force renaming of bphysics", action="store_true",
+    )
+    parser.add_argument(
+        "-6", "--RecipeUser", help="Force renaming of brecipe", action="store_true",
+    )
+    parser.add_argument(
+        "-7", "--ShopDataUser", help="Force renaming of bshop", action="store_true",
+    )
+    parser.add_argument(
+        "-8", "--UMiiUser", help="Force renaming of bumii", action="store_true",
+    )
 
     args = parser.parse_args()
     directory: Path = Path(args.directory)
@@ -41,11 +68,22 @@ def main() -> None:
         "target_actor": args.target_actor,
         "bigendian": args.bigendian,
     }
+    force: dict = {
+        "DamageParamUser": args.DamageParamUser,
+        "DropTableUser": args.DropTableUser,
+        "GParamUser": args.GParamUser,
+        "LifeConditionUser": args.LifeConditionUser,
+        "ModelUser": args.ModelUser,
+        "PhysicsUser": args.PhysicsUser,
+        "RecipeUser": args.RecipeUser,
+        "ShopDataUser": args.ShopDataUser,
+        "UMiiUser": args.UMiiUser,
+    }
 
-    actorpack.copy_actor(directory, basics)
+    actorpack.copy_actor(directory, basics, force)
 
     actorinfo_path: Path = directory / "content" / "Actor" / "ActorInfo.product.sbyml"
-    actorinfo.copy_actor(actorinfo_path, basics)
+    actorinfo.copy_actor(actorinfo_path, basics, actorpack.bfres_name)
 
     bootup_path: Path = directory / "content" / "Pack" / "Bootup.pack"
     bootup.copy_actor(bootup_path, basics)
@@ -53,22 +91,36 @@ def main() -> None:
     lang_path: Path = directory / "content" / "Pack" / f"Bootup_{bcmlutil.get_settings('lang')}.pack"
     language.copy_actor(lang_path, basics)
 
+    path: str
+    if actorpack.bfres_name == "":
+        path = f"Model/{args.source_actor}.sbfres"
+    elif force["ModelUser"] and not actorpack.bfres_name == "":
+        path = f"Model/{actorpack.bfres_name}.sbfres"
     try:
         if not Path(directory / "content" / "Model" / f"{args.target_actor}.sbfres").exists():
             shutil.copy(
-                bcmlutil.get_game_file(f"Model/{args.source_actor}.sbfres"),
+                bcmlutil.get_game_file(path),
                 directory / "content" / "Model" / f"{args.target_actor}.sbfres",
             )
+    except FileNotFoundError:
+        print(f"Could not find {args.source_actor}'s model. Skipping model copy...")
+        pass
+
+    if actorpack.bfres_name == "":
+        path = args.source_actor
+    elif force["ModelUser"] and not actorpack.bfres_name == "":
+        path = actorpack.bfres_name
+    try:
         if args.bigendian:
             if not Path(
                 directory / "content" / "Model" / f"{args.target_actor}.Tex1.sbfres"
             ).exists():
                 shutil.copy(
-                    bcmlutil.get_game_file(f"Model/{args.source_actor}.Tex1.sbfres"),
+                    bcmlutil.get_game_file(f"Model/{path}.Tex1.sbfres"),
                     directory / "content" / "Model" / f"{args.target_actor}.Tex1.sbfres",
                 )
                 shutil.copy(
-                    bcmlutil.get_game_file(f"Model/{args.source_actor}.Tex2.sbfres"),
+                    bcmlutil.get_game_file(f"Model/{path}.Tex2.sbfres"),
                     directory / "content" / "Model" / f"{args.target_actor}.Tex2.sbfres",
                 )
         else:
@@ -76,26 +128,24 @@ def main() -> None:
                 directory / "content" / "Model" / f"{args.target_actor}.Tex.sbfres"
             ).exists():
                 shutil.copy(
-                    bcmlutil.get_game_file(f"Model/{args.source_actor}.Tex.sbfres"),
+                    bcmlutil.get_game_file(f"Model/{path}.Tex.sbfres"),
                     directory / "content" / "Model" / f"{args.target_actor}.Tex.sbfres",
                 )
     except FileNotFoundError:
         print(
-            f"{args.source_actor} seems to use a different actor's model or no model, skipping model copy..."
+            f"Could not find {args.source_actor}'s textures. Was the bigendian flag set wrong? Skipping texture copy..."
         )
         pass
 
-    if not actorpack.icon_name == "":
+    if actorpack.icon_name == "":
+        path = f"UI/StockItem/{args.source_actor}.sbitemico"
+    elif force["ModelUser"] and not actorpack.icon_name == "":
+        path = f"UI/StockItem/{actorpack.icon_name}.sbitemico"
+    try:
         shutil.copy(
-            bcmlutil.get_game_file(f"UI/StockItem/{actorpack.icon_name}.sbitemico"),
+            bcmlutil.get_game_file(path),
             directory / "content" / "UI" / "StockItem" / f"{args.target_actor}.sbitemico",
         )
-    else:
-        try:
-            shutil.copy(
-                bcmlutil.get_game_file(f"UI/StockItem/{args.source_actor}.sbitemico"),
-                directory / "content" / "UI" / "StockItem" / f"{args.target_actor}.sbitemico",
-            )
-        except FileNotFoundError:
-            print(f"{args.source_actor} seems to use no icon, skipping icon copy...")
-            pass
+    except FileNotFoundError:
+        print(f"{args.source_actor} doesn't use an icon, skipping icon copy...")
+        pass
