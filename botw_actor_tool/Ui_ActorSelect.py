@@ -1,7 +1,7 @@
 import wx
 
-import actorinfo
-from util import BatSettings, _set_dark_mode
+from . import actorinfo
+from .util import BatSettings, _set_dark_mode
 
 
 class UiActorSelect(wx.Dialog):

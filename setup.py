@@ -22,5 +22,5 @@ setuptools.setup(
         "Development Status :: 3 - Alpha",
     ],
     python_requires=">=3.7.4",
-    install_requires=["bcml>=3.0.0b25", "oead>=0.11.2",],
+    install_requires=["wxPython>=4.1.0", "oead>=0.11.2", "PyMsyt>=0.1.5"],
 )

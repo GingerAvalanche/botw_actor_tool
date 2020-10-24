@@ -1,6 +1,6 @@
 import wx
 
-import util
+from . import util
 
 
 class UiTexts(wx.Panel):

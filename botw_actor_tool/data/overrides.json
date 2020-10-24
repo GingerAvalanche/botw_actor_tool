@@ -1,0 +1,136 @@
+{
+    "STANDARD_OVERRIDES": {
+        "OVERRIDE_IS_EVENT_ASSOCIATED": {
+            "IsInside_Dungeon": true,
+            "MapTower_07_Demo": false
+        },
+        "OVERRIDE_IS_ONE_TRIGGER": {
+            "Clear_": true,
+            "CompleteTreasure_": true,
+            "Enter_": true,
+            "IsGet_": true,
+            "Open_": true
+        },
+        "OVERRIDE_IS_PROGRAM_READABLE": {},
+        "OVERRIDE_IS_PROGRAM_WRITABLE": {
+            "MapTower_07_Demo": false
+        },
+        "OVERRIDE_IS_SAVE": {
+            "CompleteTreasure_": true,
+            "Enter_": true,
+            "EquipTime_": true,
+            "IsGet_": true,
+            "IsInside_Dungeon": false,
+            "IsNewPictureBook_": true,
+            "IsRegisteredPictureBook_": true,
+            "Location_": true,
+            "PictureBookSize_": true,
+            "PorchTime_": true
+        },
+        "OVERRIDE_RESET_TYPE": {
+            "Clear_": 0,
+            "DgnObj_EntranceTerminal": 0,
+            "EquipTime_": 0,
+            "IsGet_": 0,
+            "IsInside_Dungeon": 0,
+            "IsNewPictureBook_": 0,
+            "IsRegisteredPictureBook_": 0,
+            "Location_": 0,
+            "MapTower_07_Demo": 0,
+            "Open_": 0,
+            "PictureBookSize_": 0,
+            "PorchTime_": 0
+        }
+    },
+    "BOOL_OVERRIDES": {
+        "OVERRIDE_BOOL_CATEGORY": {
+            "Clear_": 1,
+            "IsRegisteredPictureBook_AncientArrow": 5,
+            "IsRegisteredPictureBook_Animal": 2,
+            "IsRegisteredPictureBook_Bee": 4,
+            "IsRegisteredPictureBook_BombArrow": 5,
+            "IsRegisteredPictureBook_ElectricArrow": 5,
+            "IsRegisteredPictureBook_Enemy": 3,
+            "IsRegisteredPictureBook_FireArrow": 5,
+            "IsRegisteredPictureBook_GameRomHorse": 2,
+            "IsRegisteredPictureBook_IceArrow": 5,
+            "IsRegisteredPictureBook_Item_Fish": 2,
+            "IsRegisteredPictureBook_Item_Insect": 2,
+            "IsRegisteredPictureBook_Item_Fruit": 4,
+            "IsRegisteredPictureBook_Item_Mushroom": 4,
+            "IsRegisteredPictureBook_Item_Plant": 4,
+            "IsRegisteredPictureBook_NormalArrow": 5,
+            "IsRegisteredPictureBook_Obj_Mineral": 6,
+            "IsRegisteredPictureBook_RemainsFire_Drone": 3,
+            "IsRegisteredPictureBook_TBox": 6,
+            "IsRegisteredPictureBook_Weapon": 5,
+            "MainField_Npc_HiddenKorok": 11,
+            "_Dark": 7,
+            "_Dragon_": 7,
+            "_Ganon": 7,
+            "_Gold": 7,
+            "_SiteBoss_": 7
+        },
+        "OVERRIDE_BOOL_INIT_VALUE": {}
+    },
+    "BOOL_ARRAY_OVERRIDES": {
+        "OVERRIDE_BOOL_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_BOOL_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_BOOL_ARRAY_MIN_VALUE": {}
+    },
+    "S32_OVERRRIDES": {
+        "OVERRIDE_S32_INIT_VALUE": {},
+        "OVERRIDE_S32_MAX_VALUE": {},
+        "OVERRIDE_S32_MIN_VALUE": {}
+    },
+    "S32_ARRAY_OVERRIDES": {
+        "OVERRIDE_S32_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_S32_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_S32_ARRAY_MIN_VALUE": {}
+    },
+    "F32_OVERRIDES": {
+        "OVERRIDE_F32_INIT_VALUE": {},
+        "OVERRIDE_F32_MAX_VALUE": {},
+        "OVERRIDE_F32_MIN_VALUE": {}
+    },
+    "F32_ARRAY_OVERRIDES": {
+        "OVERRIDE_F32_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_F32_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_F32_ARRAY_MIN_VALUE": {}
+    },
+    "STRING_OVERRIDES": {
+        "OVERRIDE_STRING_INIT_VALUE": {},
+        "OVERRIDE_STRING_MAX_VALUE": {},
+        "OVERRIDE_STRING_MIN_VALUE": {}
+    },
+    "STRING_ARRAY_OVERRIDES": {
+        "OVERRIDE_STRING_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_STRING_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_STRING_ARRAY_MIN_VALUE": {}
+    },
+    "VEC2_OVERRIDES": {
+        "OVERRIDE_VEC2_INIT_VALUE": {},
+        "OVERRIDE_VEC2_MAX_VALUE": {},
+        "OVERRIDE_VEC2_MIN_VALUE": {}
+    },
+    "VEC2_ARRAY_OVERRIDES": {
+        "OVERRIDE_VEC2_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_VEC2_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_VEC2_ARRAY_MIN_VALUE": {}
+    },
+    "VEC3_OVERRIDES": {
+        "OVERRIDE_VEC3_INIT_VALUE": {},
+        "OVERRIDE_VEC3_MAX_VALUE": {},
+        "OVERRIDE_VEC3_MIN_VALUE": {}
+    },
+    "VEC3_ARRAY_OVERRIDES": {
+        "OVERRIDE_VEC3_ARRAY_INIT_VALUE": {},
+        "OVERRIDE_VEC3_ARRAY_MAX_VALUE": {},
+        "OVERRIDE_VEC3_ARRAY_MIN_VALUE": {}
+    },
+    "VEC4_OVERRIDES": {
+        "OVERRIDE_VEC4_INIT_VALUE": {},
+        "OVERRIDE_VEC4_MAX_VALUE": {},
+        "OVERRIDE_VEC4_MIN_VALUE": {}
+    }
+}

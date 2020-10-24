@@ -4,7 +4,7 @@ from pathlib import Path
 
 EXEC_DIR = Path(os.path.dirname(os.path.realpath(__file__)))
 
-gdata_file_prefixes = {
+BGDATA_MAPPING = {
     "bool_array_data": "bool_array_data",
     "bool_data": "bool_data",
     "f32_array_data": "f32_array_data",
@@ -26,3 +26,4 @@ gdata_file_prefixes = {
 }
 
 generic_link_files = loads((EXEC_DIR / "data/generic_link_files.json").read_bytes())
+overrides = loads((EXEC_DIR / "data/overrides.json").read_text())

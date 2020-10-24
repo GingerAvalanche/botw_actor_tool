@@ -2,8 +2,7 @@ import oead
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple, Union
 
-import actorinfo
-import util
+from . import actorinfo, util
 
 
 physics_ext = {

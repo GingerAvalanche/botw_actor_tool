@@ -3,18 +3,18 @@ import zlib
 from pathlib import Path
 from typing import Union
 
-import actorinfo, util
-from __init__ import generic_link_files
-from actor import BATActor
-from Ui_Settings import UiSettingsPanel
-from Ui_ActorSelect import UiActorSelect
-from Ui_Texts import UiTexts
-from util import (
+from . import generic_link_files, actorinfo
+from .actor import BATActor
+from .Ui_Settings import UiSettingsPanel
+from .Ui_ActorSelect import UiActorSelect
+from .Ui_Texts import UiTexts
+from .util import (
     BatSettings,
     LINKS,
     _link_to_tab_index,
     _set_dark_mode,
     _try_retrieve_custom_file,
+    find_file,
 )
 
 
@@ -132,7 +132,7 @@ class UiMainWindow(wx.Frame):
         self.SetSizerAndFit(panelbox)
 
     def SetActor(self, actorname: str) -> None:
-        actorpath = util.find_file(Path(f"Actor/Pack/{actorname}.sbactorpack"))
+        actorpath = find_file(Path(f"Actor/Pack/{actorname}.sbactorpack"))
         self.LoadActor(actorpath)
 
     def LoadActor(self, actorpath: Union[Path, str]) -> None:

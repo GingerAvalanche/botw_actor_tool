@@ -1,7 +1,7 @@
 import wx
 import wx.lib.inspection
 
-from Ui_Main import UiMainWindow
+from .Ui_Main import UiMainWindow
 
 # from . import actorinfo, actorpack, bootup, language
 

@@ -8,8 +8,10 @@ import wx
 
 import oead
 from bcml import util as bcmlutil
-from __init__ import gdata_file_prefixes, generic_link_files
-from pack import ActorPack
+
+from . import generic_link_files, BGDATA_MAPPING
+from .pack import ActorPack
+from .store import FlagStore
 
 
 RESIDENT_ACTORS = [
@@ -156,7 +158,8 @@ def _try_retrieve_custom_file(link: str, fn: str) -> str:
     if link in generic_link_files:
         if fn in generic_link_files[link]:
             an = generic_link_files[link][fn]
-            a = ActorPack(util.find_file(Path(f"Actor/Pack/{an}.sbactorpack")))
+            a = ActorPack()
+            a.from_actor(find_file(Path(f"Actor/Pack/{an}.sbactorpack")))
             s = a.get_link_data(link)
             del a
     return s
@@ -176,6 +179,93 @@ def _set_dark_mode(window: wx.Window, enabled: bool) -> None:
     window.Refresh()
 
 
+def get_gamedata_sarc(bootup_path: Path) -> oead.Sarc:
+    bootup_sarc = oead.Sarc(bootup_path.read_bytes())
+    gamedata_sarc = oead.Sarc(
+        oead.yaz0.decompress(bootup_sarc.get_file("GameData/gamedata.ssarc").data)
+    )
+    return gamedata_sarc
+
+
+def get_last_two_savedata_files(bootup_path) -> list:
+    bootup_sarc = oead.Sarc(bootup_path.read_bytes())
+    savedata_sarc = oead.Sarc(
+        oead.yaz0.decompress(bootup_sarc.get_file("GameData/savedataformat.ssarc").data)
+    )
+    savedata_writer = oead.SarcWriter.from_sarc(savedata_sarc)
+    idx = 0
+    files = []
+    while True:
+        try:
+            savedata_writer.files[f"/saveformat_{idx+2}.bgsvdata"]
+            idx += 1
+        except KeyError:
+            files.append(savedata_writer.files[f"/saveformat_{idx}.bgsvdata"])
+            files.append(savedata_writer.files[f"/saveformat_{idx+1}.bgsvdata"])
+            return files
+
+
+def make_new_gamedata(store: FlagStore, big_endian: bool) -> bytes:
+    bgwriter = oead.SarcWriter(
+        endian=oead.Endianness.Big if big_endian else oead.Endianness.Little
+    )
+    for prefix, data_type in BGDATA_MAPPING.items():
+        bgdata_array = store.flags_to_bgdata_Array(prefix)
+        num_files = ceil(len(bgdata_array) / 4096)
+        for idx in range(num_files):
+            start = idx * 4096
+            end = (idx + 1) * 4096
+            if end > len(bgdata_array):
+                end = len(bgdata_array)
+            bgwriter.files[f"/{prefix}_{idx}.bgdata"] = oead.byml.to_binary(
+                oead.byml.Hash({data_type: bgdata_array[start:end]}), big_endian,
+            )
+    return bgwriter.write()[1]
+
+
+def make_new_savedata(store: FlagStore, big_endian: bool, orig_files: list) -> bytes:
+    svwriter = oead.SarcWriter(
+        endian=oead.Endianness.Big if big_endian else oead.Endianness.Little
+    )
+    svdata_array = store.flags_to_svdata_Array()
+    num_files = ceil(len(svdata_array) / 8192)
+    for idx in range(num_files):
+        start = idx * 8192
+        end = (idx + 1) * 8192
+        if end > len(svdata_array):
+            end = len(svdata_array)
+        svwriter.files[f"/saveformat_{idx}.bgsvdata"] = oead.byml.to_binary(
+            oead.byml.Hash(
+                {
+                    "file_list": oead.byml.Array(
+                        [
+                            {
+                                "IsCommon": False,
+                                "IsCommonAtSameAccount": False,
+                                "IsSaveSecureCode": True,
+                                "file_name": "game_data.sav",
+                            },
+                            oead.byml.Array(svdata_array[start:end]),
+                        ]
+                    ),
+                    "save_info": oead.byml.Array(
+                        [
+                            {
+                                "directory_num": oead.S32(num_files + 2),
+                                "is_build_machine": True,
+                                "revision": oead.S32(18203),
+                            }
+                        ]
+                    ),
+                }
+            ),
+            big_endian,
+        )
+    svwriter.files[f"/saveformat_{num_files}.bgsvdata"] = orig_files[0]
+    svwriter.files[f"/saveformat_{num_files+1}.bgsvdata"] = orig_files[1]
+    return svwriter.write()[1]
+
+
 def inject_files_into_bootup(bootup_path: Path, files: list, datas: list):
     sarc_data = bootup_path.read_bytes()
     yaz = sarc_data[0:4] == b"Yaz0"
@@ -193,6 +283,10 @@ def inject_files_into_bootup(bootup_path: Path, files: list, datas: list):
     del new_sarc
     bootup_path.write_bytes(new_bytes if not yaz else bcmlutil.compress(new_bytes))
     del new_bytes
+
+
+def unpack_oead_file(f: oead.File) -> tuple:
+    return (f.name, oead.byml.from_binary(f.data))
 
 
 def find_file(rel_path: Path) -> Union[Path, str]:

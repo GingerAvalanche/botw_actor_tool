@@ -1,13 +1,15 @@
 import oead
-import pymsyt
+import shutil
 import yaml
 from pathlib import Path
 from typing import Dict, Union
 from zlib import crc32
 
-from pack import ActorPack
-from texts import ActorTexts
-import util
+from . import util
+from .flag import BoolFlag, S32Flag
+from .pack import ActorPack
+from .texts import ActorTexts
+from .store import FlagStore
 
 
 FAR_LINKS: list = [
@@ -15,12 +17,33 @@ FAR_LINKS: list = [
     "ModelUser",
     "PhysicsUser",
 ]
+FLAG_CLASSES: dict = {
+    "EquipTime_": S32Flag,
+    "IsGet_": BoolFlag,
+    "IsNewPictureBook_": BoolFlag,
+    "IsRegisteredPictureBook_": BoolFlag,
+    "PictureBookSize_": S32Flag,
+    "PorchTime_": S32Flag,
+}
+FLAG_TYPES: dict = {
+    "Armor": ["EquipTime_", "IsGet_", "PorchTime_"],
+    "Item": ["IsGet_", "IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
+    "Weapon": [
+        "EquipTime_",
+        "IsGet_",
+        "IsNewPictureBook_",
+        "IsRegisteredPictureBook_",
+        "PictureBookSize_",
+        "PorchTime_",
+    ],
+}
 
 
 class BATActor:
     _pack: ActorPack
     _far_pack: ActorPack
     _texts: ActorTexts
+    _flags: FlagStore
 
     def __init__(self, pack: Union[Path, str]) -> None:
         self._pack = ActorPack()
@@ -36,6 +59,18 @@ class BATActor:
 
     def set_name(self, name: str) -> None:
         self._pack.set_name(name)
+        self._flags.remove_all()
+        actor_type = name.split("_")[0]
+        if actor_type in FLAG_TYPES:
+            for prefix in FLAG_TYPES[actor_type]:
+                if "Is" in prefix:
+                    ftype = "bool_data"
+                else:
+                    ftype = "s32_data"
+                flag = FLAG_CLASSES[prefix]()
+                flag.set_data_name(f"{prefix}{name}")
+                flag.use_name_to_override_params()
+                self._flags.add(ftype, flag)
 
     def get_link(self, link: str) -> str:
         return self._pack.get_link(link)
@@ -95,7 +130,8 @@ class BATActor:
     def save(self, root_dir: str, be: bool) -> None:
         actor_path = Path(f"{root_dir}/Actor/Pack/{self._pack.get_name()}.sbactorpack")
         yaz0_bytes = oead.yaz0.compress(self._pack.get_bytes(be))
-        actor_path.write_bytes(yaz0_bytes)
+        with actor_path.open("wb") as a_file:
+            a_file.write(yaz0_bytes)
 
         hash = crc32(self._pack.get_name().encode("utf-8"))
         info = self._pack.get_info()
@@ -103,7 +139,8 @@ class BATActor:
         if self._pack.get_has_far():
             actor_path = Path(f"{root_dir}/Actor/Pack/{self._far_pack.get_name()}.sbactorpack")
             yaz0_bytes = oead.yaz0.compress(self._far_pack.get_bytes(be))
-            actor_path.write_bytes(yaz0_bytes)
+            with actor_path.open("wb") as a_file:
+                a_file.write(yaz0_bytes)
 
             far_hash = crc32(self._far_pack.get_name().encode("utf-8"))
             far_info = self._far_pack.get_info()
@@ -133,3 +170,23 @@ class BATActor:
             ai_file.write(oead.yaz0.compress(oead.byml.to_binary(actorinfo)))
 
         self._texts.write(root_dir, be)
+
+        bootup_path = Path(f"{root_dir}/Pack/Bootup.pack")
+        if not bootup_path.exists():
+            bootup_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy(util.find_file(Path("Pack/Bootup.pack")), bootup_path)
+
+        gamedata_sarc = util.get_gamedata_sarc(bootup_path)
+        for bgdata_name, bgdata_hash in map(util.unpack_oead_file, gamedata_sarc.get_files()):
+            self._flags.add_flags_from_Hash(bgdata_name, bgdata_hash, False)
+
+        files_to_write: list = []
+        files_to_write.append("GameData/gamedata.ssarc")
+        files_to_write.append("GameData/savedataformat.ssarc")
+        orig_files = util.get_last_two_savedata_files(bootup_path)
+        datas_to_write: list = []
+        datas_to_write.append(oead.yaz0.compress(util.make_new_gamedata(self._flags, be)))
+        datas_to_write.append(
+            oead.yaz0.compress(util.make_new_savedata(self._flags, be, orig_files))
+        )
+        util.inject_files_into_bootup(bootup_path, files_to_write, datas_to_write)

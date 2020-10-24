@@ -1,7 +1,7 @@
 import wx
 from pathlib import Path
 
-import util
+from . import util
 
 
 class UiSettingsPanel(wx.Dialog):

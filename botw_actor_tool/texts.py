@@ -3,7 +3,7 @@ import pymsyt
 from pathlib import Path
 from typing import Dict
 
-import util
+from . import util
 
 
 class ActorTexts:
@@ -89,4 +89,5 @@ class ActorTexts:
             message_sarc_writer.files[msbt_name] = msbt
             message_bytes = message_sarc_writer.write()[1]
             text_sarc_writer.files[message] = oead.yaz0.compress(message_bytes)
-            text_pack.write_bytes(text_sarc_writer.write()[1])
+            with text_pack.open("wb") as t_file:
+                t_file.write(text_sarc_writer.write()[1])

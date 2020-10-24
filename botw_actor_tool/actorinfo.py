@@ -13,10 +13,8 @@ from math import isclose
 from pathlib import Path
 from typing import Union
 
-import util
-from pack import ActorPack
-from util import F32_equality, FSS_equality, S32_equality
-from __init__ import EXEC_DIR
+from . import EXEC_DIR, util
+from .pack import ActorPack
 
 KEYS_BY_PROFILE = loads((EXEC_DIR / "data/keys_by_profile.json").read_bytes())["keys_per_profile"]
 
@@ -284,9 +282,9 @@ RECIPE_KEYS = {
     ]
 }
 NULL_VALUES = [  # never ignore bool
-    (oead.S32, S32_equality, 0),
-    (oead.F32, F32_equality, 0),
-    (str, FSS_equality, ""),
+    (oead.S32, util.S32_equality, 0),
+    (oead.F32, util.F32_equality, 0),
+    (str, util.FSS_equality, ""),
 ]
 
 
@@ -327,8 +325,8 @@ def get_all_actors(path: str) -> list:
     else:
         actorinfo_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
         actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_path.read_bytes()))
-        for actor in actorinfo["Actors"]:
-            actorlist.append(str(actor["name"]))
+        for aiactor in actorinfo["Actors"]:
+            actorlist.append(str(aiactor["name"]))
     return sorted(actorlist)
 
 
