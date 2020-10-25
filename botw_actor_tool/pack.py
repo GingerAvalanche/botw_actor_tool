@@ -93,7 +93,7 @@ class ActorPack:
 
         for f in sarcdata.get_files():
             if not f.name in handled_filenames:
-                self._miscfiles[f"{f.name}"] = f.data
+                self._miscfiles[f"{f.name}"] = bytes(f.data)
 
         if not actorinfo_path.exists():
             actorinfo_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
