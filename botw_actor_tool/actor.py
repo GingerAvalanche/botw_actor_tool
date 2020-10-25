@@ -175,7 +175,7 @@ class BATActor:
             actorinfo["Actors"], key=lambda a: crc32(a["name"].encode("utf-8"))
         )
 
-        actorinfo_path.write_bytes(oead.yaz0.compress(oead.byml.to_binary(actorinfo)))
+        actorinfo_path.write_bytes(oead.yaz0.compress(oead.byml.to_binary(actorinfo, be)))
 
         self._texts.write(root_dir, be)
 

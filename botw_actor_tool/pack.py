@@ -221,7 +221,7 @@ class ActorPack:
         for link, data in self._bymlfiles.items():
             folder, ext = util.BYML_LINK_REFS[link]
             filename = f"Actor/{folder}/{self.get_link(link)}{ext}"
-            writer.files[filename] = oead.byml.to_binary(data)
+            writer.files[filename] = oead.byml.to_binary(data, be)
 
         for filename, data in self._miscfiles.items():
             writer.files[filename] = data
