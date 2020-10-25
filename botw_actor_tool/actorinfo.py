@@ -335,14 +335,15 @@ def _deepretrieve_info(
 
 def get_all_actors(path: str) -> list:
     actorlist = []
-    if path:
-        for actor in [actor.stem for actor in Path(path).glob("Actor/Pack/*.sbactorpack")]:
-            actorlist.append(actor)
-    else:
-        actorinfo_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
+    update_dir = util.BatSettings().get_setting("update_dir")
+    if path == update_dir:
+        actorinfo_path = Path(f"{path}/Actor/ActorInfo.product.sbyml")
         actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_path.read_bytes()))
         for aiactor in actorinfo["Actors"]:
             actorlist.append(str(aiactor["name"]))
+    else:
+        for actor in [actor.stem for actor in Path(path).glob("Actor/Pack/*.sbactorpack")]:
+            actorlist.append(actor)
     return sorted(actorlist)
 
 
