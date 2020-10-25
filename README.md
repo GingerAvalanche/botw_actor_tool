@@ -7,25 +7,44 @@ Utility for copying actors in LoZ:BotW
 * Python 3.7+ (64-bit, added to system PATH)
 
 The following `pip` packages, which will be automatically installed:
-* bcml
-* oead
+* `wxPython`
+* `PyMsyt`
+* `oead`
 
 ## Setup
 1. Download and install Python 3.7+, 64-bit. You must choose the "Add to System PATH" option during installation.
 2. Open a command line and run `pip install botw_actor_tool`
-3. Open `bcml` once and set up your paths, if you haven't already.
 
 ### How to Use
+`botw_actor_tool`
+* Open the tool with this command
+* Set your paths in the Settings before trying to load any actors. It won't be able to find actor lists if it has no paths.
+  * Paths are the same as they are in BCML
+  * Settings has a dark mode option. The option is currently terrible. Use it at your own risk.
+* Load a vanilla actor by using Ctrl+N or File -> Load Vanilla Actor. This will open a window that will allow you to choose the vanilla actor to load.
+* Load a mod actor by using Ctrl+O or File -> Load Mod Actor. This will open a window that will allow you to choose your mod's `content` or `romfs` folder, and will then find any actors in that mod's `Actor/Pack` folder and display them for you to choose which one to load.
+* Save by using Ctrl+S or File -> Save. Note that any changes to individual files/links that you haven't applied/saved will be lost.
 
-`botw_actor_tool [-b] [mod_root] [source_actor_name] [target_actor_name]`
-* `mod_root` - The root folder of your mod. If your mod doesn't contain the necessary files and folders, they will be created. (Note that this means you can start a mod by creating an empty `[mod_root]/contents` folder and running the tool)
-* `source_actor_name` - The name of the actor to copy
-* `target_actor_name` - The name of the actor to create
-* `-b` - Optional. Big endian mode, for Wii U.
+#### Layout
+##### Actor Link
+This contains an entry for every "link" in the ActorLink file, plus a section for Tags.
+* Links can be "Dummy" (no file), the actor's name, or a custom name. Selecting "Custom" won't actually do anything until you enter a custom name and click Update Custom Link.
+* Tags are comma-separated, and will support as many or as few tags as you need.
 
-#### Quirks
-* Doesn't modify anything inside the sbfres files (`content/Model/*.sbfres`) that it generates. This is because there's no Python library for doing so. You'll need to use Switch Toolbox to edit those.
-* Only creates certain gamedata and savedata flags, based on actor type. Will log which flags it creates to the console. Any additional flags should be created.
+##### Text Editors
+Most tabs will open up text editors that allow you to edit the yaml of the files in question, and will then convert it back to aamp or byml when you click the Save button at the bottom.
+* If you don't click the Save button at the bottom, your changes will be lost on switching tabs.
+
+##### Texts Tab
+Not to be confused with the text editor tabs, the texts tab is where you edit the texts of your item in-game. Things like its description, name, and compendium summary.
+* BaseName - The name to display in the inventory. Only valid for cookable recipes that have more than one outcome.
+* Name - The name to display in the inventory for most items.
+* Desc - The inventory description of an actor that can go in Link's inventory.
+* PictureBook - The description of an actor, as it appears in the compendium after you've taken a picture of it.
+
+#### Obscure Features
+* Putting the name of a file that exists in vanilla into a Custom link text field and then clicking Update Custom Link will retrieve that vanilla file's data and ask if you want to import it to your actor.
+* Editing a file with a custom name will prompt you to change the name. This is due to BotW assuming that all files with the same name contain the same data, and only loading one of them.
 
 ## Contributing
 * Issues: https://github.com/GingerAvalanche/botw_actor_tool/issues
