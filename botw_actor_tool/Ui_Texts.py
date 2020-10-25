@@ -71,7 +71,7 @@ class UiTexts(wx.Panel):
         gridsizer.Add(self._ctrls["PBookCheck"], flag=wx.ALIGN_CENTER_VERTICAL)
         gridsizer.Add(self._ctrls["PBookText"], flag=wx.ALIGN_CENTER_VERTICAL | wx.EXPAND)
 
-        buttonsizer = wx.BoxSizer(wx.HORIZONTAL)
+        buttonsizer = wx.BoxSizer(wx.VERTICAL)
         savebutton = wx.Button(self, label="Save", size=(70, 25))
         buttonsizer.Add(savebutton, flag=wx.ALIGN_RIGHT)
 

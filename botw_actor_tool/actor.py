@@ -53,6 +53,8 @@ class BATActor:
                 self._far_pack = ActorPack()
                 self._far_pack.from_actor(Path(f"{pack.name}_Far"))
         self._texts = ActorTexts(Path(pack), self._pack.get_link("ProfileUser"))
+        self._flags = FlagStore()
+        self.set_flags(self._pack.get_name())
 
     def get_name(self) -> str:
         return self._pack.get_name()
@@ -60,17 +62,7 @@ class BATActor:
     def set_name(self, name: str) -> None:
         self._pack.set_name(name)
         self._flags.remove_all()
-        actor_type = name.split("_")[0]
-        if actor_type in FLAG_TYPES:
-            for prefix in FLAG_TYPES[actor_type]:
-                if "Is" in prefix:
-                    ftype = "bool_data"
-                else:
-                    ftype = "s32_data"
-                flag = FLAG_CLASSES[prefix]()
-                flag.set_data_name(f"{prefix}{name}")
-                flag.use_name_to_override_params()
-                self._flags.add(ftype, flag)
+        self.set_flags(name)
 
     def get_link(self, link: str) -> str:
         return self._pack.get_link(link)
@@ -126,6 +118,19 @@ class BATActor:
 
     def set_texts(self, texts: Dict[str, str]) -> None:
         self._texts.set_texts(texts)
+
+    def set_flags(self, name: str) -> None:
+        actor_type = name.split("_")[0]
+        if actor_type in FLAG_TYPES:
+            for prefix in FLAG_TYPES[actor_type]:
+                if "Is" in prefix:
+                    ftype = "bool_data"
+                else:
+                    ftype = "s32_data"
+                flag = FLAG_CLASSES[prefix]()
+                flag.set_data_name(f"{prefix}{name}")
+                flag.use_name_to_override_params()
+                self._flags.add(ftype, flag)
 
     def save(self, root_dir: str, be: bool) -> None:
         actor_path = Path(f"{root_dir}/Actor/Pack/{self._pack.get_name()}.sbactorpack")

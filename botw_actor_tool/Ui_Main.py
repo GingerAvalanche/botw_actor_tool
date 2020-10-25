@@ -516,7 +516,7 @@ class UiActorLinkPanel(wx.Panel):
             rb2 = wx.RadioButton(self, label="ActorName", name=f"{link}")
             rb3 = wx.RadioButton(self, label="Custom:", name=f"{link}")
             linksizer.Add(rb1, flag=wx.ALIGN_CENTER_VERTICAL)
-            linksizer.Add(rb2, flag=wx.EXPAND | wx.ALIGN_CENTER_VERTICAL)
+            linksizer.Add(rb2, flag=wx.ALIGN_CENTER_VERTICAL)
             linksizer.Add(rb3, flag=wx.ALIGN_CENTER_VERTICAL)
             tc_width = rb2.GetSize().GetWidth()
             tc = wx.TextCtrl(self)

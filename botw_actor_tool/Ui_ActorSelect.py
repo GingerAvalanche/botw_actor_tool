@@ -43,7 +43,7 @@ class UiActorSelect(wx.Dialog):
         buttonbox.Add(acceptbutton)
         cancelbutton = wx.Button(panel, label="Cancel", size=(70, 25))
         buttonbox.Add(cancelbutton)
-        panelbox.Add(buttonbox, flag=wx.ALIGN_RIGHT | wx.ALIGN_BOTTOM | wx.ALL, border=10)
+        panelbox.Add(buttonbox, flag=wx.ALIGN_RIGHT | wx.ALL, border=10)
 
         self.Bind(wx.EVT_CHAR_HOOK, self.OnFilterChar, self.findtextenter)
         self.Bind(wx.EVT_BUTTON, self.OnFilter, findtextbutton)
