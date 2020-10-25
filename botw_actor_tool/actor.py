@@ -68,7 +68,7 @@ class BATActor:
         return self._pack.get_link(link)
 
     def set_link(self, link: str, linkref: str) -> bool:
-        if self._far_pack:
+        if self._pack.get_has_far():
             if link == "LifeConditionUser" and linkref == "Dummy":
                 return False
             self._pack.set_link(link, linkref)
