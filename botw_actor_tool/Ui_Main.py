@@ -192,7 +192,9 @@ class UiMainWindow(wx.Frame):
                     dlg = wx.MessageDialog(self, "Must choose either content or romfs!")
                     dlg.ShowModal()
                     return
+                self.Freeze()
                 self._actor.save(root_dir, be)
+                self.Thaw()
 
     def OnQuit(self, e) -> None:
         self.Close()
