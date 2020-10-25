@@ -1,6 +1,5 @@
 # Breath of the Wild Actor Editor
-NOTE: This project is currently in unusable alpha state. This message will be removed and the package uplaoded to PyPI once it is in a usable state.
-Utility for copying actors in LoZ:BotW
+Utility for editing actors in LoZ:BotW
 
 ## Dependencies
 * A dumped copy of Legend of Zelda: Breath of the Wild (for Wii U or Switch)
