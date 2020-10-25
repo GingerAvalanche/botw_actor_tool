@@ -126,6 +126,12 @@ class ActorPack:
                 if self._actorname in yaml:
                     new_yaml = yaml.replace(self._actorname, name)
                     files[link] = convert_type.from_text(new_yaml)
+        for filename in self._miscfiles.keys():
+            if self._actorname in filename:
+                filedata = self._miscfiles[filename]
+                self._miscfiles.pop(filename)
+                new_filename = filename.replace(self._actorname, name)
+                self._miscfiles[new_filename] = filedata
         self._actorname = name
         if "Armor_" in name and self._links["ModelUser"] == self._actorname:
             mlist = self._aampfiles["ModelUser"]
