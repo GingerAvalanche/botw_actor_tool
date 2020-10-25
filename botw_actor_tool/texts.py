@@ -78,7 +78,9 @@ class ActorTexts:
             lang = settings.get_setting("lang")
             text_pack = Path(f"{root_str}/Pack/Bootup_{lang}.pack")
             text_pack_load = text_pack
-            if not text_pack_load.exists():
+            if not text_pack.exists():
+                text_pack.parent.mkdir(parents=True, exist_ok=True)
+                text_pack.touch()
                 text_pack_load = Path(util.find_file(Path(f"Pack/Bootup_{lang}.pack")))
             text_sarc = oead.Sarc(text_pack_load.read_bytes())
             text_sarc_writer = oead.SarcWriter.from_sarc(text_sarc)
@@ -89,5 +91,4 @@ class ActorTexts:
             message_sarc_writer.files[msbt_name] = msbt
             message_bytes = message_sarc_writer.write()[1]
             text_sarc_writer.files[message] = oead.yaz0.compress(message_bytes)
-            with text_pack.open("wb") as t_file:
-                t_file.write(text_sarc_writer.write()[1])
+            text_pack.write_bytes(text_sarc_writer.write()[1])
