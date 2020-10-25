@@ -48,8 +48,7 @@ class ActorTexts:
                 for control_type in msyt["entries"][entry]["contents"]:
                     if "text" in control_type:
                         self._texts[entry_name] = control_type["text"]
-            else:
-                self._misc_texts[entry] = msyt["entries"][entry]
+            self._misc_texts[entry] = msyt["entries"][entry]
 
     def set_texts(self, texts: Dict[str, str]) -> None:
         self._texts = texts
