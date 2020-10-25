@@ -57,6 +57,9 @@ class ActorTexts:
     def get_texts(self) -> Dict[str, str]:
         return self._texts
 
+    def set_actor_name(self, name: str) -> None:
+        self._actor_name = name
+
     def write(self, root_str: str, be: bool) -> None:
         if self._texts:
             settings = util.BatSettings()

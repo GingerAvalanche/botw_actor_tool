@@ -61,6 +61,7 @@ class BATActor:
 
     def set_name(self, name: str) -> None:
         self._pack.set_name(name)
+        self._texts.set_actor_name(name)
         self._flags.remove_all()
         self.set_flags(name)
 
