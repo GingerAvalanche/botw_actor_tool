@@ -497,8 +497,8 @@ def get_recipe_entries(data: oead.aamp.ParameterIO) -> dict:
     return d
 
 
-def generate_actor_info(pack: ActorPack) -> oead.byml.Hash:
-    entry = pack.get_info()
+def generate_actor_info(pack: ActorPack, old_info: oead.byml.Hash) -> oead.byml.Hash:
+    entry = old_info
     entry["name"] = pack.get_name()
     entry["isHasFar"] = pack.get_has_far()
 

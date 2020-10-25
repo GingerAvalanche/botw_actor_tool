@@ -135,8 +135,10 @@ class BATActor:
     def save(self, root_dir: str, be: bool) -> None:
         actor_path = Path(f"{root_dir}/Actor/Pack/{self._pack.get_name()}.sbactorpack")
         yaz0_bytes = oead.yaz0.compress(self._pack.get_bytes(be))
-        with actor_path.open("wb") as a_file:
-            a_file.write(yaz0_bytes)
+        if not actor_path.exists():
+            actor_path.parent.mkdir(parents=True, exist_ok=True)
+            actor_path.touch()
+        actor_path.write_bytes(yaz0_bytes)
 
         hash = crc32(self._pack.get_name().encode("utf-8"))
         info = self._pack.get_info()
@@ -144,8 +146,9 @@ class BATActor:
         if self._pack.get_has_far():
             actor_path = Path(f"{root_dir}/Actor/Pack/{self._far_pack.get_name()}.sbactorpack")
             yaz0_bytes = oead.yaz0.compress(self._far_pack.get_bytes(be))
-            with actor_path.open("wb") as a_file:
-                a_file.write(yaz0_bytes)
+            if not actor_path.exists():
+                actor_path.touch()
+            actor_path.write_bytes(yaz0_bytes)
 
             far_hash = crc32(self._far_pack.get_name().encode("utf-8"))
             far_info = self._far_pack.get_info()
@@ -153,6 +156,7 @@ class BATActor:
         actorinfo_path = Path(f"{root_dir}/Actor/ActorInfo.product.sbyml")
         actorinfo_load_path = actorinfo_path
         if not actorinfo_load_path.exists():
+            actorinfo_load_path.touch()
             actorinfo_load_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
         actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_load_path.read_bytes()))
 
@@ -171,8 +175,7 @@ class BATActor:
             actorinfo["Actors"], key=lambda a: crc32(a["name"].encode("utf-8"))
         )
 
-        with actorinfo_path.open("wb") as ai_file:
-            ai_file.write(oead.yaz0.compress(oead.byml.to_binary(actorinfo)))
+        actorinfo_path.write_bytes(oead.yaz0.compress(oead.byml.to_binary(actorinfo)))
 
         self._texts.write(root_dir, be)
 

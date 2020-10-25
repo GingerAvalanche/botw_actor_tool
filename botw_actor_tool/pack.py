@@ -172,7 +172,8 @@ class ActorPack:
 
     def get_info(self) -> oead.byml.Hash:
         if self._needs_info_update:
-            self._info = actorinfo.generate_actor_info(self)
+            # TODO: This is messy, we shouldn't let someone else directly modify our property
+            actorinfo.generate_actor_info(self, self._info)
             self._needs_info_update = False
         return self._info
 
