@@ -105,9 +105,9 @@ class UiMainWindow(wx.Frame):
         settingsoption = settingsmenu.Append(wx.ID_ANY, "Settings", "Open the settings")
         menu.Append(settingsmenu, "&Settings")
 
-        debugmenu = wx.Menu()
-        textsoption = debugmenu.Append(wx.ID_ANY, "Print texts to console", "Test texts generator")
-        menu.Append(debugmenu, "&Debug")
+        # debugmenu = wx.Menu()
+        # textsoption = debugmenu.Append(wx.ID_ANY, "Print texts to console", "Test texts generator")
+        # menu.Append(debugmenu, "&Debug")
 
         self.SetMenuBar(menu)
 
@@ -116,7 +116,7 @@ class UiMainWindow(wx.Frame):
         self.Bind(wx.EVT_MENU, self.OnSave, saveoption)
         self.Bind(wx.EVT_MENU, self.OnQuit, quitmenuoption)
         self.Bind(wx.EVT_MENU, self.OnSettings, settingsoption)
-        self.Bind(wx.EVT_MENU, self.OnTexts, textsoption)
+        # self.Bind(wx.EVT_MENU, self.OnTexts, textsoption)
         self.Bind(wx.EVT_CLOSE, self.OnClose)
 
         panelbox = wx.BoxSizer(wx.VERTICAL)

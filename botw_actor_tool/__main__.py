@@ -27,7 +27,7 @@ def main() -> None:
     mainwindow = UiMainWindow(None, title="BotW Actor Tool")
     app.SetTopWindow(mainwindow)
     mainwindow.Show()
-    wx.lib.inspection.InspectionTool().Show()
+    # wx.lib.inspection.InspectionTool().Show()
     app.MainLoop()
 
 
