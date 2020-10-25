@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="botw_actor_tool",
-    version="0.0.1",
+    version="0.1.0",
     author="Ginger",
     author_email="chodness@gmail.com",
     description="Utility for editing actors in LoZ:BotW",
@@ -19,7 +19,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
         "Operating System :: OS Independent",
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 4 - Beta",
     ],
     python_requires=">=3.7.4",
     install_requires=["wxPython>=4.1.0", "oead>=0.11.2", "PyMsyt>=0.1.5"],
