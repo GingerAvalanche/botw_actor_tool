@@ -70,6 +70,7 @@ class ActorPack:
                     self._tags.append(actorlink.objects["Tags"].params[tag].v)
             else:
                 self._misc_tags.append({key: actorlink.objects[key]})
+        handled_filenames.add(actorlink_name)
 
         for link in util.AAMP_LINK_REFS:
             folder, ext = util.AAMP_LINK_REFS[link]
