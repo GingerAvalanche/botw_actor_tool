@@ -149,7 +149,7 @@ class ActorPack:
         elif link in util.BYML_LINK_REFS:
             folder, ext = util.BYML_LINK_REFS[link]
             if old_linkref == "Dummy":
-                self._bymlfiles[link] = oead.aamp.Hash()
+                self._bymlfiles[link] = oead.byml.Hash()
             elif linkref == "Dummy":
                 self._bymlfiles.pop(link)
         self._needs_info_update = True
