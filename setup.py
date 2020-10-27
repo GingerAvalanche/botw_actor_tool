@@ -24,5 +24,5 @@ setuptools.setup(
         "Development Status :: 4 - Beta",
     ],
     python_requires=">=3.7.4",
-    install_requires=["wxPython>=4.1.0", "oead>=0.11.2", "PyMsyt>=0.1.5"],
+    install_requires=["wxPython>=4.1.0", "oead>=0.11.2", "PyMsyt>=0.1.5", "update_check>=0.0.11"],
 )
