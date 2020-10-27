@@ -23,7 +23,6 @@ import os
 import wx
 
 import oead
-from bcml import util as bcmlutil
 
 from . import generic_link_files, BGDATA_MAPPING
 from .pack import ActorPack
@@ -286,7 +285,7 @@ def inject_files_into_bootup(bootup_path: Path, files: list, datas: list):
     sarc_data = bootup_path.read_bytes()
     yaz = sarc_data[0:4] == b"Yaz0"
     if yaz:
-        sarc_data = bcmlutil.decompress(sarc_data)
+        sarc_data = oead.yaz0.decompress(sarc_data)
     old_sarc = oead.Sarc(sarc_data)
     del sarc_data
     new_sarc = oead.SarcWriter.from_sarc(old_sarc)
@@ -297,7 +296,7 @@ def inject_files_into_bootup(bootup_path: Path, files: list, datas: list):
         )
     new_bytes = new_sarc.write()[1]
     del new_sarc
-    bootup_path.write_bytes(new_bytes if not yaz else bcmlutil.compress(new_bytes))
+    bootup_path.write_bytes(new_bytes if not yaz else oead.yaz0.compress(new_bytes))
     del new_bytes
 
 
