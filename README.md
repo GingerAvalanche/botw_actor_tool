@@ -1,5 +1,7 @@
 # Breath of the Wild Actor Editor
-Utility for editing actors in LoZ:BotW
+Utility for editing actors in Legend of Zelda: Breath of the Wild. With it, you can edit actors simply. No longer will you need to edit 4 different files just to add one new item! Now you can just select the item you want to base yours off of, change the name, change the texts, hit save, and boom! New item.
+
+Note that the tool does not handle resource files (.sbfres). Those need to be handled with Switch Toolbox.
 
 ## Dependencies
 * A dumped copy of Legend of Zelda: Breath of the Wild (for Wii U or Switch)
