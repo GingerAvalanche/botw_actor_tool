@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="botw_actor_tool",
-    version="0.1.1",
+    version="0.1.2",
     author="Ginger",
     author_email="chodness@gmail.com",
     description="Utility for editing actors in LoZ:BotW",
