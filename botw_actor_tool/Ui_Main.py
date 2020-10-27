@@ -743,21 +743,16 @@ class UiTextEditor(wx.Panel):
             index += self._editor.WrapCount(index)
             count += 1
         if count < 100:
-            if not self._editor.GetMarginWidth(1) == 16:
-                self._editor.SetMarginWidth(1, 16)
-            else:
-                return
-        elif count < 1000:
             if not self._editor.GetMarginWidth(1) == 24:
                 self._editor.SetMarginWidth(1, 24)
             else:
                 return
-        elif count < 10000:
+        elif count < 1000:
             if not self._editor.GetMarginWidth(1) == 32:
                 self._editor.SetMarginWidth(1, 32)
             else:
                 return
-        elif count < 100000:
+        elif count < 10000:
             if not self._editor.GetMarginWidth(1) == 40:
                 self._editor.SetMarginWidth(1, 40)
             else:
