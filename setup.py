@@ -1,11 +1,13 @@
 import setuptools
 
+from botw_actor_tool.__version__ import VERSION
+
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="botw_actor_tool",
-    version="0.1.2",
+    version=VERSION,
     author="Ginger",
     author_email="chodness@gmail.com",
     description="Utility for editing actors in LoZ:BotW",

@@ -84,7 +84,7 @@ class UiMainWindow(wx.Frame):
             "Texts",
             "Flags",
         ]
-        menu = wx.MenuBar()
+        self._menubar = wx.MenuBar()
         filemenu = wx.Menu()
 
         actorselectoption = filemenu.Append(
@@ -99,17 +99,17 @@ class UiMainWindow(wx.Frame):
         )
         filemenu.AppendSeparator()
         quitmenuoption = filemenu.Append(wx.ID_EXIT, "&Quit\tCtrl+Q", "Quit application")
-        menu.Append(filemenu, "&File")
+        self._menubar.Append(filemenu, "&File")
 
         settingsmenu = wx.Menu()
         settingsoption = settingsmenu.Append(wx.ID_ANY, "Settings", "Open the settings")
-        menu.Append(settingsmenu, "&Settings")
+        self._menubar.Append(settingsmenu, "&Settings")
 
         # debugmenu = wx.Menu()
         # textsoption = debugmenu.Append(wx.ID_ANY, "Print texts to console", "Test texts generator")
         # menu.Append(debugmenu, "&Debug")
 
-        self.SetMenuBar(menu)
+        self.SetMenuBar(self._menubar)
 
         self.Bind(wx.EVT_MENU, self.OnNew, actorselectoption)
         self.Bind(wx.EVT_MENU, self.OnOpen, openoption)
@@ -146,6 +146,12 @@ class UiMainWindow(wx.Frame):
         self.CreateStatusBar()
 
         self.SetSizerAndFit(panelbox)
+
+    def SetNeedsUpdate(self) -> None:
+        update = wx.Menu()
+        updateoption = update.Append(wx.ID_ANY, "How to Update", "How to update")
+        self._menubar.Append(update, "Update Available")
+        self.Bind(wx.EVT_MENU, self.OnUpdate, updateoption)
 
     def SetActor(self, actorname: str) -> None:
         actorpath = find_file(Path(f"Actor/Pack/{actorname}.sbactorpack"))
@@ -205,8 +211,8 @@ class UiMainWindow(wx.Frame):
                 elif Path(root_dir).name == "content":
                     be = True
                 else:
-                    dlg = wx.MessageDialog(self, "Must choose either content or romfs!")
-                    dlg.ShowModal()
+                    with wx.MessageDialog(self, "Must choose either content or romfs!") as dlg:
+                        dlg.ShowModal()
                     return
                 self.Freeze()
                 self._actor.save(root_dir, be)
@@ -221,6 +227,13 @@ class UiMainWindow(wx.Frame):
 
     def OnTexts(self, e) -> None:
         print(self._actor._texts.get_texts())
+
+    def OnUpdate(self, e) -> None:
+        with wx.MessageDialog(
+            self,
+            "Update available on PyPI.\n\nInstall it with the console command:\n\npip install -U botw_actor_tool",
+        ) as dlg:
+            dlg.ShowModal()
 
     def OnClose(self, e) -> None:
         settings = BatSettings()
