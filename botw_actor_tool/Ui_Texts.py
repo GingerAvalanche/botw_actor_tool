@@ -38,7 +38,9 @@ class UiTexts(wx.Panel):
         self._ctrls["BaseNameCheck"] = wx.CheckBox(
             self, label=f"{actor_name}_BaseName", name="BaseName"
         )
-        self._ctrls["BaseNameText"] = wx.TextCtrl(self)
+        self._ctrls["BaseNameText"] = wx.TextCtrl(
+            self, size=(-1, 23), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL
+        )
         if "BaseName" in texts:
             self._ctrls["BaseNameCheck"].SetValue(True)
             self._ctrls["BaseNameText"].Enable()
@@ -50,7 +52,9 @@ class UiTexts(wx.Panel):
         gridsizer.Add(self._ctrls["BaseNameText"], flag=wx.ALIGN_CENTER_VERTICAL | wx.EXPAND)
 
         self._ctrls["NameCheck"] = wx.CheckBox(self, label=f"{actor_name}_Name", name="Name")
-        self._ctrls["NameText"] = wx.TextCtrl(self)
+        self._ctrls["NameText"] = wx.TextCtrl(
+            self, size=(-1, 23), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL
+        )
         if "Name" in texts:
             self._ctrls["NameCheck"].SetValue(True)
             self._ctrls["NameText"].Enable()
@@ -62,7 +66,7 @@ class UiTexts(wx.Panel):
         gridsizer.Add(self._ctrls["NameText"], flag=wx.ALIGN_CENTER_VERTICAL | wx.EXPAND)
 
         self._ctrls["DescCheck"] = wx.CheckBox(self, label=f"{actor_name}_Desc", name="Desc")
-        self._ctrls["DescText"] = wx.TextCtrl(self, style=wx.TE_MULTILINE, size=(-1, 76))
+        self._ctrls["DescText"] = wx.TextCtrl(self, size=(-1, 76), style=wx.TE_MULTILINE)
         if "Desc" in texts:
             self._ctrls["DescCheck"].SetValue(True)
             self._ctrls["DescText"].Enable()
@@ -76,7 +80,7 @@ class UiTexts(wx.Panel):
         self._ctrls["PBookCheck"] = wx.CheckBox(
             self, label=f"{actor_name}_PictureBook", name="PBook"
         )
-        self._ctrls["PBookText"] = wx.TextCtrl(self, style=wx.TE_MULTILINE, size=(-1, 76))
+        self._ctrls["PBookText"] = wx.TextCtrl(self, size=(-1, 76), style=wx.TE_MULTILINE)
         if "PictureBook" in texts:
             self._ctrls["PBookCheck"].SetValue(True)
             self._ctrls["PBookText"].Enable()

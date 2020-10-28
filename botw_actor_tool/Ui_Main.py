@@ -191,6 +191,7 @@ class UiMainWindow(wx.Frame):
             code, actor = dlg.ShowModal()
             if code == 0:
                 self.SetActor(actor)
+        self.DarkMode()
 
     def OnOpen(self, e) -> None:
         with wx.DirDialog(self, "Select your mod's content or romfs directory") as dlg:
@@ -201,6 +202,7 @@ class UiMainWindow(wx.Frame):
                     if code == 0:
                         actorpath = Path(f"{root_dir}/Actor/Pack/{actor}.sbactorpack")
                         self.LoadActor(actorpath)
+        self.DarkMode()
 
     def OnSave(self, e) -> None:
         with wx.DirDialog(self, "Select your mod's content or romfs directory") as dlg:
@@ -224,6 +226,7 @@ class UiMainWindow(wx.Frame):
     def OnSettings(self, e) -> None:
         with UiSettingsPanel(self) as dlg:
             dlg.ShowModal()
+        self.DarkMode()
 
     def OnTexts(self, e) -> None:
         print(self._actor._texts.get_texts())
@@ -281,6 +284,7 @@ class UiMainWindow(wx.Frame):
         self._linkcontents.Layout()
         self.Thaw()
         self._prevcontents = selection
+        self.DarkMode()
 
     def ClearLinkContents(self) -> None:
         if len(self._linkcontents.GetChildren()) == 1:
@@ -509,7 +513,6 @@ class UiActorLinkPanel(wx.Panel):
     def __init__(self, *args, **kwargs) -> None:
         super(UiActorLinkPanel, self).__init__(*args, **kwargs)
         self.InitUI()
-        self.TopLevelParent.DarkMode()
 
     def InitUI(self) -> None:
         boxsizer = wx.BoxSizer(wx.VERTICAL)
@@ -517,7 +520,7 @@ class UiActorLinkPanel(wx.Panel):
         # Actor Name
         linksizer = wx.BoxSizer(wx.HORIZONTAL)
         st = wx.StaticText(self, size=(125, -1), label="Actor Name:")
-        tc = wx.TextCtrl(self)
+        tc = wx.TextCtrl(self, size=(-1, 25), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL)
         bt = wx.Button(self, size=(70, 25), label="Apply")
         linksizer.Add(st, flag=wx.ALIGN_CENTER_VERTICAL)
         linksizer.Add(tc, proportion=1)
@@ -529,7 +532,7 @@ class UiActorLinkPanel(wx.Panel):
         # Priority
         linksizer = wx.BoxSizer(wx.HORIZONTAL)
         st = wx.StaticText(self, size=(125, -1), label="Priority:")
-        tc = wx.TextCtrl(self)
+        tc = wx.TextCtrl(self, size=(-1, 25), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL)
         bt = wx.Button(self, size=(70, 25), label="Apply")
         linksizer.Add(st, flag=wx.ALIGN_CENTER_VERTICAL)
         linksizer.Add(tc, proportion=1)
@@ -550,7 +553,7 @@ class UiActorLinkPanel(wx.Panel):
             linksizer.Add(rb2, flag=wx.ALIGN_CENTER_VERTICAL)
             linksizer.Add(rb3, flag=wx.ALIGN_CENTER_VERTICAL)
             tc_width = rb2.GetSize().GetWidth()
-            tc = wx.TextCtrl(self)
+            tc = wx.TextCtrl(self, size=(-1, 25), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL)
             tc.Disable()
             linksizer.Add(tc, proportion=1)
             bt = wx.Button(self, size=(120, 25), label="Update Custom Link", name=f"{link}")
@@ -570,7 +573,7 @@ class UiActorLinkPanel(wx.Panel):
         # Tags
         linksizer = wx.BoxSizer(wx.HORIZONTAL)
         st = wx.StaticText(self, size=(125, -1), label="Tags:")
-        tc = wx.TextCtrl(self)
+        tc = wx.TextCtrl(self, size=(-1, 25), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL)
         bt = wx.Button(self, size=(70, 25), label="Apply")
         linksizer.Add(st, flag=wx.ALIGN_CENTER_VERTICAL)
         linksizer.Add(tc, proportion=1)
@@ -686,7 +689,6 @@ class UiTextEditor(wx.Panel):
         self._bound_events = []
         self._suppress_rename = False
         self.InitUI()
-        self.TopLevelParent.DarkMode()
 
     def InitUI(self) -> None:
         boxsizer = wx.BoxSizer(wx.VERTICAL)

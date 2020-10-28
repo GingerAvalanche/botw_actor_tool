@@ -182,7 +182,7 @@ def _try_retrieve_custom_file(link: str, fn: str) -> str:
 
 def _set_dark_mode(window: wx.Window, enabled: bool) -> None:
     if enabled:
-        bg = wx.Colour(15, 15, 15)
+        bg = wx.Colour(40, 40, 40)
         fg = wx.Colour(255, 255, 255)
     else:
         bg = wx.NullColour
@@ -190,8 +190,44 @@ def _set_dark_mode(window: wx.Window, enabled: bool) -> None:
     window.SetBackgroundColour(bg)
     window.SetForegroundColour(fg)
     for child in window.Children:
-        _set_dark_mode(child, enabled)
+        if isinstance(child, wx.stc.StyledTextCtrl):
+            set_stc_dark_mode(child, enabled)
+        else:
+            _set_dark_mode(child, enabled)
     window.Refresh()
+
+
+def set_stc_dark_mode(stc: wx.stc.StyledTextCtrl, enabled: bool) -> None:
+    if enabled:
+        default = "fore:#FFFFFF"
+        line = "fore:#FFFFFF"
+        comment = "fore:#00FF00"
+        identifier = "fore:#FF0000"
+        keyword = "fore:#FFFFFF"
+        number = "fore:#FFBBBB"
+        bg = "back:#202020"
+    else:
+        default = "fore:#000000"
+        line = "fore:#000000"
+        comment = "fore:#FF00FF"
+        identifier = "fore:#2020FF"
+        keyword = "fore:#000000"
+        number = "fore:005555"
+        bg = "back:#FFFFFF"
+    face = "face:Consolas"
+    stc.SetLexer(wx.stc.STC_LEX_YAML)
+    stc.StyleSetSpec(wx.stc.STC_STYLE_DEFAULT, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_STYLE_LINENUMBER, f"{line},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_DEFAULT, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_COMMENT, f"{comment},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_IDENTIFIER, f"bold,{identifier},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_KEYWORD, f"{keyword},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_NUMBER, f"bold,{number},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_REFERENCE, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_DOCUMENT, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_TEXT, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_ERROR, f"{default},{bg},{face}")
+    stc.StyleSetSpec(wx.stc.STC_YAML_OPERATOR, f"{default},{bg},{face}")
 
 
 def get_gamedata_sarc(bootup_path: Path) -> oead.Sarc:
