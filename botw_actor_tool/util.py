@@ -206,6 +206,7 @@ def set_stc_dark_mode(stc: wx.stc.StyledTextCtrl, enabled: bool) -> None:
         keyword = "fore:#FFFFFF"
         number = "fore:#FFBBBB"
         bg = "back:#202020"
+        caret = wx.Colour(255, 255, 255)
     else:
         default = "fore:#000000"
         line = "fore:#000000"
@@ -214,6 +215,7 @@ def set_stc_dark_mode(stc: wx.stc.StyledTextCtrl, enabled: bool) -> None:
         keyword = "fore:#000000"
         number = "fore:005555"
         bg = "back:#FFFFFF"
+        caret = wx.Colour(0, 0, 0)
     face = "face:Consolas"
     stc.SetLexer(wx.stc.STC_LEX_YAML)
     stc.StyleSetSpec(wx.stc.STC_STYLE_DEFAULT, f"{default},{bg},{face}")
@@ -228,6 +230,7 @@ def set_stc_dark_mode(stc: wx.stc.StyledTextCtrl, enabled: bool) -> None:
     stc.StyleSetSpec(wx.stc.STC_YAML_TEXT, f"{default},{bg},{face}")
     stc.StyleSetSpec(wx.stc.STC_YAML_ERROR, f"{default},{bg},{face}")
     stc.StyleSetSpec(wx.stc.STC_YAML_OPERATOR, f"{default},{bg},{face}")
+    stc.SetCaretForeground(caret)
 
 
 def get_gamedata_sarc(bootup_path: Path) -> oead.Sarc:
