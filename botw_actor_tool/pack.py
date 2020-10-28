@@ -105,7 +105,7 @@ class ActorPack:
                 continue
             filename = f"Actor/{folder}/{linkref}{ext}"
             filedata = sarcdata.get_file(filename).data
-            self._aampfiles[link] = oead.byml.from_binary(filedata)
+            self._bymlfiles[link] = oead.byml.from_binary(filedata)
             handled_filenames.add(filename)
 
         for f in sarcdata.get_files():
