@@ -694,12 +694,14 @@ class UiTextEditor(wx.Panel):
         boxsizer = wx.BoxSizer(wx.VERTICAL)
 
         self._editor = wx.stc.StyledTextCtrl(self, style=wx.TE_MULTILINE | wx.TE_WORDWRAP)
-        self._editor.StyleSetFont(
-            0, wx.Font(10, wx.MODERN, wx.FONTSTYLE_NORMAL, wx.NORMAL, False, "Consolas")
-        )
         self._editor.SetMarginType(1, wx.stc.STC_MARGIN_NUMBER)
+        self._editor.SetMarginWidth(1, 24)
+
         self._editor.Bind(wx.EVT_MOUSEWHEEL, self.OnScroll)
         self._editor.Bind(wx.EVT_SCROLLWIN_THUMBRELEASE, self.OnScroll)
+        self._editor.Bind(wx.EVT_CHAR, self.OnFindDialog)
+        self._editor.Bind(wx.EVT_FIND, self.OnFind)
+        self._editor.Bind(wx.EVT_FIND_NEXT, self.OnFind)
         boxsizer.Add(self._editor, proportion=1, flag=wx.EXPAND, border=10)
 
         savesizer = wx.BoxSizer(wx.HORIZONTAL)
@@ -786,6 +788,43 @@ class UiTextEditor(wx.Panel):
                     self._suppress_rename = True
         self.TopLevelParent.UpdateActorLinkData(self._link, data)
         self._hash = hash
+
+    def OnFindDialog(self, e) -> None:
+        if e.GetKeyCode() == wx.WXK_CONTROL_F:
+            finddata = wx.FindReplaceData(flags=wx.FR_DOWN)
+            finddata.SetFindString(self._editor.GetSelectedText())
+            dlg = wx.FindReplaceDialog(self._editor, finddata, "Find")
+            dlg.Show()
+        else:
+            e.Skip()
+
+    def OnFind(self, e) -> None:
+        from_, to_ = self._editor.GetSelection()
+        self._editor.ClearSelections()
+        fs = e.GetFindString()
+        fl = e.GetFlags()
+        if fl & wx.FR_DOWN:
+            self._editor.SetAnchor(to_)
+            self._editor.SetCurrentPos(to_)
+            self._editor.SearchAnchor()
+            loc = self._editor.SearchNext(fl, fs)
+            if loc == -1:
+                self._editor.SetAnchor(0)
+                self._editor.SetCurrentPos(0)
+                self._editor.SearchAnchor()
+                self._editor.SearchNext(fl, fs)
+        else:
+            self._editor.SetAnchor(from_)
+            self._editor.SetCurrentPos(from_)
+            self._editor.SearchAnchor()
+            loc = self._editor.SearchPrev(fl, fs)
+            if loc == -1:
+                self._editor.SetAnchor(self._editor.GetTextLength())
+                self._editor.SetCurrentPos(self._editor.GetTextLength())
+                self._editor.SearchAnchor()
+                self._editor.SearchPrev(fl, fs)
+        from_, to_ = self._editor.GetSelection()
+        self._editor.ScrollRange(to_, from_)
 
     def Bind(self, event, handler, source=None, id=wx.ID_ANY, id2=wx.ID_ANY):
         self._bound_events.append((event, handler, source))
