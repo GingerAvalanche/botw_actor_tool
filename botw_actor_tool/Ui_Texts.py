@@ -16,8 +16,6 @@
 
 import wx
 
-from . import util
-
 
 class UiTexts(wx.Panel):
     _ctrls: dict
@@ -26,7 +24,6 @@ class UiTexts(wx.Panel):
     def __init__(self, *args, **kwargs) -> None:
         super(UiTexts, self).__init__(*args, **kwargs)
         self._ctrls = {}
-        util._set_dark_mode(self, util.BatSettings().get_dark_mode())
 
     def InitUI(self, actor_name: str, texts: dict) -> None:
         selfsizer = wx.BoxSizer(wx.VERTICAL)

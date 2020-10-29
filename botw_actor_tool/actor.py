@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Dict, Union
 from zlib import crc32
 
-from . import util
+from . import actorinfo, generic_link_files, util
 from .flag import BoolFlag, S32Flag
 from .pack import ActorPack
 from .texts import ActorTexts
@@ -55,22 +55,67 @@ FLAG_TYPES: dict = {
 }
 
 
+def try_retrieve_custom_file(link: str, fn: str) -> str:
+    s = ""
+    if link in generic_link_files:
+        if fn in generic_link_files[link]:
+            an = generic_link_files[link][fn]
+            a = ActorPack()
+            a.from_actor(util.find_file(Path(f"Actor/Pack/{an}.sbactorpack")))
+            s = a.get_link_data(link)
+            del a
+    return s
+
+
 class BATActor:
     _pack: ActorPack
+    _info: oead.byml.Hash
+    _needs_info_update: bool
+    _has_far: bool
     _far_pack: ActorPack
+    _far_info: oead.byml.Hash
+    _far_needs_info_update: bool
     _texts: ActorTexts
     _flags: FlagStore
+    _titlebg: bool
 
     def __init__(self, pack: Union[Path, str]) -> None:
+        if isinstance(pack, str):
+            self._titlebg = True
+            actorinfo_path = (
+                Path(pack.split("//")[0]).parent / "../Actor/ActorInfo.product.sbyml"
+            ).resolve()
         self._pack = ActorPack()
         self._pack.from_actor(pack)
+        self._has_far = False
+        self._needs_info_update = False
         if isinstance(pack, Path):
+            actorinfo_path = (pack.parent / "../ActorInfo.product.sbyml").resolve()
             if pack.with_name(f"{pack.name}_Far").exists():
                 self._far_pack = ActorPack()
                 self._far_pack.from_actor(Path(f"{pack.name}_Far"))
+                self._has_far = True
+                self._far_needs_info_update = False
         self._texts = ActorTexts(Path(pack), self._pack.get_link("ProfileUser"))
         self._flags = FlagStore()
         self.set_flags(self._pack.get_name())
+
+        if not actorinfo_path.exists():
+            actorinfo_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
+        actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_path.read_bytes()))
+        info_set = far_info_set = False
+        for actor in actorinfo["Actors"]:
+            if actor["name"] == self._pack.get_name():
+                self._info = actor
+                info_set = True
+            if self._has_far:
+                if actor["name"] == self._far_pack.get_name():
+                    self._far_info = actor
+                    far_info_set = True
+            if info_set and (far_info_set or not self._has_far):
+                break
+        del actorinfo
+        del actorinfo_path
 
     def get_name(self) -> str:
         return self._pack.get_name()
@@ -80,38 +125,45 @@ class BATActor:
         self._texts.set_actor_name(name)
         self._flags.remove_all()
         self.set_flags(name)
+        self._needs_info_update = True
+        self._titlebg = False
 
     def get_link(self, link: str) -> str:
         return self._pack.get_link(link)
 
     def set_link(self, link: str, linkref: str) -> bool:
-        if self._pack.get_has_far():
+        if self._has_far:
             if link == "LifeConditionUser" and linkref == "Dummy":
                 return False
             self._pack.set_link(link, linkref)
+            self._needs_info_update = True
             if link in FAR_LINKS:
                 self._far_pack.set_link(link, linkref)
+                self._far_needs_info_update = True
             return True
         else:
             self._pack.set_link(link, linkref)
+            self._needs_info_update = True
             return True
 
     def get_has_far(self) -> bool:
-        return self._pack.get_has_far()
+        return self._has_far
 
     def set_has_far(self, enabled: bool, pack: Path = Path()) -> bool:
-        if enabled and not self._pack.get_has_far():
+        if enabled and not self._has_far:
             self._far_pack = ActorPack()
             for link in [link for link in FAR_LINKS if not link == "LifeConditionUser"]:
                 linkref = self._pack.get_link(link)
                 if not linkref == "Dummy":
                     self._far_pack.set_link_data(link, self._pack.get_link_data(link))
             self._far_pack.set_name(f"{self._pack.get_name()}_Far")
-            self._pack.set_has_far(True)
+            self._has_far = True
+            self._needs_info_update = True
             return True
         if not enabled:
             del self._far_pack
-            self._pack.set_has_far(False)
+            self._has_far = False
+            self._needs_info_update = True
             return True
         return False
 
@@ -120,12 +172,28 @@ class BATActor:
 
     def set_link_data(self, link: str, data: str) -> None:
         self._pack.set_link_data(link, data)
+        self._needs_info_update = True
 
     def get_tags(self) -> str:
         return self._pack.get_tags()
 
     def set_tags(self, tags: str) -> None:
+        self._needs_info_update = True
         self._pack.set_tags(tags)
+
+    def get_info(self) -> oead.byml.Hash:
+        if self._needs_info_update:
+            # TODO: This is messy, we shouldn't let someone else directly modify our property
+            actorinfo.generate_actor_info(self._pack, self._has_far, self._info)
+            self._needs_info_update = False
+        return self._info
+
+    def get_far_info(self) -> oead.byml.Hash:
+        if self._far_needs_info_update:
+            # TODO: This is messy, we shouldn't let someone else directly modify our property
+            actorinfo.generate_actor_info(self._far_pack, False, self._far_info)
+            self._far_needs_info_update = False
+        return self._far_info
 
     def get_actorlink(self) -> oead.aamp.ParameterIO:
         return self._pack.get_actorlink()
@@ -158,9 +226,9 @@ class BATActor:
         actor_path.write_bytes(yaz0_bytes)
 
         hash = crc32(self._pack.get_name().encode("utf-8"))
-        info = self._pack.get_info()
+        info = self.get_info()
 
-        if self._pack.get_has_far():
+        if self._has_far:
             actor_path = Path(f"{root_dir}/Actor/Pack/{self._far_pack.get_name()}.sbactorpack")
             yaz0_bytes = oead.yaz0.compress(self._far_pack.get_bytes(be))
             if not actor_path.exists():
@@ -168,7 +236,7 @@ class BATActor:
             actor_path.write_bytes(yaz0_bytes)
 
             far_hash = crc32(self._far_pack.get_name().encode("utf-8"))
-            far_info = self._far_pack.get_info()
+            far_info = self.get_far_info()
 
         actorinfo_path = Path(f"{root_dir}/Actor/ActorInfo.product.sbyml")
         actorinfo_load_path = actorinfo_path
@@ -179,14 +247,14 @@ class BATActor:
 
         hashes = [int(h) for h in actorinfo["Hashes"]]
         hashes.append(hash)
-        if self._pack.get_has_far():
+        if self._has_far:
             hashes.append(far_hash)
         actorinfo["Hashes"] = oead.byml.Array(
             [oead.U32(h) if h > 2147483647 else oead.S32(h) for h in sorted(hashes)]
         )
 
         actorinfo["Actors"].append(info)
-        if self._pack.get_has_far():
+        if self._has_far:
             actorinfo["Actors"].append(far_info)
         actorinfo["Actors"] = sorted(
             actorinfo["Actors"], key=lambda a: crc32(a["name"].encode("utf-8"))

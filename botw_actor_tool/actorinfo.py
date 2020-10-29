@@ -514,10 +514,12 @@ def get_recipe_entries(data: oead.aamp.ParameterIO) -> dict:
     return d
 
 
-def generate_actor_info(pack: ActorPack, old_info: oead.byml.Hash) -> oead.byml.Hash:
+def generate_actor_info(
+    pack: ActorPack, has_far: bool, old_info: oead.byml.Hash
+) -> oead.byml.Hash:
     entry = old_info
     entry["name"] = pack.get_name()
-    entry["isHasFar"] = pack.get_has_far()
+    entry["isHasFar"] = has_far
 
     profile = pack.get_link("ProfileUser")
     if not pack.get_link("SlinkUser") == "Dummy":

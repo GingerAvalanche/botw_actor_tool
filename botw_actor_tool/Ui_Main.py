@@ -18,7 +18,7 @@ import wx
 from pathlib import Path
 from typing import Union
 
-from .actor import BATActor
+from .actor import BATActor, try_retrieve_custom_file
 from .Ui_Settings import UiSettingsPanel
 from .Ui_ActorLink import UiActorLinkPanel
 from .Ui_ActorSelect import UiActorSelect
@@ -27,11 +27,23 @@ from .Ui_Texts import UiTexts
 from .util import (
     BatSettings,
     LINKS,
-    _link_to_tab_index,
     _set_dark_mode,
-    _try_retrieve_custom_file,
     find_file,
 )
+
+
+def link_to_tab_index(link: str) -> int:
+    # I am not proud...
+    not_implemented = ["ElinkUser", "ProfileUser", "SlinkUser", "XlinkUser"]
+    if link in not_implemented:
+        return -1
+    index = LINKS.index(link)
+    if index == 0 or index == 7:
+        return -1
+    elif index > 7:
+        return index - 1
+    else:
+        return index
 
 
 class UiMainWindow(wx.Frame):
@@ -107,7 +119,7 @@ class UiMainWindow(wx.Frame):
 
         # debugmenu = wx.Menu()
         # textsoption = debugmenu.Append(wx.ID_ANY, "Print texts to console", "Test texts generator")
-        # menu.Append(debugmenu, "&Debug")
+        # self._menubar.Append(debugmenu, "&Debug")
 
         self.SetMenuBar(self._menubar)
 
@@ -169,7 +181,7 @@ class UiMainWindow(wx.Frame):
                 enable = True
             else:
                 enable = False
-            index = _link_to_tab_index(LINKS[i])
+            index = link_to_tab_index(LINKS[i])
             if not index == -1:
                 self._linkselectorbox.EnableItem(index, enable)
         self._linkselectorbox.EnableItem(25, True)
@@ -181,7 +193,7 @@ class UiMainWindow(wx.Frame):
         self.Thaw()
 
     def EnableRadioForLink(self, link: str, enable: bool) -> None:
-        index = _link_to_tab_index(link)
+        index = link_to_tab_index(link)
         if not index == -1:
             self._linkselectorbox.EnableItem(index, enable)
 
@@ -484,7 +496,7 @@ class UiMainWindow(wx.Frame):
         if not self._actor.set_link(link, linkref):
             return False
         if try_retrieve_data:
-            data = _try_retrieve_custom_file(link, linkref)
+            data = try_retrieve_custom_file(link, linkref)
             if data:
                 dlg = wx.MessageDialog(
                     self, f"Found a vanilla {link} file named {linkref}. Import?", style=wx.YES_NO,

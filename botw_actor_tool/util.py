@@ -24,8 +24,7 @@ import wx
 
 import oead
 
-from . import generic_link_files, BGDATA_MAPPING
-from .pack import ActorPack
+from . import BGDATA_MAPPING
 from .store import FlagStore
 
 
@@ -152,32 +151,6 @@ LANGUAGES = [
     "KRko",
     "TWzh",
 ]
-
-
-def _link_to_tab_index(link: str) -> int:
-    # I am not proud...
-    not_implemented = ["ElinkUser", "ProfileUser", "SlinkUser", "XlinkUser"]
-    if link in not_implemented:
-        return -1
-    index = LINKS.index(link)
-    if index == 0 or index == 7:
-        return -1
-    elif index > 7:
-        return index - 1
-    else:
-        return index
-
-
-def _try_retrieve_custom_file(link: str, fn: str) -> str:
-    s = ""
-    if link in generic_link_files:
-        if fn in generic_link_files[link]:
-            an = generic_link_files[link][fn]
-            a = ActorPack()
-            a.from_actor(find_file(Path(f"Actor/Pack/{an}.sbactorpack")))
-            s = a.get_link_data(link)
-            del a
-    return s
 
 
 def _set_dark_mode(window: wx.Window, enabled: bool) -> None:
