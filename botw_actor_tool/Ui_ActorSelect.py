@@ -88,9 +88,9 @@ class UiActorSelect(wx.Dialog):
     def OnFilter(self, e) -> None:
         self.selectoptions.Clear()
         filterednames = []
-        str_filter = self.findtextenter.GetValue()
+        str_filter = self.findtextenter.GetValue().lower()
         for name in self.actornames:
-            if str_filter in name:
+            if str_filter in name.lower():
                 filterednames.append(name)
         self.selectoptions.Set(filterednames)
         self.selectoptions.Update()
