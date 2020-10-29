@@ -35,7 +35,11 @@ class ActorTexts:
         self._misc_texts = {}
         self._actor_name = pack.stem
         self._profile = profile
-        root_dir = Path(str(pack).split("Actor")[0])
+        root_dir = pack.parent
+        while True:
+            if root_dir.name == "content":
+                break
+            root_dir = root_dir.parent
         settings = util.BatSettings()
         lang = settings.get_setting("lang")
         text_pack = root_dir / f"Pack/Bootup_{lang}.pack"
