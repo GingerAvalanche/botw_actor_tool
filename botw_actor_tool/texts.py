@@ -81,6 +81,10 @@ class ActorTexts:
 
     def write(self, root_str: str, be: bool) -> None:
         if self._texts:
+            for entry, text in self._texts.items():
+                entry_name = f"{self._actor_name}_{entry}"
+                self._misc_texts[entry_name] = {"contents": [{"text": text}]}  # type:ignore[index]
+
             settings = util.BatSettings()
             msyt = {
                 "group_count": self._group_count,
@@ -89,9 +93,6 @@ class ActorTexts:
             }
             for entry, data in self._misc_texts.items():
                 msyt["entries"][entry] = data  # type:ignore[index]
-            for entry, text in self._texts.items():
-                entry_name = f"{self._actor_name}_{entry}"
-                msyt["entries"][entry_name] = {"contents": [{"text": text}]}  # type:ignore[index]
             platform = "wiiu" if be else "switch"
             temp = settings.get_data_dir() / "temp.msbt"
             pymsyt.write_msbt(msyt, temp, platform=platform)
