@@ -245,7 +245,7 @@ def make_new_gamedata(store: FlagStore, big_endian: bool) -> bytes:
             if end > len(bgdata_array):
                 end = len(bgdata_array)
             bgwriter.files[f"/{prefix}_{idx}.bgdata"] = oead.byml.to_binary(
-                oead.byml.Hash({data_type: bgdata_array[start:end]}), big_endian,
+                oead.byml.Hash({data_type: bgdata_array[start:end]}), big_endian
             )
     return bgwriter.write()[1]
 
@@ -309,6 +309,20 @@ def inject_files_into_bootup(bootup_path: Path, files: list, datas: list):
     new_bytes = new_sarc.write()[1]
     del new_sarc
     bootup_path.write_bytes(new_bytes if not yaz else oead.yaz0.compress(new_bytes))
+    del new_bytes
+
+
+def inject_bytes_into_sarc(sarc: Path, name: str, data: bytes) -> None:
+    sarc_data = sarc.read_bytes()
+    yaz = sarc_data[0:4] == b"Yaz0"
+    if yaz:
+        sarc_data = oead.yaz0.decompress(sarc_data)
+    sarc_writer = oead.SarcWriter.from_sarc(oead.Sarc(sarc_data))
+    del sarc_data
+    sarc_writer.files[name] = data
+    new_bytes = sarc_writer.write()[1]
+    del sarc_writer
+    sarc.write_bytes(new_bytes if not yaz else oead.yaz0.compress(new_bytes))
     del new_bytes
 
 
@@ -381,7 +395,7 @@ class BatSettings:
                         "dark_theme": False,
                         "lang": "USen",
                     },
-                    "Window": {"WinPosX": "0", "WinPosY": "0", "WinHeight": "0", "WinWidth": "0",},
+                    "Window": {"WinPosX": "0", "WinPosY": "0", "WinHeight": "0", "WinWidth": "0"},
                 }
             )
 

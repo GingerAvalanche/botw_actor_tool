@@ -77,11 +77,11 @@ class BATActor:
     _far_needs_info_update: bool
     _texts: ActorTexts
     _flags: FlagStore
-    _titlebg: bool
+    _resident: bool
 
     def __init__(self, pack: Union[Path, str]) -> None:
         if isinstance(pack, str):
-            self._titlebg = True
+            self._resident = True
             actorinfo_path = (
                 Path(pack.split("//")[0]).parent / "../Actor/ActorInfo.product.sbyml"
             ).resolve()
@@ -90,6 +90,7 @@ class BATActor:
         self._has_far = False
         self._needs_info_update = False
         if isinstance(pack, Path):
+            self._resident = False
             actorinfo_path = (pack.parent / "../ActorInfo.product.sbyml").resolve()
             if pack.with_name(f"{pack.name}_Far").exists():
                 self._far_pack = ActorPack()
@@ -126,7 +127,7 @@ class BATActor:
         self._flags.remove_all()
         self.set_flags(name)
         self._needs_info_update = True
-        self._titlebg = False
+        self._resident = False
 
     def get_link(self, link: str) -> str:
         return self._pack.get_link(link)
@@ -159,6 +160,7 @@ class BATActor:
             self._far_pack.set_name(f"{self._pack.get_name()}_Far")
             self._has_far = True
             self._needs_info_update = True
+            self._resident = False
             return True
         if not enabled:
             del self._far_pack
@@ -218,12 +220,21 @@ class BATActor:
                 self._flags.add(ftype, flag)
 
     def save(self, root_dir: str, be: bool) -> None:
-        actor_path = Path(f"{root_dir}/Actor/Pack/{self._pack.get_name()}.sbactorpack")
-        yaz0_bytes = oead.yaz0.compress(self._pack.get_bytes(be))
-        if not actor_path.exists():
-            actor_path.parent.mkdir(parents=True, exist_ok=True)
-            actor_path.touch()
-        actor_path.write_bytes(yaz0_bytes)
+        if self._resident:
+            titlebg_path = Path(f"{root_dir}/Pack/TitleBG.pack")
+            actor_dir = f"Actor/Pack/{self._pack.get_name()}.sbactorpack"
+            if not titlebg_path.exists():
+                titlebg_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(util.find_file(Path("Pack/TitleBG.pack")), titlebg_path)
+            yaz0_bytes = oead.yaz0.compress(self._pack.get_bytes(be))
+            util.inject_bytes_into_sarc(titlebg_path, actor_dir, yaz0_bytes)
+        else:
+            actor_path = Path(f"{root_dir}/Actor/Pack/{self._pack.get_name()}.sbactorpack")
+            yaz0_bytes = oead.yaz0.compress(self._pack.get_bytes(be))
+            if not actor_path.exists():
+                actor_path.parent.mkdir(parents=True, exist_ok=True)
+                actor_path.touch()
+            actor_path.write_bytes(yaz0_bytes)
 
         hash = crc32(self._pack.get_name().encode("utf-8"))
         info = self.get_info()
