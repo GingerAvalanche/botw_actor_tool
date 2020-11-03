@@ -37,7 +37,7 @@ class ActorTexts:
         self._profile = profile
         root_dir = pack.parent
         while True:
-            if root_dir.name == "content":
+            if root_dir.name == "content" or root_dir.name == "romfs":
                 break
             root_dir = root_dir.parent
         settings = util.BatSettings()
