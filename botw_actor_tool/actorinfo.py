@@ -304,6 +304,10 @@ NULL_VALUES = [  # never ignore bool
 ]
 
 
+def padhex(s):
+    return "0x" + s[2:].zfill(8)
+
+
 def _deepretrieve_info(
     data: dict,
     keys: Union[dict, list],
@@ -367,7 +371,7 @@ def get_actorlink_tags(data: oead.aamp.ParameterIO) -> Union[oead.byml.Hash, Non
         for _, val in data.objects["Tags"].params.items():
             taghash = zlib.crc32(val.v.encode("utf-8"))
             tagval = oead.U32(taghash) if taghash > 2147483647 else oead.S32(taghash)
-            taghex = f"tag{str(hex(taghash))[2:]}"
+            taghex = f"tag{padhex(hex(taghash))[2:]}"
             d[taghex] = tagval
     return d
 
