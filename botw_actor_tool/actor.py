@@ -257,19 +257,28 @@ class BATActor:
         actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_load_path.read_bytes()))
 
         hashes = [int(h) for h in actorinfo["Hashes"]]
-        hashes.append(hash)
+        try:
+            hash_index = hashes.index(hash)
+        except ValueError:
+            hashes.append(hash)
+            hashes.sort()
+            hash_index = hashes.index(hash)
+            actorinfo["Actors"].insert(hash_index, oead.byml.Hash())
         if self._has_far:
-            hashes.append(far_hash)
+            try:
+                far_hash_index = hashes.index(far_hash)
+            except ValueError:
+                hashes.append(far_hash)
+                hashes.sort()
+                far_hash_index = hashes.index(far_hash)
+                actorinfo["Actors"].insert(far_hash_index, oead.byml.Hash())
         actorinfo["Hashes"] = oead.byml.Array(
-            [oead.U32(h) if h > 2147483647 else oead.S32(h) for h in sorted(hashes)]
+            [oead.U32(h) if h > 2147483647 else oead.S32(h) for h in hashes]
         )
 
-        actorinfo["Actors"].append(info)
+        actorinfo["Actors"][hash_index] = info
         if self._has_far:
-            actorinfo["Actors"].append(far_info)
-        actorinfo["Actors"] = sorted(
-            actorinfo["Actors"], key=lambda a: crc32(a["name"].encode("utf-8"))
-        )
+            actorinfo["Actors"][far_hash_index] = far_info
 
         actorinfo_path.write_bytes(oead.yaz0.compress(oead.byml.to_binary(actorinfo, be)))
 
