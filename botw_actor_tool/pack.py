@@ -36,7 +36,7 @@ class ActorPack:
     _bymlfiles: Dict[str, oead.byml.Hash]
     _miscfiles: dict
     _info: oead.byml.Hash
-    _links: dict
+    _links: Dict[str, str]
     _tags: list
     _misc_tags: list
 

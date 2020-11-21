@@ -16,7 +16,6 @@
 
 import oead
 import shutil
-import yaml
 from pathlib import Path
 from typing import Dict, Union
 from zlib import crc32

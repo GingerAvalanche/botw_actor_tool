@@ -55,7 +55,10 @@ class UiTextEditor(wx.Panel):
         savebtn = wx.Button(self, label="Save", size=(70, 25))
         self.Bind(wx.EVT_BUTTON, self.OnSave, savebtn)
         savesizer.Add(
-            savedesc, proportion=1, flag=wx.RIGHT | wx.ALIGN_CENTER_VERTICAL, border=10,
+            savedesc,
+            proportion=1,
+            flag=wx.RIGHT | wx.ALIGN_CENTER_VERTICAL,
+            border=10,
         )
         savesizer.Add(savebtn)
         boxsizer.Add(savesizer, flag=wx.EXPAND | wx.TOP, border=10)

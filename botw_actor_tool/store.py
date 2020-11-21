@@ -116,7 +116,7 @@ IGNORED_SAVE_FLAGS = [
 
 
 class FlagStore:
-    _store: Dict[str, dict]
+    _store: Dict[str, Dict[int, BFUFlag]]
 
     def __init__(self) -> None:
         self._store = {}

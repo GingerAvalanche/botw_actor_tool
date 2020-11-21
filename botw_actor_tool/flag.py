@@ -1250,4 +1250,3 @@ class Vec4Flag(BFUFlag):
         for substr, value in OVERRIDES["OVERRIDE_VEC4_MIN_VALUE"].items():
             if substr in self._data_name:
                 self._min_value = value
-

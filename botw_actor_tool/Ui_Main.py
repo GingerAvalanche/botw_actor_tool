@@ -134,7 +134,10 @@ class UiMainWindow(wx.Frame):
         panelbox = wx.BoxSizer(wx.VERTICAL)
 
         self._linkselectorbox = wx.RadioBox(
-            self, label="Actor Property", choices=tabs, majorDimension=7,
+            self,
+            label="Actor Property",
+            choices=tabs,
+            majorDimension=7,
         )
         for i in range(len(tabs)):
             self._linkselectorbox.EnableItem(i, False)
@@ -499,7 +502,9 @@ class UiMainWindow(wx.Frame):
             data = try_retrieve_custom_file(link, linkref)
             if data:
                 dlg = wx.MessageDialog(
-                    self, f"Found a vanilla {link} file named {linkref}. Import?", style=wx.YES_NO,
+                    self,
+                    f"Found a vanilla {link} file named {linkref}. Import?",
+                    style=wx.YES_NO,
                 )
                 if dlg.ShowModal() == wx.ID_YES:
                     self.UpdateActorLinkData(link, data)
