@@ -52,7 +52,7 @@ class ActorTexts:
         msbt = message_sarc.get_file(f"ActorType/{self._profile}.msbt")
         if not msbt:
             return
-        msyt = Msbt.from_binary(msbt).to_dict()
+        msyt = Msbt.from_binary(bytes(msbt.data)).to_dict()
         del text_sarc
         del message_sarc
         del msbt
@@ -60,7 +60,7 @@ class ActorTexts:
             if self._actor_name in e:
                 entry = e.replace(f"{self._actor_name}_", "")
                 self._texts[entry] = ""
-                for control_type in msyt["entries"][entry]["contents"]:
+                for control_type in msyt["entries"][e]["contents"]:
                     if "text" in control_type:
                         self._texts[entry] = f"{self._texts[entry]}{control_type['text']}"
 
@@ -88,7 +88,7 @@ class ActorTexts:
             message_sarc = oead.Sarc(oead.yaz0.decompress(text_sarc.get_file(message).data))
             message_sarc_writer = oead.SarcWriter.from_sarc(message_sarc)
             msbt_name = f"ActorType/{self._profile}.msbt"
-            msyt = Msbt.from_binary(message_sarc_writer.files[msbt_name]).to_dict()
+            msyt = Msbt.from_binary(bytes(message_sarc_writer.files[msbt_name])).to_dict()
             for key, text in self._texts.items():
                 msyt["entries"][f"{self._actor_name}_{key}"] = {"contents": [{"text": text}]}
             message_sarc_writer.files[msbt_name] = Msbt.from_dict(msyt).to_binary(be)
