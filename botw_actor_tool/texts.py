@@ -15,8 +15,8 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import oead
-import pymsyt
 from pathlib import Path
+from pymsyt import Msbt
 from typing import Dict
 
 from . import util
@@ -27,8 +27,6 @@ class ActorTexts:
     _misc_texts: dict
     _actor_name: str
     _profile: str
-    _group_count: int
-    _atr_unknown: int
 
     def __init__(self, pack: Path, profile: str):
         self._texts = {}
@@ -54,23 +52,17 @@ class ActorTexts:
         msbt = message_sarc.get_file(f"ActorType/{self._profile}.msbt")
         if not msbt:
             return
-        temp = settings.get_data_dir() / "temp.msbt"
-        with temp.open("wb") as t_file:
-            t_file.write(msbt.data)
-        msyt = pymsyt.parse_msbt(temp)
+        msyt = Msbt.from_binary(msbt).to_dict()
         del text_sarc
         del message_sarc
         del msbt
-        temp.unlink()
-        self._group_count = msyt["group_count"]
-        self._atr_unknown = msyt["atr1_unknown"]
-        for entry in msyt["entries"]:
-            if self._actor_name in entry:
-                entry_name = entry.replace(f"{self._actor_name}_", "")
+        for e in msyt["entries"]:
+            if self._actor_name in e:
+                entry = e.replace(f"{self._actor_name}_", "")
+                self._texts[entry] = ""
                 for control_type in msyt["entries"][entry]["contents"]:
                     if "text" in control_type:
-                        self._texts[entry_name] = control_type["text"]
-            self._misc_texts[entry] = msyt["entries"][entry]
+                        self._texts[entry] = f"{self._texts[entry]}{control_type['text']}"
 
     def set_texts(self, texts: Dict[str, str]) -> None:
         self._texts = texts
@@ -83,24 +75,7 @@ class ActorTexts:
 
     def write(self, root_str: str, be: bool) -> None:
         if self._texts:
-            for entry, text in self._texts.items():
-                entry_name = f"{self._actor_name}_{entry}"
-                self._misc_texts[entry_name] = {"contents": [{"text": text}]}  # type:ignore[index]
-
-            settings = util.BatSettings()
-            msyt = {
-                "group_count": self._group_count,
-                "atr1_unknown": self._atr_unknown,
-                "entries": {},
-            }
-            for entry, data in self._misc_texts.items():
-                msyt["entries"][entry] = data  # type:ignore[index]
-            platform = "wiiu" if be else "switch"
-            temp = settings.get_data_dir() / "temp.msbt"
-            pymsyt.write_msbt(msyt, temp, platform=platform)
-            msbt = temp.read_bytes()
-            temp.unlink()
-            lang = settings.get_setting("lang")
+            lang = util.BatSettings().get_setting("lang")
             text_pack = Path(f"{root_str}/Pack/Bootup_{lang}.pack")
             text_pack_load = text_pack
             if not text_pack.exists():
@@ -113,7 +88,10 @@ class ActorTexts:
             message_sarc = oead.Sarc(oead.yaz0.decompress(text_sarc.get_file(message).data))
             message_sarc_writer = oead.SarcWriter.from_sarc(message_sarc)
             msbt_name = f"ActorType/{self._profile}.msbt"
-            message_sarc_writer.files[msbt_name] = msbt
+            msyt = Msbt.from_binary(message_sarc_writer.files[msbt_name]).to_dict()
+            for key, text in self._texts.items():
+                msyt["entries"][f"{self._actor_name}_{key}"] = {"contents": [{"text": text}]}
+            message_sarc_writer.files[msbt_name] = Msbt.from_dict(msyt).to_binary(be)
             message_bytes = message_sarc_writer.write()[1]
             text_sarc_writer.files[message] = oead.yaz0.compress(message_bytes)
             text_pack.write_bytes(text_sarc_writer.write()[1])
