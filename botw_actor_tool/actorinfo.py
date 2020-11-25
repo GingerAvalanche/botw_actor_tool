@@ -519,7 +519,7 @@ def get_recipe_entries(data: oead.aamp.ParameterIO) -> dict:
 
 
 def generate_actor_info(
-    pack: ActorPack, has_far: bool, old_info: oead.byml.Hash, new_actor: bool
+    pack: ActorPack, has_far: bool, old_info: oead.byml.Hash, old_actor: bool
 ) -> oead.byml.Hash:
     entry = old_info
     entry["name"] = pack.get_name()
@@ -527,7 +527,7 @@ def generate_actor_info(
 
     profile = pack.get_link("ProfileUser")
 
-    if new_actor:
+    if not old_actor:
         if not pack.get_link("SlinkUser") == "Dummy":
             entry["bugMask"] = oead.S32(2)  # TODO: Find what sets the first bit of bugMask
 

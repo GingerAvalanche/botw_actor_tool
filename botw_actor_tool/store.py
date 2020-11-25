@@ -15,7 +15,7 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from oead.byml import Array, Hash
-from typing import Dict, List
+from typing import Dict, List, Set
 
 from . import BGDATA_MAPPING
 from .flag import (
@@ -122,7 +122,7 @@ class FlagStore:
     def __init__(self) -> None:
         self._store = {}
         self._orig_store = {}
-        for _, ftype in BGDATA_MAPPING.items():
+        for ftype in FLAG_MAPPING:
             self._store[ftype] = {}
             self._orig_store[ftype] = {}
 
@@ -137,20 +137,32 @@ class FlagStore:
                     flag, revival=is_revival
                 )
 
+    def add_flags_from_Hash_no_overwrite(self, name: str, data: Hash) -> None:
+        is_revival = bool("revival" in name)
+        for ftype, flags in data.items():
+            for flag in flags:
+                if not self.find(ftype, flag["HashValue"].v).exists():
+                    self._store[ftype][flag["HashValue"].v] = FLAG_MAPPING[ftype](
+                        flag, revival=is_revival
+                    )
+                    self._orig_store[ftype][flag["HashValue"].v] = FLAG_MAPPING[ftype](
+                        flag, revival=is_revival
+                    )
+
     def find(self, ftype: str, hash: int) -> BFUFlag:
         if hash in self._store[ftype]:
             return self._store[ftype][hash]
         return BFUFlag()
 
     def find_all(self, ftype: str, search: str) -> List[BFUFlag]:
-        r: list = []
+        r: List[BFUFlag] = []
         for _, flag in self._store[ftype].items():
             if flag.name_contains(search):
                 r.append(flag)
         return r
 
-    def find_all_hashes(self, ftype: str, search: str) -> set:
-        r: set = set()
+    def find_all_hashes(self, ftype: str, search: str) -> Set[int]:
+        r: Set[int] = set()
         for hash, flag in self._store[ftype].items():
             if flag.name_contains(search):
                 r.add(hash)
@@ -180,23 +192,23 @@ class FlagStore:
             r += len(self.get_deleted_ftype(ftype))
         return r
 
-    def get_new_ftype(self, ftype: str) -> set:
-        r = set()
+    def get_new_ftype(self, ftype: str) -> Set[str]:
+        r: Set[str] = set()
         for _, flag in self._store[ftype].items():
             if flag.hash_value not in self._orig_store[ftype]:
                 r.add(flag.data_name)
         return r
 
-    def get_modified_ftype(self, ftype: str) -> set:
-        r = set()
+    def get_modified_ftype(self, ftype: str) -> Set[str]:
+        r: Set[str] = set()
         for _, flag in self._store[ftype].items():
             if flag.hash_value in self._orig_store[ftype]:
                 if not flag == self._orig_store[ftype][flag.hash_value]:
                     r.add(flag.data_name)
         return r
 
-    def get_deleted_ftype(self, ftype: str) -> set:
-        r = set()
+    def get_deleted_ftype(self, ftype: str) -> Set[str]:
+        r: Set[str] = set()
         for _, flag in self._orig_store[ftype].items():
             if flag.hash_value not in self._store[ftype]:
                 r.add(flag.data_name)
@@ -222,21 +234,21 @@ class FlagStore:
             r += len(self.get_deleted_ftype_svdata(ftype))
         return r
 
-    def get_new_ftype_svdata(self, ftype: str) -> set:
-        r = set()
+    def get_new_ftype_svdata(self, ftype: str) -> Set[str]:
+        r: Set[str] = set()
         for _, flag in self._store[ftype].items():
             if flag.is_save:
                 if flag.hash_value not in self._orig_store[ftype]:
                     r.add(flag.data_name)
         return r
 
-    def get_modified_ftype_svdata(self, ftype: str) -> set:
+    def get_modified_ftype_svdata(self, ftype: str) -> Set[str]:
         """Always returns empty because modifying anything about
         a save flag will make it a new+delete instead"""
         return set()
 
-    def get_deleted_ftype_svdata(self, ftype: str) -> set:
-        r = set()
+    def get_deleted_ftype_svdata(self, ftype: str) -> Set[str]:
+        r: Set[str] = set()
         for _, flag in self._orig_store[ftype].items():
             if flag.is_save:
                 if flag.hash_value not in self._store[ftype]:

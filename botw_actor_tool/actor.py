@@ -78,6 +78,7 @@ class BATActor:
     _far_needs_info_update: bool
     _texts: ActorTexts
     _flags: FlagStore
+    _flag_hashes: Dict[str, set]
     _resident: bool
     _origname: str
     _far_origname: str
@@ -104,6 +105,7 @@ class BATActor:
                 self._far_needs_info_update = False
         self._texts = ActorTexts(Path(pack), self._pack.get_link("ProfileUser"))
         self._flags = FlagStore()
+        self._flag_hashes = {"bool_data": set(), "s32_data": set()}
         self.set_flags(self._origname)
 
         if not actorinfo_path.exists():
@@ -129,8 +131,6 @@ class BATActor:
     def set_name(self, name: str) -> None:
         self._pack.set_name(name)
         self._texts.set_actor_name(name)
-        del self._flags
-        self._flags = FlagStore()
         self.set_flags(name)
         self._needs_info_update = True
         self._resident = False
@@ -220,6 +220,10 @@ class BATActor:
         self._texts.set_texts(texts)
 
     def set_flags(self, name: str) -> None:
+        for ftype, hashes in self._flag_hashes.items():
+            for hash in hashes:
+                self._flags.remove(ftype, hash)
+            self._flag_hashes[ftype].clear()
         actor_type = name.split("_")[0]
         if actor_type in FLAG_TYPES:
             for prefix in FLAG_TYPES[actor_type]:
@@ -229,6 +233,7 @@ class BATActor:
                     ftype = "s32_data"
                 flag = FLAG_CLASSES[prefix]()
                 flag.data_name = f"{prefix}{name}"
+                self._flag_hashes[ftype].add(flag.hash_value)
                 flag.use_name_to_override_params()
                 self._flags.add(ftype, flag)
 
@@ -304,7 +309,7 @@ class BATActor:
 
         gamedata_sarc = util.get_gamedata_sarc(bootup_path)
         for bgdata_name, bgdata_hash in map(util.unpack_oead_file, gamedata_sarc.get_files()):
-            self._flags.add_flags_from_Hash(bgdata_name, bgdata_hash)
+            self._flags.add_flags_from_Hash_no_overwrite(bgdata_name, bgdata_hash)
 
         files_to_write: list = []
         files_to_write.append("GameData/gamedata.ssarc")
