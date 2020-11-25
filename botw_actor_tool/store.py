@@ -117,25 +117,30 @@ IGNORED_SAVE_FLAGS = [
 
 class FlagStore:
     _store: Dict[str, Dict[int, BFUFlag]]
+    _orig_store: Dict[str, Dict[int, BFUFlag]]
 
     def __init__(self) -> None:
         self._store = {}
-        for ftype in FLAG_MAPPING:
+        self._orig_store = {}
+        for _, ftype in BGDATA_MAPPING.items():
             self._store[ftype] = {}
+            self._orig_store[ftype] = {}
 
-    def add_flags_from_Hash(self, name: str, data: Hash, overwrite_ok: bool = True) -> None:
+    def add_flags_from_Hash(self, name: str, data: Hash) -> None:
         is_revival = bool("revival" in name)
         for ftype, flags in data.items():
             for flag in flags:
-                hash = flag["HashValue"].v
-                if hash in self._store[ftype] and not overwrite_ok:
-                    continue
-                self._store[ftype][hash] = FLAG_MAPPING[ftype](flag, revival=is_revival)
+                self._store[ftype][flag["HashValue"].v] = FLAG_MAPPING[ftype](
+                    flag, revival=is_revival
+                )
+                self._orig_store[ftype][flag["HashValue"].v] = FLAG_MAPPING[ftype](
+                    flag, revival=is_revival
+                )
 
     def find(self, ftype: str, hash: int) -> BFUFlag:
         if hash in self._store[ftype]:
             return self._store[ftype][hash]
-        return BoolFlag()
+        return BFUFlag()
 
     def find_all(self, ftype: str, search: str) -> List[BFUFlag]:
         r: list = []
@@ -152,38 +157,101 @@ class FlagStore:
         return r
 
     def add(self, ftype: str, flag: BFUFlag) -> None:
-        self._store[ftype][flag.get_hash()] = flag
+        self._store[ftype][flag.hash_value] = flag
 
-    def modify(self, ftype: str, old_hash: int, new_flag: BFUFlag) -> bool:
-        flag = self.find(ftype, old_hash)
-        new_hash = new_flag.get_hash()
-        if new_hash == old_hash:
-            return False
-        self._store[ftype].pop(old_hash)
-        self._store[ftype][new_hash] = new_flag
-        return True
+    def remove(self, ftype: str, hash: int) -> None:
+        self._store[ftype].pop(hash, None)
 
-    def remove(self, ftype: str, hash: int) -> bool:
-        flag = self.find(ftype, hash)
-        if flag.exists():
-            name = self._store[ftype][hash].get_name()
-            self._store[ftype].pop(hash)
-            return True
-        return False
-
-    def remove_all(self) -> None:
+    def get_num_new(self) -> int:
+        r = 0
         for ftype in FLAG_MAPPING:
-            self._store[ftype].clear()
+            r += len(self.get_new_ftype(ftype))
+        return r
+
+    def get_num_modified(self) -> int:
+        r = 0
+        for ftype in FLAG_MAPPING:
+            r += len(self.get_modified_ftype(ftype))
+        return r
+
+    def get_num_deleted(self) -> int:
+        r = 0
+        for ftype in FLAG_MAPPING:
+            r += len(self.get_deleted_ftype(ftype))
+        return r
+
+    def get_new_ftype(self, ftype: str) -> set:
+        r = set()
+        for _, flag in self._store[ftype].items():
+            if flag.hash_value not in self._orig_store[ftype]:
+                r.add(flag.data_name)
+        return r
+
+    def get_modified_ftype(self, ftype: str) -> set:
+        r = set()
+        for _, flag in self._store[ftype].items():
+            if flag.hash_value in self._orig_store[ftype]:
+                if not flag == self._orig_store[ftype][flag.hash_value]:
+                    r.add(flag.data_name)
+        return r
+
+    def get_deleted_ftype(self, ftype: str) -> set:
+        r = set()
+        for _, flag in self._orig_store[ftype].items():
+            if flag.hash_value not in self._store[ftype]:
+                r.add(flag.data_name)
+        return r
+
+    def get_total_changes(self) -> int:
+        return self.get_num_new() + self.get_num_modified() + self.get_num_deleted()
+
+    def get_num_new_svdata(self) -> int:
+        r = 0
+        for ftype in FLAG_MAPPING:
+            r += len(self.get_new_ftype_svdata(ftype))
+        return r
+
+    def get_num_modified_svdata(self) -> int:
+        """Always returns 0 because modifying anything about
+        a save flag will make it a new+delete instead"""
+        return 0
+
+    def get_num_deleted_svdata(self) -> int:
+        r = 0
+        for ftype in FLAG_MAPPING:
+            r += len(self.get_deleted_ftype_svdata(ftype))
+        return r
+
+    def get_new_ftype_svdata(self, ftype: str) -> set:
+        r = set()
+        for _, flag in self._store[ftype].items():
+            if flag.is_save:
+                if flag.hash_value not in self._orig_store[ftype]:
+                    r.add(flag.data_name)
+        return r
+
+    def get_modified_ftype_svdata(self, ftype: str) -> set:
+        """Always returns empty because modifying anything about
+        a save flag will make it a new+delete instead"""
+        return set()
+
+    def get_deleted_ftype_svdata(self, ftype: str) -> set:
+        r = set()
+        for _, flag in self._orig_store[ftype].items():
+            if flag.is_save:
+                if flag.hash_value not in self._store[ftype]:
+                    r.add(flag.data_name)
+        return r
 
     def flags_to_bgdata_Array(self, prefix: str) -> Array:
         ftype = BGDATA_MAPPING[prefix]
         if prefix == "revival_bool_data" or prefix == "revival_s32_data":
             flag_list = [
-                flag.to_Hash() for _, flag in self._store[ftype].items() if flag.is_revival()
+                flag.to_Hash() for _, flag in self._store[ftype].items() if flag.is_revival
             ]
         elif prefix == "bool_data" or prefix == "s32_data":
             flag_list = [
-                flag.to_Hash() for _, flag in self._store[ftype].items() if not flag.is_revival()
+                flag.to_Hash() for _, flag in self._store[ftype].items() if not flag.is_revival
             ]
         else:
             flag_list = [flag.to_Hash() for _, flag in self._store[ftype].items()]
@@ -196,6 +264,6 @@ class FlagStore:
             flag_list += [
                 flag.to_sv_Hash()
                 for _, flag in flagdict.items()
-                if flag.is_save() and not flag.get_name() in IGNORED_SAVE_FLAGS
+                if flag.is_save and not flag.data_name in IGNORED_SAVE_FLAGS
             ]
         return Array(sorted(flag_list, key=lambda f: f["HashValue"]))

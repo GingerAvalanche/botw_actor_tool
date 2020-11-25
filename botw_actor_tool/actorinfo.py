@@ -519,18 +519,20 @@ def get_recipe_entries(data: oead.aamp.ParameterIO) -> dict:
 
 
 def generate_actor_info(
-    pack: ActorPack, has_far: bool, old_info: oead.byml.Hash
+    pack: ActorPack, has_far: bool, old_info: oead.byml.Hash, new_actor: bool
 ) -> oead.byml.Hash:
     entry = old_info
     entry["name"] = pack.get_name()
     entry["isHasFar"] = has_far
 
     profile = pack.get_link("ProfileUser")
-    if not pack.get_link("SlinkUser") == "Dummy":
-        entry["bugMask"] = oead.S32(2)  # TODO: Find what sets the first bit of bugMask
 
-    if entry["sortKey"].v > 0:
-        entry["sortKey"] = oead.S32(entry["sortKey"].v + 1)
+    if new_actor:
+        if not pack.get_link("SlinkUser") == "Dummy":
+            entry["bugMask"] = oead.S32(2)  # TODO: Find what sets the first bit of bugMask
+
+        if entry["sortKey"].v > 0:
+            entry["sortKey"] = oead.S32(entry["sortKey"].v + 1)
 
     actorlink = pack.get_actorlink()
     for key, value in get_actorlink_entries(actorlink).items():

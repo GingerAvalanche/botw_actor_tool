@@ -9,7 +9,11 @@
             "CompleteTreasure_": true,
             "Enter_": true,
             "IsGet_": true,
-            "Open_": true
+            "Open_": true,
+            "IsGet_PortableUnit": false,
+            "Clear_Remains": false,
+            "Open_Door": false,
+            "FinalTrial_Open_DoorBoss": true
         },
         "OVERRIDE_IS_PROGRAM_READABLE": {},
         "OVERRIDE_IS_PROGRAM_WRITABLE": {
@@ -65,11 +69,12 @@
             "IsRegisteredPictureBook_TBox": 6,
             "IsRegisteredPictureBook_Weapon": 5,
             "MainField_Npc_HiddenKorok": 11,
-            "_Dark": 7,
-            "_Dragon_": 7,
-            "_Ganon": 7,
-            "_Gold": 7,
-            "_SiteBoss_": 7
+            "IsRegisteredPictureBook_Enemy_.*_Dark": 7,
+            "IsRegisteredPictureBook_Enemy_.*_Gold": 7,
+            "IsRegisteredPictureBook_Enemy_Dragon": 7,
+            "IsRegisteredPictureBook_Enemy_Ganon": 7,
+            "IsRegisteredPictureBook_Enemy_SiteBoss": 7,
+            "Dungeon_Clear_": -1
         },
         "OVERRIDE_BOOL_INIT_VALUE": {}
     },
@@ -78,10 +83,29 @@
         "OVERRIDE_BOOL_ARRAY_MAX_VALUE": {},
         "OVERRIDE_BOOL_ARRAY_MIN_VALUE": {}
     },
-    "S32_OVERRRIDES": {
-        "OVERRIDE_S32_INIT_VALUE": {},
-        "OVERRIDE_S32_MAX_VALUE": {},
-        "OVERRIDE_S32_MIN_VALUE": {}
+    "S32_OVERRIDES": {
+        "OVERRIDE_S32_INIT_VALUE": {
+            "EquipTime_": 0,
+            "Location_": 0,
+            "Location_StartPoint": 1,
+            "Npc_": 0,
+            "PictureBookSize_": -1,
+            "PorchTime_": 0
+        },
+        "OVERRIDE_S32_MAX_VALUE": {
+            "EquipTime_": 2147483647,
+            "Location_": 2147483647,
+            "Npc_": 65535,
+            "PictureBookSize_": 65536,
+            "PorchTime_": 2147483647
+        },
+        "OVERRIDE_S32_MIN_VALUE": {
+            "EquipTime_": 0,
+            "Location_": -2147483648,
+            "Npc_": 0,
+            "PictureBookSize_": -1,
+            "PorchTime_": 0
+        }
     },
     "S32_ARRAY_OVERRIDES": {
         "OVERRIDE_S32_ARRAY_INIT_VALUE": {},

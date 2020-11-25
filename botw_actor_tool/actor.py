@@ -17,7 +17,7 @@
 import oead
 import shutil
 from pathlib import Path
-from typing import Dict, Union
+from typing import Dict, List, Union
 from zlib import crc32
 
 from . import actorinfo, generic_link_files, util
@@ -27,12 +27,12 @@ from .texts import ActorTexts
 from .store import FlagStore
 
 
-FAR_LINKS: list = [
+FAR_LINKS: List[str] = [
     "LifeConditionUser",
     "ModelUser",
     "PhysicsUser",
 ]
-FLAG_CLASSES: dict = {
+FLAG_CLASSES: Dict[str, type] = {
     "EquipTime_": S32Flag,
     "IsGet_": BoolFlag,
     "IsNewPictureBook_": BoolFlag,
@@ -40,8 +40,10 @@ FLAG_CLASSES: dict = {
     "PictureBookSize_": S32Flag,
     "PorchTime_": S32Flag,
 }
-FLAG_TYPES: dict = {
+FLAG_TYPES: Dict[str, List[str]] = {
+    "Animal": ["IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
     "Armor": ["EquipTime_", "IsGet_", "PorchTime_"],
+    "Enemy": ["IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
     "Item": ["IsGet_", "IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
     "Weapon": [
         "EquipTime_",
@@ -77,6 +79,8 @@ class BATActor:
     _texts: ActorTexts
     _flags: FlagStore
     _resident: bool
+    _origname: str
+    _far_origname: str
 
     def __init__(self, pack: Union[Path, str]) -> None:
         if isinstance(pack, str):
@@ -86,6 +90,7 @@ class BATActor:
             ).resolve()
         self._pack = ActorPack()
         self._pack.from_actor(pack)
+        self._origname = self._pack.get_name()
         self._has_far = False
         self._needs_info_update = False
         if isinstance(pack, Path):
@@ -94,18 +99,19 @@ class BATActor:
             if pack.with_name(f"{pack.name}_Far").exists():
                 self._far_pack = ActorPack()
                 self._far_pack.from_actor(Path(f"{pack.name}_Far"))
+                self._far_origname = self._far_pack.get_name()
                 self._has_far = True
                 self._far_needs_info_update = False
         self._texts = ActorTexts(Path(pack), self._pack.get_link("ProfileUser"))
         self._flags = FlagStore()
-        self.set_flags(self._pack.get_name())
+        self.set_flags(self._origname)
 
         if not actorinfo_path.exists():
             actorinfo_path = Path(util.find_file(Path("Actor/ActorInfo.product.sbyml")))
         actorinfo = oead.byml.from_binary(oead.yaz0.decompress(actorinfo_path.read_bytes()))
         info_set = far_info_set = False
         for actor in actorinfo["Actors"]:
-            if actor["name"] == self._pack.get_name():
+            if actor["name"] == self._origname:
                 self._info = actor
                 info_set = True
             if self._has_far:
@@ -123,7 +129,8 @@ class BATActor:
     def set_name(self, name: str) -> None:
         self._pack.set_name(name)
         self._texts.set_actor_name(name)
-        self._flags.remove_all()
+        del self._flags
+        self._flags = FlagStore()
         self.set_flags(name)
         self._needs_info_update = True
         self._resident = False
@@ -185,14 +192,21 @@ class BATActor:
     def get_info(self) -> oead.byml.Hash:
         if self._needs_info_update:
             # TODO: This is messy, we shouldn't let someone else directly modify our property
-            actorinfo.generate_actor_info(self._pack, self._has_far, self._info)
+            actorinfo.generate_actor_info(
+                self._pack, self._has_far, self._info, self._origname == self._pack.get_name()
+            )
             self._needs_info_update = False
         return self._info
 
     def get_far_info(self) -> oead.byml.Hash:
         if self._far_needs_info_update:
             # TODO: This is messy, we shouldn't let someone else directly modify our property
-            actorinfo.generate_actor_info(self._far_pack, False, self._far_info)
+            actorinfo.generate_actor_info(
+                self._far_pack,
+                False,
+                self._far_info,
+                self._far_origname == self._far_pack.get_name(),
+            )
             self._far_needs_info_update = False
         return self._far_info
 
@@ -214,7 +228,7 @@ class BATActor:
                 else:
                     ftype = "s32_data"
                 flag = FLAG_CLASSES[prefix]()
-                flag.set_data_name(f"{prefix}{name}")
+                flag.data_name = f"{prefix}{name}"
                 flag.use_name_to_override_params()
                 self._flags.add(ftype, flag)
 
@@ -290,7 +304,7 @@ class BATActor:
 
         gamedata_sarc = util.get_gamedata_sarc(bootup_path)
         for bgdata_name, bgdata_hash in map(util.unpack_oead_file, gamedata_sarc.get_files()):
-            self._flags.add_flags_from_Hash(bgdata_name, bgdata_hash, False)
+            self._flags.add_flags_from_Hash(bgdata_name, bgdata_hash)
 
         files_to_write: list = []
         files_to_write.append("GameData/gamedata.ssarc")

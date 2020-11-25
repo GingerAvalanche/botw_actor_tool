@@ -128,3 +128,6 @@ mypy.ini
 
 # Pyre type checker
 .pyre/
+
+# VSCode
+.vscode/

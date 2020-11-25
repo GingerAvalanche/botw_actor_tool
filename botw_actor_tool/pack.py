@@ -173,7 +173,7 @@ class ActorPack:
 
     def get_actorlink(self) -> oead.aamp.ParameterIO:
         actorlink = oead.aamp.ParameterIO()
-        actorlink.type = ""
+        actorlink.type = "xml"
         actorlink.objects["LinkTarget"] = oead.aamp.ParameterObject()
         for link, linkref in self._links.items():
             actorlink.objects["LinkTarget"].params[link] = linkref
