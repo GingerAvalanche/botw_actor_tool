@@ -109,26 +109,28 @@ class ActorPack:
             if linkref == self._actorname:
                 self._links[link] = name
 
-        conversion_list = [
-            (self._aampfiles, oead.aamp.ParameterIO),
-            (self._bymlfiles, oead.byml),
-        ]
-        for i in range(len(conversion_list)):
-            files, convert_type = conversion_list[i]
-            for link, value in files.items():
-                yaml = convert_type.to_text(value)
-                if self._actorname in yaml:
-                    new_yaml = yaml.replace(self._actorname, name)
-                    files[link] = convert_type.from_text(new_yaml)
+        for link, value in self._aampfiles.items():
+            yaml = oead.aamp.ParameterIO.to_text(value)
+            if self._actorname in yaml:
+                new_yaml = yaml.replace(self._actorname, name)
+                self._aampfiles[link] = oead.aamp.ParameterIO.from_text(new_yaml)
+        for link, value in self._bymlfiles.items():
+            yaml = oead.byml.to_text(value)
+            if self._actorname in yaml:
+                new_yaml = yaml.replace(self._actorname, name)
+                self._bymlfiles[link] = oead.byml.from_text(new_yaml)
         for filename in self._miscfiles.keys():
             if self._actorname in filename:
-                filedata = self._miscfiles[filename]
-                self._miscfiles.pop(filename)
                 new_filename = filename.replace(self._actorname, name)
-                self._miscfiles[new_filename] = filedata
+                self._miscfiles[new_filename] = self._miscfiles[filename]
+                self._miscfiles.pop(filename)
         self._actorname = name
         if "Armor_" in name and self._links["ModelUser"] == self._actorname:
-            mlist = self._aampfiles["ModelUser"]
+            self._aampfiles["ModelUser"].lists["ModelData"].lists["ModelData_0"].objects[
+                "Base"
+            ].params["Folder"] = oead.aamp.Parameter(
+                oead.FixedSafeString64("_".join(name.split("_")[:-1]))
+            )
 
     def get_link(self, link: str) -> str:
         return self._links[link]
