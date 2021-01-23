@@ -125,6 +125,11 @@ class BATActor:
         del actorinfo
         del actorinfo_path
 
+        if not self._info or (self._has_far and not self._far_info):
+            raise RuntimeError(
+                f"ActorInfo.product.sbyml did not contain an info entry for {self._origname}"
+            )
+
     def get_name(self) -> str:
         return self._pack.get_name()
 

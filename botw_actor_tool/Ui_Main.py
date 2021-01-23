@@ -173,7 +173,11 @@ class UiMainWindow(wx.Frame):
         self.LoadActor(actorpath)
 
     def LoadActor(self, actorpath: Union[Path, str]) -> None:
-        self._actor = BATActor(actorpath)
+        try:
+            self._actor = BATActor(actorpath)
+        except RuntimeError as err:
+            print(err)
+            return
         self.Freeze()
         for i in range(self._linkselectorbox.GetCount()):
             self._linkselectorbox.EnableItem(i, False)
