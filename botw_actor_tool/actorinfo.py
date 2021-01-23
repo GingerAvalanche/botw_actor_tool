@@ -335,6 +335,8 @@ def _deepretrieve_info(
                 data[info] = otype(el.params[param].v)
             except KeyError:
                 pass
+            except TypeError:
+                raise TypeError(f"{param}")
 
 
 def get_all_actors(path: str) -> list:
