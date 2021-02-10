@@ -239,7 +239,7 @@ class BATActor:
                 else:
                     ftype = "s32_data"
                 flag = FLAG_CLASSES[prefix]()
-                if name[0] == "_":
+                if prefix[0] == "_":
                     flag.data_name = f"{name}{prefix}"
                 else:
                     flag.data_name = f"{prefix}{name}"
