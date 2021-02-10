@@ -7,6 +7,7 @@
         "OVERRIDE_IS_ONE_TRIGGER": {
             "Clear_": true,
             "CompleteTreasure_": true,
+            "_DispNameFlag": true,
             "Enter_": true,
             "IsGet_": true,
             "Open_": true,
@@ -21,6 +22,7 @@
         },
         "OVERRIDE_IS_SAVE": {
             "CompleteTreasure_": true,
+            "_DispNameFlag": true,
             "Enter_": true,
             "EquipTime_": true,
             "IsGet_": true,

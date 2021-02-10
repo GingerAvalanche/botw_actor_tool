@@ -33,6 +33,7 @@ FAR_LINKS: List[str] = [
     "PhysicsUser",
 ]
 FLAG_CLASSES: Dict[str, type] = {
+    "_DispNameFlag": BoolFlag,
     "EquipTime_": S32Flag,
     "IsGet_": BoolFlag,
     "IsNewPictureBook_": BoolFlag,
@@ -45,6 +46,7 @@ FLAG_TYPES: Dict[str, List[str]] = {
     "Armor": ["EquipTime_", "IsGet_", "PorchTime_"],
     "Enemy": ["IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
     "Item": ["IsGet_", "IsNewPictureBook_", "IsRegisteredPictureBook_", "PictureBookSize_"],
+    "Npc": ["_DispNameFlag"],
     "Weapon": [
         "EquipTime_",
         "IsGet_",
@@ -237,7 +239,10 @@ class BATActor:
                 else:
                     ftype = "s32_data"
                 flag = FLAG_CLASSES[prefix]()
-                flag.data_name = f"{prefix}{name}"
+                if name[0] == "_":
+                    flag.data_name = f"{name}{prefix}"
+                else:
+                    flag.data_name = f"{prefix}{name}"
                 self._flag_hashes[ftype].add(flag.hash_value)
                 flag.use_name_to_override_params()
                 self._flags.add(ftype, flag)
