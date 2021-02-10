@@ -234,11 +234,11 @@ class BATActor:
         actor_type = name.split("_")[0]
         if actor_type in FLAG_TYPES:
             for prefix in FLAG_TYPES[actor_type]:
-                if "Is" in prefix:
+                flag = FLAG_CLASSES[prefix]()
+                if isinstance(flag, BoolFlag):
                     ftype = "bool_data"
                 else:
                     ftype = "s32_data"
-                flag = FLAG_CLASSES[prefix]()
                 if prefix[0] == "_":
                     flag.data_name = f"{name}{prefix}"
                 else:
