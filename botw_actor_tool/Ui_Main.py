@@ -144,11 +144,12 @@ class UiMainWindow(wx.Frame):
         panelbox.Add(self._linkselectorbox, flag=wx.EXPAND | wx.ALL, border=10)
         self.Bind(wx.EVT_RADIOBOX, self.OnPropRadio, self._linkselectorbox)
 
-        self._linkcontents = wx.Panel(self)
-        lcbox = wx.BoxSizer(wx.HORIZONTAL)
+        self._linkcontents = wx.ScrolledWindow(self)
+        lcbox = wx.BoxSizer(wx.VERTICAL)
         actorpanel = UiActorLinkPanel(self._linkcontents)
-        lcbox.Add(actorpanel, proportion=1, flag=wx.EXPAND)
-        self._linkcontents.SetSizerAndFit(lcbox)
+        lcbox.Add(actorpanel, flag=wx.EXPAND)
+        self._linkcontents.SetSizer(lcbox)
+        self._linkcontents.FitInside()
         self._linkcontents.Disable()
 
         panelbox.Add(

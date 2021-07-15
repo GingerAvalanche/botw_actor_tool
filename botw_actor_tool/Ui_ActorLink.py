@@ -68,7 +68,7 @@ class UiActorLinkPanel(wx.Panel):
             linksizer.Add(rb2, flag=wx.ALIGN_CENTER_VERTICAL)
             linksizer.Add(rb3, flag=wx.ALIGN_CENTER_VERTICAL)
             tc_width = rb2.GetSize().GetWidth()
-            tc = wx.TextCtrl(self, size=(-1, 25), style=wx.TE_MULTILINE | wx.TE_NO_VSCROLL)
+            tc = wx.TextCtrl(self, size=(-1, 25))
             tc.Disable()
             linksizer.Add(tc, proportion=1)
             bt = wx.Button(self, size=(120, 25), label="Update Custom Link", name=f"{link}")
