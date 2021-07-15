@@ -119,7 +119,7 @@ class ActorPack:
             if self._actorname in yaml:
                 new_yaml = yaml.replace(self._actorname, name)
                 self._bymlfiles[link] = oead.byml.from_text(new_yaml)
-        for filename in self._miscfiles.keys():
+        for filename in [*self._miscfiles]:
             if self._actorname in filename:
                 new_filename = filename.replace(self._actorname, name)
                 self._miscfiles[new_filename] = self._miscfiles[filename]
