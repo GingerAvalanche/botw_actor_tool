@@ -131,13 +131,13 @@ class UiMainWindow(wx.Frame):
         # self.Bind(wx.EVT_MENU, self.OnTexts, textsoption)
         self.Bind(wx.EVT_CLOSE, self.OnClose)
 
-        panelbox = wx.BoxSizer(wx.VERTICAL)
+        panelbox = wx.BoxSizer(wx.HORIZONTAL)
 
         self._linkselectorbox = wx.RadioBox(
             self,
             label="Actor Property",
             choices=tabs,
-            majorDimension=7,
+            majorDimension=1,
         )
         for i in range(len(tabs)):
             self._linkselectorbox.EnableItem(i, False)
@@ -155,7 +155,7 @@ class UiMainWindow(wx.Frame):
         panelbox.Add(
             self._linkcontents,
             proportion=1,
-            flag=wx.EXPAND | wx.LEFT | wx.RIGHT | wx.BOTTOM,
+            flag=wx.EXPAND | wx.TOP | wx.RIGHT | wx.BOTTOM,
             border=10,
         )
 
