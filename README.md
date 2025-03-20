@@ -5,7 +5,7 @@ Note that the tool does not handle resource files (.sbfres). Those need to be ha
 
 ## Dependencies
 * A dumped copy of Legend of Zelda: Breath of the Wild (for Wii U or Switch)
-* Python 3.8-3.10 (64-bit, added to system PATH)
+* Python 3.8-3.9 (64-bit, added to system PATH)
 
 The following `pip` packages, which will be automatically installed:
 * `wxPython`
@@ -13,7 +13,7 @@ The following `pip` packages, which will be automatically installed:
 * `oead`
 
 ## Setup
-1. Download and install a version of Python between 3.8 and 3.10, 64-bit. You must choose the "Add to System PATH" option during installation.
+1. Download and install a version of Python between 3.8 and 3.9, 64-bit. You must choose the "Add to System PATH" option during installation.
 2. Open a command line and run `pip install botw_actor_tool`
 
 ### How to Use
